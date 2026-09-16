@@ -431,12 +431,39 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     const c = themeColors();
     const s = settings;
     const close = rows[rows.length - 1].close;
+
+    // Computes the initial view (restored zoom, or the 3M default) as
+    // creation-time timeScale options (barSpacing/rightOffset) instead of
+    // a post-creation setVisibleRange call. Confirmed live -- in both this
+    // dev pane and a real Chrome tab, via a debug handle poking the chart
+    // instance directly -- that setVisibleRange/setVisibleLogicalRange
+    // calls made AFTER creation can take anywhere from several seconds to
+    // tens of seconds to actually land on a chart this data-heavy (4
+    // panes, VWAP bands/fills, divergence lines, DMI), and that a SECOND
+    // call issued before the first one lands cancels it and restarts that
+    // same wait. That's exactly why every previous polling/retry attempt
+    // here (short interval or long) never converged: each rebuild's own
+    // retries were racing each other, not the library. Baking the target
+    // view into the chart's own initial options sidesteps the override
+    // race entirely -- there is nothing to override, so nothing to lose.
+    const dateToIndex = new Map(rows.map((r, i) => [r.date, i]));
+    const savedRange = lastRangeRef.current ?? loadViewRange(symbol || "");
+    const restored = savedRange && dateToIndex.has(savedRange.from) && dateToIndex.has(savedRange.to) ? savedRange : null;
+    const initialSessions = RANGE_BUTTONS.find((r) => r.id === "3M")?.n ?? rows.length;
+    const defaultFromIdx = Math.max(0, rows.length - initialSessions);
+    const targetFromIdx = restored ? dateToIndex.get(restored.from)! : defaultFromIdx;
+    const targetToIdx = restored ? dateToIndex.get(restored.to)! : rows.length - 1;
+    const visibleRealBars = Math.max(1, targetToIdx - targetFromIdx + 1);
+    const initialRightOffset = 3;
+    const plotWidth = Math.max(1, el.clientWidth || 600);
+    const initialBarSpacing = Math.max(0.5, plotWidth / (visibleRealBars + initialRightOffset));
+
     const chart = createChart(el, {
       autoSize: true,
       layout: { background: { color: c.panel }, textColor: c.muted, fontFamily: MONO, panes: { separatorColor: c.hair, separatorHoverColor: c.border, enableResize: true } },
       grid: { vertLines: { visible: false }, horzLines: { visible: false } },
       rightPriceScale: { borderColor: c.border, minimumWidth: 74 },
-      timeScale: { borderColor: c.border, rightOffset: 3 },
+      timeScale: { borderColor: c.border, rightOffset: initialRightOffset, barSpacing: initialBarSpacing },
       crosshair: {
         mode: CrosshairMode.Normal,
         vertLine: { color: c.faint, width: 1, style: LineStyle.Dashed, labelBackgroundColor: c.muted },
@@ -444,6 +471,7 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
       },
     });
     chartRef.current = chart;
+    setActiveRangeId(restored ? matchRangeButton(rows, restored) : "3M");
 
     const tick = idxTickSize(close);
     const candles = chart.addSeries(CandlestickSeries, {
@@ -720,24 +748,6 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     panes[0]?.setStretchFactor(PRICE_H);
     for (let i = 1; i < panes.length; i++) panes[i]?.setStretchFactor(OSC_H);
 
-    // Restores wherever this ticker's own chart was last zoomed/panned to,
-    // falling back to the 3M default only the first time a symbol is ever
-    // opened. Prefers the in-memory range this same rebuild's own cleanup
-    // just captured (lastRangeRef -- exact, synchronous) over
-    // viewRangeStore's localStorage copy (debounced 400ms, so it can be
-    // stale by the time an indicator toggle -- a quick click -- triggers
-    // this rebuild); localStorage is still the fallback for the real
-    // first-mount-after-a-hard-refresh case, where no in-memory value
-    // exists yet.
-    const savedRange = lastRangeRef.current ?? loadViewRange(symbol || "");
-    const dateSet = new Set(rows.map((r) => r.date));
-    const initialSessions = RANGE_BUTTONS.find((r) => r.id === "3M")?.n ?? rows.length;
-    const fromIdx = Math.max(0, rows.length - initialSessions);
-    const defaultRange = { from: rows[fromIdx].date as Time, to: rows[rows.length - 1].date as Time };
-    const restored = savedRange && dateSet.has(savedRange.from) && dateSet.has(savedRange.to) ? savedRange : null;
-    chart.timeScale().setVisibleRange(restored ? { from: restored.from as Time, to: restored.to as Time } : defaultRange);
-    setActiveRangeId(restored ? matchRangeButton(rows, restored) : "3M");
-
     // Persists the visible range on every pan/zoom/range-button change (not
     // just on unmount -- a tab close or crash shouldn't lose it), and keeps
     // the range-button row honest about whether the current view still
@@ -762,7 +772,6 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     // means the candles' own size is a function of (plotWidth, bar count,
     // MARGIN_PX) alone -- never of which indicators happen to be showing.
     const trackMarginOffset = makeMarginOffsetTracker(chart, rows.length - 1, dynamicMarginPx);
-    trackMarginOffset();
     chart.timeScale().subscribeVisibleLogicalRangeChange(trackMarginOffset);
 
     const legendAt = (idx: number): Legend => {
