@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-09-15",
+ "asOf": "2026-09-16",
  "entries": [
   {
    "date": "2026-07-10",
@@ -680,7 +680,7 @@
    "target": 336,
    "invalidation": 225.4,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-09-09",
@@ -690,7 +690,7 @@
    "target": 7562,
    "invalidation": 7053.75,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-09-11",
@@ -700,7 +700,7 @@
    "target": 575,
    "invalidation": 507,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-11",
@@ -710,7 +710,7 @@
    "target": 5020,
    "invalidation": 4643.1,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-11",
@@ -720,7 +720,7 @@
    "target": 642,
    "invalidation": 594.0,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-11",
@@ -730,7 +730,7 @@
    "target": 550,
    "invalidation": 504.9,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-11",
@@ -740,7 +740,7 @@
    "target": 108,
    "invalidation": 99.99,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-14",
@@ -750,7 +750,7 @@
    "target": 526,
    "invalidation": 483.12,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -760,7 +760,7 @@
    "target": 204,
    "invalidation": 193.05,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -770,7 +770,7 @@
    "target": 638,
    "invalidation": 584.1,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -780,7 +780,7 @@
    "target": 542,
    "invalidation": 504.9,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -790,7 +790,7 @@
    "target": 108,
    "invalidation": 99.99,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -800,7 +800,7 @@
    "target": 209,
    "invalidation": 192.06,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -810,7 +810,7 @@
    "target": 2745,
    "invalidation": 2626.4,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -820,7 +820,7 @@
    "target": 621,
    "invalidation": 522,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-14",
@@ -830,14 +830,64 @@
    "target": 820,
    "invalidation": 707.85,
    "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "PGEO",
+   "score": 75,
+   "close": 1055.0,
+   "target": 1085,
+   "invalidation": 1034,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "CMRY",
+   "score": 60,
+   "close": 4550.0,
+   "target": 4620,
+   "invalidation": 4356.0,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "MNCN",
+   "score": 60,
+   "close": 202.0,
+   "target": 204,
+   "invalidation": 193.05,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "BSML",
+   "score": 55,
+   "close": 550.0,
+   "target": 621,
+   "invalidation": 524,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "PBSA",
+   "score": 55,
+   "close": 745.0,
+   "target": 820,
+   "invalidation": 707.85,
+   "outcome": "open",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 83,
-  "decided": 57,
-  "targetFirst": 22,
-  "hitRate": 0.386
+  "total": 88,
+  "decided": 59,
+  "targetFirst": 24,
+  "hitRate": 0.407
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
