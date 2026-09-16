@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-16T22:42:42.592552+07:00",
+ "generatedAt": "2026-09-17T01:47:30.466360+07:00",
  "marketDate": "2026-09-16",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-16T22:42:32.063400+07:00"
+  "auditedAt": "2026-09-17T01:47:14.227413+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-15T01:26:55.281115+07:00",
-   "marketDate": "2026-09-14",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-09-15T01:29:45.178612+07:00",
    "marketDate": "2026-09-14",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-16",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-17T01:46:20.773950+07:00",
+   "marketDate": "2026-09-16",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,10 +93,14 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-16T22:42:33.526077+07:00",
+  "lastChecked": "2026-09-17T01:47:20.803066+07:00",
   "checked": 15,
   "failures": [],
   "results": [
+   {
+    "ticker": "ACES",
+    "status": "ERROR: TypeError"
+   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -122,11 +126,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "CMRY",
+    "ticker": "CNMA",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "DFAM",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "INCO",
     "status": "ERROR: TypeError"
    },
    {
@@ -135,14 +143,6 @@
    },
    {
     "ticker": "MSIE",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "PBSA",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "PGEO",
     "status": "ERROR: TypeError"
    },
    {
