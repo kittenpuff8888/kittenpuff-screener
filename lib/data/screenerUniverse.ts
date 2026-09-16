@@ -109,6 +109,10 @@ export interface UniverseRow {
   rsiDivBullishPivotDate: string | null; // pivot bar's own date -- NOT the confirmation date; see compute_screener_signals.py
   rsiDivHiddenBullish: boolean;
   rsiDivHiddenBullishPivotDate: string | null;
+  rsiDivBearish: boolean;
+  rsiDivBearishPivotDate: string | null;
+  rsiDivHiddenBearish: boolean;
+  rsiDivHiddenBearishPivotDate: string | null;
   stochRsiGoldenCross: boolean;
   stochRsiOversold: boolean; // earlier, lower-precision companion: K and D both <20, K converging on D but not yet crossed
   breakSma200: boolean;
@@ -287,7 +291,7 @@ export const SETUPS: SetupDef[] = [
     label: "RSI Bullish Divergence",
     icon: "⤢",
     hasBear: false,
-    req: "Regular bullish RSI(10, Wilder-smoothed) divergence confirmed today — a literal port of TradingView's own built-in RSI divergence logic: price makes a lower low while RSI makes a higher low, comparing the two most recent confirmed 5-bar RSI pivots, 5–60 bars apart, no RSI-value threshold",
+    req: "Regular bullish RSI(14, Wilder-smoothed) divergence confirmed today — a literal port of a user-supplied Pine Script v6 divergence indicator: price (Low) makes a lower low while RSI makes a higher low, comparing the two most recent confirmed 5-bar RSI pivots, 5–60 bars apart, no RSI-value threshold",
     bull: (r) => r.rsiDivBullish,
   },
   {
@@ -295,8 +299,24 @@ export const SETUPS: SetupDef[] = [
     label: "RSI Hidden Bullish Divergence",
     icon: "⤢",
     hasBear: false,
-    req: "Hidden bullish RSI(10, Wilder-smoothed) divergence confirmed today — the exact mirror of Regular above: price makes a higher low while RSI makes a lower low, same 5-bar confirmed-pivot logic and 5–60 bar gap, no RSI-value threshold",
+    req: "Hidden bullish RSI(14, Wilder-smoothed) divergence confirmed today — the exact mirror of Regular above: price (Low) makes a higher low while RSI makes a lower low, same 5-bar confirmed-pivot logic and 5–60 bar gap, no RSI-value threshold",
     bull: (r) => r.rsiDivHiddenBullish,
+  },
+  {
+    key: "rsi14_div_bearish",
+    label: "RSI Bearish Divergence",
+    icon: "⤡",
+    hasBear: false,
+    req: "Regular bearish RSI(14, Wilder-smoothed) divergence confirmed today — the pivot-high mirror of RSI Bullish Divergence, ported from the same Pine Script v6 indicator: price (High) makes a higher high while RSI makes a lower high, comparing the two most recent confirmed 5-bar RSI pivots, 5–60 bars apart, no RSI-value threshold",
+    bull: (r) => r.rsiDivBearish,
+  },
+  {
+    key: "rsi14_div_hidden_bearish",
+    label: "RSI Hidden Bearish Divergence",
+    icon: "⤡",
+    hasBear: false,
+    req: "Hidden bearish RSI(14, Wilder-smoothed) divergence confirmed today — the exact mirror of Regular Bearish above: price (High) makes a lower high while RSI makes a higher high, same 5-bar confirmed-pivot logic and 5–60 bar gap, no RSI-value threshold",
+    bull: (r) => r.rsiDivHiddenBearish,
   },
   {
     key: "stoch_rsi_golden_cross",
@@ -566,6 +586,8 @@ export type ScreenerSignal = {
   breakIbhIbl?: boolean;
   rsiDivBullish?: boolean; rsiDivBullishPivotDate?: string | null;
   rsiDivHiddenBullish?: boolean; rsiDivHiddenBullishPivotDate?: string | null;
+  rsiDivBearish?: boolean; rsiDivBearishPivotDate?: string | null;
+  rsiDivHiddenBearish?: boolean; rsiDivHiddenBearishPivotDate?: string | null;
   stochRsiGoldenCross?: boolean; stochRsiOversold?: boolean;
   breakSma200?: boolean; emaGoldenCross?: boolean;
   nearPqM1?: boolean; nearPqM2?: boolean; nearPyM1?: boolean; nearPyM2?: boolean;
@@ -679,6 +701,10 @@ export function buildUniverse(scr: ScreenerDoc, setupsDoc: SetupsDoc, ibMap: IbM
       rsiDivBullishPivotDate: sig.rsiDivBullishPivotDate ?? null,
       rsiDivHiddenBullish: !!sig.rsiDivHiddenBullish,
       rsiDivHiddenBullishPivotDate: sig.rsiDivHiddenBullishPivotDate ?? null,
+      rsiDivBearish: !!sig.rsiDivBearish,
+      rsiDivBearishPivotDate: sig.rsiDivBearishPivotDate ?? null,
+      rsiDivHiddenBearish: !!sig.rsiDivHiddenBearish,
+      rsiDivHiddenBearishPivotDate: sig.rsiDivHiddenBearishPivotDate ?? null,
       stochRsiGoldenCross: !!sig.stochRsiGoldenCross,
       stochRsiOversold: !!sig.stochRsiOversold,
       breakSma200: !!sig.breakSma200,

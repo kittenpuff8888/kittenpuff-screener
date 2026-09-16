@@ -89,17 +89,17 @@ const MARGIN_PX = 56;
       barSpacing = plotWidth / (visibleRealBars + rightOffset)
       rightOffset * barSpacing = MARGIN_PX
       => rightOffset = MARGIN_PX * visibleRealBars / (plotWidth - MARGIN_PX) */
-function makeMarginOffsetTracker(chart: IChartApi, lastBarIndex: number) {
+function makeMarginOffsetTracker(chart: IChartApi, lastBarIndex: number, marginPx: number) {
   const adjustingRef = { current: false };
   const apply = () => {
     if (adjustingRef.current) return;
     const plotWidth = chart.timeScale().width();
     const lr = chart.timeScale().getVisibleLogicalRange();
-    if (!plotWidth || plotWidth <= MARGIN_PX || !lr) return;
+    if (!plotWidth || plotWidth <= marginPx || !lr) return;
     const realFrom = Math.max(0, lr.from);
     const realTo = Math.min(lastBarIndex, lr.to);
     const visibleRealBars = Math.max(1, realTo - realFrom);
-    const wanted = Math.max(2, Math.round((MARGIN_PX * visibleRealBars) / (plotWidth - MARGIN_PX)));
+    const wanted = Math.max(2, Math.round((marginPx * visibleRealBars) / (plotWidth - marginPx)));
     const current = chart.timeScale().options().rightOffset;
     if (Math.abs(current - wanted) < 1) return;
     adjustingRef.current = true;
@@ -110,6 +110,26 @@ function makeMarginOffsetTracker(chart: IChartApi, lastBarIndex: number) {
     setTimeout(() => { adjustingRef.current = false; }, 0);
   };
   return apply;
+}
+
+/** Pixel width the VWAP margin needs to fit its own text labels without
+    clipping -- MARGIN_PX alone (tuned tight, "close to the last candle")
+    is only enough when there's no label text to show at all. Mirrors
+    MarginLabelsRenderer's own two-column layout math (col1 right-aligned
+    at the edge, col0 inboard of it with a 14px gap) so the reserved margin
+    and the text actually drawn into it always agree. Measured with a
+    throwaway canvas context (cheap -- a handful of measureText calls once
+    per chart rebuild), never below MARGIN_PX so VWAP-off/label-off stays
+    at the original tight default. */
+function measureMarginWidth(items: MarginLabelItem[], font: string): number {
+  if (!items.length || typeof document === "undefined") return MARGIN_PX;
+  const ctx = document.createElement("canvas").getContext("2d");
+  if (!ctx) return MARGIN_PX;
+  ctx.font = font;
+  const widest = (col: 0 | 1) => items.filter((it) => it.col === col).reduce((w, it) => Math.max(w, ctx.measureText(it.text).width), 0);
+  const w0 = widest(0), w1 = widest(1);
+  const needed = (w1 ? w0 + 14 + w1 : w0) + 8 + 16;
+  return Math.max(MARGIN_PX, Math.ceil(needed));
 }
 
 // IDX's own published tick-size schedule (price bands -> minimum price
@@ -142,7 +162,12 @@ function themeColors() {
     shadow: v("--shadow", dark ? "rgba(0,0,0,.55)" : "rgba(8,10,13,.20)"),
     // Redesign-specific tokens with no CSS-var home yet -- chart-canvas-only
     // values, kept local per the file's existing themeColors() precedent.
-    paneTag: dark ? "rgba(12,15,20,.82)" : "rgba(255,255,255,.88)",
+    // A light scrim for legend-text legibility, not a wall -- at the old
+    // .82/.88 alpha this fully occluded candles/wicks sitting behind it
+    // (confirmed live: a tall wick visibly cut off right at the block's
+    // bottom edge), which is exactly the opposite of how TradingView's own
+    // legend renders (text directly over the chart, no solid backing).
+    paneTag: dark ? "rgba(12,15,20,.32)" : "rgba(255,255,255,.42)",
     oscFill: dark ? "rgba(28,45,98,.32)" : "rgba(41,98,255,.07)",
     // Candle up/down deliberately split from the UI accent in dark mode
     // (TradingView's own dark candle blue is more saturated than this
@@ -341,6 +366,23 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
   const [activeRangeId, setActiveRangeId] = useState<string>("3M");
   const containerRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<IChartApi | null>(null);
+  // The chart-building effect below tears down and fully recreates the
+  // chart on every settings/hidden change (toggling any indicator's eye,
+  // Bull/Bear, or a gear-panel edit), since indicator series can't just be
+  // added/removed from a live chart cleanly here. Restoring the view from
+  // viewRangeStore's SAVED range alone isn't enough to make that invisible:
+  // that save is 400ms-debounced, so a toggle clicked right after a pan/
+  // zoom (well within 400ms, and toggling is a quick click) would read a
+  // stale range and visibly "jump" -- exactly the "chart zooms in when I
+  // hide/unhide an indicator" bug this fixes. Capturing the chart's own
+  // live range synchronously in the cleanup below, in a ref (so it
+  // survives the teardown/rebuild instead of resetting with component
+  // state), and preferring it over the debounced localStorage value closes
+  // that race entirely -- zoom now only ever changes when the user
+  // actually changes it.
+  const lastRangeRef = useRef<{ from: string; to: string } | null>(null);
+  const lastSymbolRef = useRef<string | undefined>(undefined);
+  if (lastSymbolRef.current !== symbol) { lastRangeRef.current = null; lastSymbolRef.current = symbol; }
 
   useEffect(() => subscribeStudySettings(setSettings), []);
   useEffect(() => subscribeHiddenMap(setHidden), []);
@@ -485,6 +527,7 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     //    them would be unreadable noise; forward lines still draw for
     //    every one within the cap). ──
     const vw = computeAnchoredVwap(rows, s.vwapAnchor as VwapAnchor, s.vwapMult1, s.vwapMult2, s.vwapMult2 + 1, s.vwapSource as VwapSource);
+    let dynamicMarginPx = MARGIN_PX;
     if (!hidden.vwap) {
       const segs: Array<{ key: string; idxs: number[] }> = [];
       vw.points.forEach((p, i) => {
@@ -546,9 +589,11 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
         }
       });
       if (marginItems.length) {
+        const font = `10.5px ${MONO}, ui-monospace, monospace`;
         const host = chart.addSeries(LineSeries, { color: "rgba(0,0,0,0)", lastValueVisible: false, priceLineVisible: false, crosshairMarkerVisible: false });
         host.setData(rows.map((r) => ({ time: r.date as Time, value: r.close })));
-        host.attachPrimitive(new MarginLabels(marginItems, rows[rows.length - 1].date as Time, c.muted, `10.5px ${MONO}, ui-monospace, monospace`));
+        host.attachPrimitive(new MarginLabels(marginItems, rows[rows.length - 1].date as Time, c.muted, font));
+        dynamicMarginPx = measureMarginWidth(marginItems, font);
       }
     }
 
@@ -675,12 +720,16 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     panes[0]?.setStretchFactor(PRICE_H);
     for (let i = 1; i < panes.length; i++) panes[i]?.setStretchFactor(OSC_H);
 
-    // Restores wherever this ticker's own chart was last zoomed/panned to
-    // (viewRangeStore.ts), falling back to the 3M default only the first
-    // time a symbol is ever opened (or if the saved range no longer lines
-    // up with this ticker's actual bar range, e.g. after new sessions have
-    // been published since it was saved).
-    const savedRange = loadViewRange(symbol || "");
+    // Restores wherever this ticker's own chart was last zoomed/panned to,
+    // falling back to the 3M default only the first time a symbol is ever
+    // opened. Prefers the in-memory range this same rebuild's own cleanup
+    // just captured (lastRangeRef -- exact, synchronous) over
+    // viewRangeStore's localStorage copy (debounced 400ms, so it can be
+    // stale by the time an indicator toggle -- a quick click -- triggers
+    // this rebuild); localStorage is still the fallback for the real
+    // first-mount-after-a-hard-refresh case, where no in-memory value
+    // exists yet.
+    const savedRange = lastRangeRef.current ?? loadViewRange(symbol || "");
     const dateSet = new Set(rows.map((r) => r.date));
     const initialSessions = RANGE_BUTTONS.find((r) => r.id === "3M")?.n ?? rows.length;
     const fromIdx = Math.max(0, rows.length - initialSessions);
@@ -712,7 +761,7 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     // Keeping the same fixed margin active at all times, VWAP on or off,
     // means the candles' own size is a function of (plotWidth, bar count,
     // MARGIN_PX) alone -- never of which indicators happen to be showing.
-    const trackMarginOffset = makeMarginOffsetTracker(chart, rows.length - 1);
+    const trackMarginOffset = makeMarginOffsetTracker(chart, rows.length - 1, dynamicMarginPx);
     trackMarginOffset();
     chart.timeScale().subscribeVisibleLogicalRangeChange(trackMarginOffset);
 
@@ -739,6 +788,11 @@ export function IndicatorCompanion({ ohlcv, symbol, companyName }: { ohlcv: Ohlc
     chart.subscribeCrosshairMove(onMove);
 
     return () => {
+      // Captured synchronously, before teardown -- see lastRangeRef's own
+      // comment above for why this (not the debounced localStorage save)
+      // is what the next rebuild's restore prefers.
+      const live = chart.timeScale().getVisibleRange();
+      if (live) lastRangeRef.current = { from: String(live.from), to: String(live.to) };
       chart.unsubscribeCrosshairMove(onMove);
       chart.timeScale().unsubscribeVisibleTimeRangeChange(onTimeRangeChange);
       if (saveTimer) clearTimeout(saveTimer);

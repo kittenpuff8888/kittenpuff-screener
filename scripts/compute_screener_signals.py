@@ -35,7 +35,7 @@ ticker:
   rsiDivHiddenBullish -- same RSI(14), same pivot scan, same shared 5-60 bar
                          gate as rsiDivBullish above (TradingView uses one
                          shared pivot-range config for every divergence
-                         type) -- the exact mirror of it: CLOSE makes a
+                         type) -- the exact mirror of it: LOW makes a
                          Higher Low while RSI makes a Lower Low, comparing
                          the same two most recent confirmed pivots, no
                          RSI-value gate. An earlier version of this signal
@@ -52,7 +52,26 @@ ticker:
                          rsiDivBullish: both pivots must be confirmed swing
                          lows, so confirmation lags the more recent pivot by
                          swing_window bars (pivot date shown is that more
-                         recent pivot, not today).
+                         recent pivot, not today). Price basis changed from
+                         CLOSE to LOW when this got re-aligned to the
+                         user-supplied Pine script below (that script's own
+                         `hiddenBull` uses `low[right]` uniformly, not
+                         Close) -- see regular_bearish_divergence()'s
+                         docstring for the full context on that script.
+  rsiDivBearish       -- Regular Bearish RSI(14, Wilder) divergence -- the
+                         pivot-high mirror of rsiDivBullish: HIGH makes a
+                         Higher High while RSI makes a Lower High, same
+                         5-bars-each-side pivot scan and 5-60 bar gap, no
+                         RSI-value threshold. Ported from a user-supplied
+                         Pine Script v6 divergence indicator (rsiLen=14,
+                         pivot left/right=5/5, strict comparison) rather
+                         than reproduced from scratch -- see
+                         regular_bearish_divergence()'s own docstring.
+  rsiDivHiddenBearish -- Hidden Bearish RSI(14, Wilder) divergence -- the
+                         exact mirror of rsiDivBearish: HIGH makes a Lower
+                         High while RSI makes a Higher High, same pivot
+                         scan and gate. Same Pine script source as
+                         rsiDivBearish.
   breakSma200         -- today's close crosses above SMA200 (yesterday's
                          close was at or below it).
   emaGoldenCross      -- EMA25 crosses above EMA50 today (yesterday EMA25
@@ -308,6 +327,24 @@ def _swing_low_positions(vals: np.ndarray, w: int) -> list[int]:
     return pos
 
 
+def _swing_high_positions(vals: np.ndarray, w: int) -> list[int]:
+    """Pivot-high mirror of _swing_low_positions() -- a literal
+    `ta.pivothigh(vals, w, w)` port, same plateau-tolerant (`>=`) test.
+    Drives regular_bearish_divergence()/hidden_bearish_divergence() the
+    same way _swing_low_positions() drives the bullish pair above."""
+    pos = []
+    for i in range(w, len(vals) - w):
+        c = vals[i]
+        if np.isnan(c):
+            continue
+        left, right = vals[i - w:i], vals[i + 1:i + w + 1]
+        if np.all(np.isnan(left)) or np.all(np.isnan(right)):
+            continue
+        if c >= np.nanmax(left) and c >= np.nanmax(right):
+            pos.append(i)
+    return pos
+
+
 def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
     """Hidden Bullish RSI(14, Wilder) divergence -- the exact mirror of
     regular_bullish_divergence(): same `ta.pivotlow(rsi, 5, 5)` pivot scan,
@@ -315,11 +352,23 @@ def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     pivot-range gate (5-60 bars apart, last pivot confirmed within the last
     20 bars) -- TradingView's own script uses ONE shared pivot-range
     configuration for every divergence type (regular/hidden bullish/
-    bearish), not a bespoke one per type. Only two things flip from
-    regular's: the price/RSI comparison direction (price makes a HIGHER
-    low while RSI makes a LOWER low -- an uptrend-continuation pattern,
-    the opposite of regular's reversal pattern), and the price basis
-    (CLOSE here, not LOW -- confirmed against the reference case below).
+    bearish), not a bespoke one per type. Only the price/RSI comparison
+    direction flips from regular's: price makes a HIGHER low while RSI
+    makes a LOWER low -- an uptrend-continuation pattern, the opposite of
+    regular's reversal pattern.
+
+    Price basis is LOW here, same as regular's -- changed from an earlier
+    CLOSE basis (see below) when this got re-aligned to a user-supplied
+    Pine Script v6 divergence indicator: that script's own `hiddenBull`
+    condition is `isHigher(currPriceLow, prevPriceLow) and
+    isLower(currRsiLow, prevRsiLow)` where `currPriceLow = low[right]` --
+    LOW uniformly for every one of its four divergence types, never Close.
+    The prior CLOSE basis below was verified against TradingView's own
+    BUILT-IN "RSI" indicator specifically (a different, unrelated
+    reference), which may genuinely use Close for its hidden divergences --
+    but the user explicitly asked for the newer script's own logic here,
+    which doesn't, so this now follows that script instead of the older
+    reference.
 
     This replaces an earlier, structurally different version of this
     function that never actually got the same TradingView-parity fix
@@ -331,13 +380,16 @@ def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     true") even after regular_bullish_divergence() was fixed, because it
     had never been rewritten to match.
 
-    RSI(10) was verified directly against the same real example used to
-    validate the old version: BEST 2026-08-13 (RSI 56.8, close 109) ->
-    2026-08-26 (RSI 54.2, close 117) -- price Higher Low + RSI Lower Low,
-    confirmed on 26 Aug with this literal-port logic. Length bumped to 14
-    afterward to match the user-supplied Pine script's `rsiLen` input (see
-    regular_bullish_divergence()'s docstring); the RSI(10) numbers above are
-    carried over from that earlier check, not re-verified at length 14.
+    RSI(10), CLOSE-basis was verified directly against the same real
+    example used to validate the old version: BEST 2026-08-13 (RSI 56.8,
+    close 109) -> 2026-08-26 (RSI 54.2, close 117) -- price Higher Low +
+    RSI Lower Low, confirmed on 26 Aug with that earlier literal-port
+    logic. Length bumped to 14 and price basis switched Close->Low since,
+    per the docstring above; the RSI(10)/Close numbers above are carried
+    over from that earlier check, not re-verified at length 14 / Low basis
+    (BEST's own Low happens to track its Close closely enough on both of
+    those two dates that this particular example would likely still
+    confirm the same pivot pair either way, but that hasn't been checked).
 
     No RSI-band gate on the earlier pivot (unlike the old version) means a
     case like PYFA's own 2026-08-26 pivot (r1 in the low 40s -- an
@@ -356,7 +408,7 @@ def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     if hist is None or hist.empty or len(hist) < 25:
         return None
     df = hist.tail(lookback)
-    close = df["Close"].astype(float).values
+    low = df["Low"].astype(float).values
     r = rsi_wilder(df["Close"].astype(float), 14).values
 
     pivots = _swing_low_positions(r, swing_window)
@@ -365,7 +417,7 @@ def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     i1, i2 = pivots[-2], pivots[-1]
     if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
         return None
-    p1, p2 = float(close[i1]), float(close[i2])
+    p1, p2 = float(low[i1]), float(low[i2])
     r1, r2 = float(r[i1]), float(r[i2])
     if any(np.isnan(x) for x in (p1, p2, r1, r2)):
         return None
@@ -385,6 +437,105 @@ def hidden_bullish_divergence_today(hist: pd.DataFrame) -> tuple[bool, str | Non
     if today is None:
         return False, None
     yday = hidden_bullish_divergence(hist.iloc[:-1])
+    newly_confirmed = yday is None or yday["ref2_date"] != today["ref2_date"]
+    if not newly_confirmed:
+        return False, None
+    return True, today["ref2_date"]
+
+
+def regular_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+    """Regular Bearish RSI(14, Wilder) divergence -- the pivot-HIGH mirror
+    of regular_bullish_divergence(): a literal port of a user-supplied
+    Pine Script v6 divergence indicator's `regularBear` condition
+    (`ta.pivothigh(rsi, 5, 5)`, compare the two most recent confirmed
+    pivots, HIGH makes a higher high while RSI makes a lower high, same
+    shared 5-60 bar pivot-range gate, no RSI-value threshold). Unlike
+    rsiDivBullish/rsiDivHiddenBullish above (which started life matching
+    TradingView's own built-in RSI study and were only later re-aligned to
+    this script), this pair is a first-time, direct port straight from the
+    script the user provided -- there's no earlier TradingView-parity
+    verification history to carry over or correct here.
+
+    Price basis is HIGH for both regular and hidden bearish -- the script's
+    own `currPriceHigh = high[right]` is shared by both `regularBear` and
+    `hiddenBear`, same as LOW is shared by both bullish types (see
+    hidden_bullish_divergence()'s docstring on why bullish uses LOW, not
+    Close, for the same reason).
+
+    i2 is the most recent CONFIRMED pivot (needing swing_window bars after
+    it), not forced to today -- same reversal-style confirmation-lag
+    reasoning as every other divergence function in this file."""
+    if hist is None or hist.empty or len(hist) < 25:
+        return None
+    df = hist.tail(lookback)
+    high = df["High"].astype(float).values
+    r = rsi_wilder(df["Close"].astype(float), 14).values
+
+    pivots = _swing_high_positions(r, swing_window)
+    if len(pivots) < 2:
+        return None
+    i1, i2 = pivots[-2], pivots[-1]
+    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
+        return None
+    p1, p2 = float(high[i1]), float(high[i2])
+    r1, r2 = float(r[i1]), float(r[i2])
+    if any(np.isnan(x) for x in (p1, p2, r1, r2)):
+        return None
+    if not (p2 > p1 and r2 < r1):
+        return None
+    return {"i2": i2, "ref2_date": df.index[i2].strftime("%d %b '%y"), "p1": p1, "p2": p2, "r1": r1, "r2": r2}
+
+
+def regular_bearish_divergence_today(hist: pd.DataFrame) -> tuple[bool, str | None]:
+    """Regular Bearish divergence newly confirmed today -- same
+    "confirmed today" diff-vs-yesterday / ref2_date-changed approach as
+    regular_bullish_divergence_today(); see its docstring."""
+    today = regular_bearish_divergence(hist)
+    if today is None:
+        return False, None
+    yday = regular_bearish_divergence(hist.iloc[:-1])
+    newly_confirmed = yday is None or yday["ref2_date"] != today["ref2_date"]
+    if not newly_confirmed:
+        return False, None
+    return True, today["ref2_date"]
+
+
+def hidden_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+    """Hidden Bearish RSI(14, Wilder) divergence -- the exact mirror of
+    regular_bearish_divergence(): same pivot-high scan and shared 5-60 bar
+    gate, only the comparison direction flips -- HIGH makes a LOWER high
+    while RSI makes a HIGHER high (a downtrend-continuation pattern, the
+    opposite of regular's reversal pattern). Same Pine-script source and
+    HIGH price basis as regular_bearish_divergence() -- see its docstring."""
+    if hist is None or hist.empty or len(hist) < 25:
+        return None
+    df = hist.tail(lookback)
+    high = df["High"].astype(float).values
+    r = rsi_wilder(df["Close"].astype(float), 14).values
+
+    pivots = _swing_high_positions(r, swing_window)
+    if len(pivots) < 2:
+        return None
+    i1, i2 = pivots[-2], pivots[-1]
+    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
+        return None
+    p1, p2 = float(high[i1]), float(high[i2])
+    r1, r2 = float(r[i1]), float(r[i2])
+    if any(np.isnan(x) for x in (p1, p2, r1, r2)):
+        return None
+    if not (p2 < p1 and r2 > r1):
+        return None
+    return {"i2": i2, "ref2_date": df.index[i2].strftime("%d %b '%y"), "p1": p1, "p2": p2, "r1": r1, "r2": r2}
+
+
+def hidden_bearish_divergence_today(hist: pd.DataFrame) -> tuple[bool, str | None]:
+    """Hidden Bearish divergence newly confirmed today -- same "confirmed
+    today" diff-vs-yesterday / ref2_date-changed approach as
+    regular_bullish_divergence_today(); see its docstring."""
+    today = hidden_bearish_divergence(hist)
+    if today is None:
+        return False, None
+    yday = hidden_bearish_divergence(hist.iloc[:-1])
     newly_confirmed = yday is None or yday["ref2_date"] != today["ref2_date"]
     if not newly_confirmed:
         return False, None
@@ -566,12 +717,18 @@ def main(market_date: str) -> None:
         close = float(hist["Close"].iloc[-1])
         rsi_div_bullish, rsi_div_bullish_pivot = regular_bullish_divergence_today(hist)
         rsi_div_hidden, rsi_div_hidden_pivot = hidden_bullish_divergence_today(hist)
+        rsi_div_bearish, rsi_div_bearish_pivot = regular_bearish_divergence_today(hist)
+        rsi_div_hidden_bear, rsi_div_hidden_bear_pivot = hidden_bearish_divergence_today(hist)
         record = {
             "breakIbhIbl": ib_break(hist, ibh, ibl),
             "rsiDivBullish": rsi_div_bullish,
             "rsiDivBullishPivotDate": rsi_div_bullish_pivot,
             "rsiDivHiddenBullish": rsi_div_hidden,
             "rsiDivHiddenBullishPivotDate": rsi_div_hidden_pivot,
+            "rsiDivBearish": rsi_div_bearish,
+            "rsiDivBearishPivotDate": rsi_div_bearish_pivot,
+            "rsiDivHiddenBearish": rsi_div_hidden_bear,
+            "rsiDivHiddenBearishPivotDate": rsi_div_hidden_bear_pivot,
             "stochRsiGoldenCross": stoch_rsi_golden_cross_today(hist),
             "stochRsiOversold": stoch_rsi_oversold_today(hist),
             "breakSma200": break_sma200_today(hist),
