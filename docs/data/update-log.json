@@ -1,18 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-08-04T20:40:59.358826+07:00",
-      "marketDate": "2026-08-04",
-      "status": "NO_CHANGE",
-      "message": "Dataset already published; last successful snapshot preserved."
-    },
-    {
-      "timestamp": "2026-08-05T18:36:48.142205+07:00",
-      "marketDate": "2026-08-05",
-      "status": "STARTED",
-      "message": "Daily update pipeline started."
-    },
-    {
       "timestamp": "2026-08-05T19:31:20.439280+07:00",
       "marketDate": "2026-08-05",
       "status": "FAILED",
@@ -599,6 +587,18 @@
       "marketDate": "2026-09-16",
       "status": "NO_CHANGE",
       "message": "Dataset already published; last successful snapshot preserved."
+    },
+    {
+      "timestamp": "2026-09-18T00:27:42.529394+07:00",
+      "marketDate": "2026-09-17",
+      "status": "STARTED",
+      "message": "Daily update pipeline started."
+    },
+    {
+      "timestamp": "2026-09-18T01:51:58.111476+07:00",
+      "marketDate": "2026-09-17",
+      "status": "NO_DATA",
+      "message": "No valid IDX session was available for 2026-09-17; latest observed OHLCV date was 2026-09-16. The last successful snapshot was preserved."
     }
   ]
 }
