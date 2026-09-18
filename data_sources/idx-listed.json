@@ -3,7 +3,7 @@
   "source": "IDX Daftar Saham (data_sources/ksei-data-source.xlsx, TICKER LIST)",
   "asOf": "2026-08-31",
   "count": 962,
-  "generatedAt": "2026-09-18T13:49:54.446791+00:00",
+  "generatedAt": "2026-09-18T14:59:43.766213+00:00",
   "records": [
     {
       "ticker": "MGLV",

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-18T20:50:34.652629+07:00",
+ "generatedAt": "2026-09-18T22:00:23.184029+07:00",
  "marketDate": "2026-09-18",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-18T20:50:18.598196+07:00"
+  "auditedAt": "2026-09-18T22:00:08.328556+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-16T21:22:09.270367+07:00",
-   "marketDate": "2026-09-16",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
   {
    "timestamp": "2026-09-16T22:40:48.043460+07:00",
    "marketDate": "2026-09-16",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-18",
    "status": "NO_CHANGE",
    "message": "Dataset already published; last successful snapshot preserved."
+  },
+  {
+   "timestamp": "2026-09-18T21:58:43.965050+07:00",
+   "marketDate": "2026-09-18",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-18T20:50:21.595619+07:00",
+  "lastChecked": "2026-09-18T22:00:11.109056+07:00",
   "checked": 15,
   "failures": [],
   "results": [
