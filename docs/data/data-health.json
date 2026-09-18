@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-18T19:55:58.365451+07:00",
+ "generatedAt": "2026-09-18T20:50:34.652629+07:00",
  "marketDate": "2026-09-18",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-18T19:55:43.477954+07:00"
+  "auditedAt": "2026-09-18T20:50:18.598196+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-16T01:42:09.852157+07:00",
-   "marketDate": "2026-09-15",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-09-16T21:22:09.270367+07:00",
    "marketDate": "2026-09-16",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-18",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-18T20:48:24.162793+07:00",
+   "marketDate": "2026-09-18",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-18T19:55:46.130859+07:00",
+  "lastChecked": "2026-09-18T20:50:21.595619+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -118,15 +118,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BSML",
+    "ticker": "BYAN",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "CNMA",
+    "ticker": "EMAS",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "INCO",
+    "ticker": "HOPE",
     "status": "ERROR: TypeError"
    },
    {
@@ -134,7 +134,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MNCN",
+    "ticker": "MAPI",
     "status": "ERROR: TypeError"
    },
    {
