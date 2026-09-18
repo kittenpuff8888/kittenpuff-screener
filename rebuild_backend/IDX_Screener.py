@@ -8788,25 +8788,51 @@ def _yf_pace() -> None:
     _yf_last_call_ts = time.monotonic()
 
 
+_YF_DEGRADED_THRESHOLD = 15  # consecutive full-retry failures before assuming broad rate-limiting
+_yf_consecutive_failures = 0
+
+
 def _fetch_yf_info(sym: str, retries: int = 3, backoff_seconds: float = 4.0) -> dict:
     """yf.Ticker(sym).info, paced and retried with backoff. yfinance signals a
     rate-limited request with an EMPTY dict, not an exception, so a bare retry
-    without checking for emptiness never fires — retry on empty here."""
+    without checking for emptiness never fires — retry on empty here.
+
+    Circuit breaker: a full 3-attempt/4s+8s-backoff retry costs ~14s per
+    ticker, which is fine for occasional flakiness but not for a broadly
+    rate-limited run -- across ~962 tickers that's ~3.7h by itself, which is
+    exactly what was blowing through the daily pipeline's 3h CI ceiling and
+    preventing it from ever reaching the OHLCV archive/screener-signal
+    stages that actually matter, even on days the underlying price data was
+    perfectly fetchable. Once _YF_DEGRADED_THRESHOLD tickers in a row have
+    failed every attempt (a real, sustained block, not one flaky ticker),
+    drop to a single fast attempt per ticker for the rest of the run --
+    genuine data still gets a fair shot early on and again immediately after
+    the first success (which resets the streak), but a dead run stops
+    paying the full retry tax on every remaining ticker. Fundamentals still
+    correctly fall through to the IDX API / Investing.com fallbacks (or
+    N/A) exactly as before; only how hard yfinance itself gets retried
+    changes."""
+    global _yf_consecutive_failures
+    degraded = _yf_consecutive_failures >= _YF_DEGRADED_THRESHOLD
+    effective_retries = 1 if degraded else retries
     last_exc: Optional[Exception] = None
-    for attempt in range(retries):
+    for attempt in range(effective_retries):
         _yf_pace()
         try:
             info = yf.Ticker(sym).info or {}
             if info:
+                _yf_consecutive_failures = 0
                 return info
         except Exception as exc:
             last_exc = exc
-        if attempt + 1 < retries:
+        if attempt + 1 < effective_retries:
             time.sleep(backoff_seconds * (2 ** attempt))
+    _yf_consecutive_failures += 1
+    tag = " [degraded: broad rate-limit detected, retries reduced]" if degraded else ""
     if last_exc:
-        print(f"[YF_RETRY] {sym}: empty/failed after {retries} attempts ({last_exc})")
+        print(f"[YF_RETRY] {sym}: empty/failed after {effective_retries} attempts ({last_exc}){tag}")
     else:
-        print(f"[YF_RETRY] {sym}: empty info after {retries} attempts")
+        print(f"[YF_RETRY] {sym}: empty info after {effective_retries} attempts{tag}")
     return {}
 
 
