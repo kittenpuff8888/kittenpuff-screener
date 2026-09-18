@@ -226,15 +226,26 @@ def ib_break(hist: pd.DataFrame, ibh: float | None, ibl: float | None) -> bool:
     return bool(was_middling and breaks_today)
 
 
-def regular_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+def regular_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5) -> dict | None:
     """Regular Bullish RSI(14, Wilder) divergence -- a literal port of a
     user-supplied Pine Script v6 divergence indicator (rsiLen=14, pivot
     left/right=5/5, strict HH/LL comparison): `ta.pivotlow(rsi, 5, 5)`,
     compare the two most recent confirmed pivots, LOW makes a lower low
-    while RSI makes a higher low, gap 5-60 bars, no RSI-value gate at all.
-    Length bumped from 10 to 14 to match that script's own `rsiLen` input
-    exactly (previously matched TradingView's built-in "RSI" study, whose
-    own default is also 14 -- so this restores parity with both).
+    while RSI makes a higher low, no RSI-value gate at all. Length bumped
+    from 10 to 14 to match that script's own `rsiLen` input exactly
+    (previously matched TradingView's built-in "RSI" study, whose own
+    default is also 14 -- so this restores parity with both).
+
+    No gap/age gate between the two pivots -- an earlier version of this
+    function rejected pairs more than 60 bars apart or whose most recent
+    pivot was more than 20 bars old, neither of which exists in the actual
+    Pine script (confirmed against lib/indicators/divergence.ts's own
+    line-by-line port of the same script, which chains every consecutive
+    pivot pair with no such constraint at all). That was this function's
+    own invented heuristic, exactly like the earlier oversold-gate/
+    EMA-basis mistakes below -- caught the same way, by the screener and
+    the chart disagreeing on a real ticker the chart (Pine-faithful) got
+    right and the screener (gated) missed or mistimed.
 
     Two corrections from an earlier version of this function, both found
     by directly reproducing a real, exact mismatch the user reported
@@ -283,8 +294,6 @@ def regular_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5,
     if len(pivots) < 2:
         return None
     i1, i2 = pivots[-2], pivots[-1]
-    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
-        return None
     p1, p2 = float(low[i1]), float(low[i2])
     r1, r2 = float(r[i1]), float(r[i2])
     if any(np.isnan(x) for x in (p1, p2, r1, r2)):
@@ -345,14 +354,13 @@ def _swing_high_positions(vals: np.ndarray, w: int) -> list[int]:
     return pos
 
 
-def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5) -> dict | None:
     """Hidden Bullish RSI(14, Wilder) divergence -- the exact mirror of
     regular_bullish_divergence(): same `ta.pivotlow(rsi, 5, 5)` pivot scan,
-    same "compare the two most recent confirmed pivots" logic, same shared
-    pivot-range gate (5-60 bars apart, last pivot confirmed within the last
-    20 bars) -- TradingView's own script uses ONE shared pivot-range
-    configuration for every divergence type (regular/hidden bullish/
-    bearish), not a bespoke one per type. Only the price/RSI comparison
+    same "compare the two most recent confirmed pivots" logic, no gap/age
+    gate between them (see regular_bullish_divergence()'s docstring on why
+    that gate was removed -- it was invented, not part of the real script).
+    Only the price/RSI comparison
     direction flips from regular's: price makes a HIGHER low while RSI
     makes a LOWER low -- an uptrend-continuation pattern, the opposite of
     regular's reversal pattern.
@@ -415,8 +423,6 @@ def hidden_bullish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     if len(pivots) < 2:
         return None
     i1, i2 = pivots[-2], pivots[-1]
-    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
-        return None
     p1, p2 = float(low[i1]), float(low[i2])
     r1, r2 = float(r[i1]), float(r[i2])
     if any(np.isnan(x) for x in (p1, p2, r1, r2)):
@@ -443,13 +449,15 @@ def hidden_bullish_divergence_today(hist: pd.DataFrame) -> tuple[bool, str | Non
     return True, today["ref2_date"]
 
 
-def regular_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+def regular_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5) -> dict | None:
     """Regular Bearish RSI(14, Wilder) divergence -- the pivot-HIGH mirror
     of regular_bullish_divergence(): a literal port of a user-supplied
     Pine Script v6 divergence indicator's `regularBear` condition
     (`ta.pivothigh(rsi, 5, 5)`, compare the two most recent confirmed
-    pivots, HIGH makes a higher high while RSI makes a lower high, same
-    shared 5-60 bar pivot-range gate, no RSI-value threshold). Unlike
+    pivots, HIGH makes a higher high while RSI makes a lower high, no
+    gap/age gate between them and no RSI-value threshold -- see
+    regular_bullish_divergence()'s docstring on why the gate was removed).
+    Unlike
     rsiDivBullish/rsiDivHiddenBullish above (which started life matching
     TradingView's own built-in RSI study and were only later re-aligned to
     this script), this pair is a first-time, direct port straight from the
@@ -475,8 +483,6 @@ def regular_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5,
     if len(pivots) < 2:
         return None
     i1, i2 = pivots[-2], pivots[-1]
-    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
-        return None
     p1, p2 = float(high[i1]), float(high[i2])
     r1, r2 = float(r[i1]), float(r[i2])
     if any(np.isnan(x) for x in (p1, p2, r1, r2)):
@@ -500,11 +506,11 @@ def regular_bearish_divergence_today(hist: pd.DataFrame) -> tuple[bool, str | No
     return True, today["ref2_date"]
 
 
-def hidden_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, min_separation=5, max_pivot_gap=60, max_last_swing_age=20) -> dict | None:
+def hidden_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5) -> dict | None:
     """Hidden Bearish RSI(14, Wilder) divergence -- the exact mirror of
-    regular_bearish_divergence(): same pivot-high scan and shared 5-60 bar
-    gate, only the comparison direction flips -- HIGH makes a LOWER high
-    while RSI makes a HIGHER high (a downtrend-continuation pattern, the
+    regular_bearish_divergence(): same pivot-high scan, no gap/age gate,
+    only the comparison direction flips -- HIGH makes a LOWER high while
+    RSI makes a HIGHER high (a downtrend-continuation pattern, the
     opposite of regular's reversal pattern). Same Pine-script source and
     HIGH price basis as regular_bearish_divergence() -- see its docstring."""
     if hist is None or hist.empty or len(hist) < 25:
@@ -517,8 +523,6 @@ def hidden_bearish_divergence(hist: pd.DataFrame, lookback=150, swing_window=5, 
     if len(pivots) < 2:
         return None
     i1, i2 = pivots[-2], pivots[-1]
-    if (i2 - i1) < min_separation or (i2 - i1) > max_pivot_gap or (len(df) - 1 - i2) > max_last_swing_age:
-        return None
     p1, p2 = float(high[i1]), float(high[i2])
     r1, r2 = float(r[i1]), float(r[i2])
     if any(np.isnan(x) for x in (p1, p2, r1, r2)):
