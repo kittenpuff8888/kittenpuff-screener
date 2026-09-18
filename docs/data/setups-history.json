@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-09-16",
+ "asOf": "2026-09-18",
  "entries": [
   {
    "date": "2026-07-10",
@@ -699,8 +699,8 @@
    "close": 535.0,
    "target": 575,
    "invalidation": 507,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-09-11",
@@ -710,7 +710,7 @@
    "target": 5020,
    "invalidation": 4643.1,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-09-11",
@@ -720,7 +720,7 @@
    "target": 642,
    "invalidation": 594.0,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-09-11",
@@ -729,8 +729,8 @@
    "close": 530.0,
    "target": 550,
    "invalidation": 504.9,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-09-11",
@@ -739,8 +739,8 @@
    "close": 105.0,
    "target": 108,
    "invalidation": 99.99,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-09-14",
@@ -749,8 +749,8 @@
    "close": 496.0,
    "target": 526,
    "invalidation": 483.12,
-   "outcome": "open",
-   "barsObserved": 2
+   "outcome": "invalidated",
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -760,7 +760,7 @@
    "target": 204,
    "invalidation": 193.05,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -770,7 +770,7 @@
    "target": 638,
    "invalidation": 584.1,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -780,7 +780,7 @@
    "target": 542,
    "invalidation": 504.9,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -790,7 +790,7 @@
    "target": 108,
    "invalidation": 99.99,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -799,8 +799,8 @@
    "close": 199.0,
    "target": 209,
    "invalidation": 192.06,
-   "outcome": "open",
-   "barsObserved": 2
+   "outcome": "invalidated",
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -810,7 +810,7 @@
    "target": 2745,
    "invalidation": 2626.4,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -820,7 +820,7 @@
    "target": 621,
    "invalidation": 522,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-14",
@@ -830,7 +830,7 @@
    "target": 820,
    "invalidation": 707.85,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-09-15",
@@ -839,8 +839,8 @@
    "close": 1055.0,
    "target": 1085,
    "invalidation": 1034,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 3
   },
   {
    "date": "2026-09-15",
@@ -850,7 +850,7 @@
    "target": 4620,
    "invalidation": 4356.0,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-09-15",
@@ -860,7 +860,7 @@
    "target": 204,
    "invalidation": 193.05,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-09-15",
@@ -870,7 +870,7 @@
    "target": 621,
    "invalidation": 524,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-09-15",
@@ -880,14 +880,74 @@
    "target": 820,
    "invalidation": 707.85,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "ACES",
+   "score": 65,
+   "close": 350.0,
+   "target": 354,
+   "invalidation": 336.6,
+   "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "CNMA",
+   "score": 65,
+   "close": 91.0,
+   "target": 92,
+   "invalidation": 87.12,
+   "outcome": "target",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "INCO",
+   "score": 65,
+   "close": 4830.0,
+   "target": 4975,
+   "invalidation": 4554.0,
+   "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "MNCN",
+   "score": 65,
+   "close": 200.0,
+   "target": 204,
+   "invalidation": 193.05,
+   "outcome": "invalidated",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "BSML",
+   "score": 55,
+   "close": 550.0,
+   "target": 575,
+   "invalidation": 520,
+   "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "PBSA",
+   "score": 55,
+   "close": 750.0,
+   "target": 808,
+   "invalidation": 707.85,
+   "outcome": "open",
+   "barsObserved": 2
   }
  ],
  "summary": {
-  "total": 88,
-  "decided": 59,
-  "targetFirst": 24,
-  "hitRate": 0.407
+  "total": 94,
+  "decided": 64,
+  "targetFirst": 25,
+  "hitRate": 0.391
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
