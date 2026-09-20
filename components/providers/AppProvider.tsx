@@ -214,8 +214,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const openTicker = useCallback((ticker: string) => {
     const clean = ticker.trim().toUpperCase().replace(".JK", "");
-    if (clean) router.push(`/ticker?ticker=${clean}`);
-  }, [router]);
+    if (clean) window.open(`/ticker?ticker=${clean}`, "_blank", "noopener,noreferrer");
+  }, []);
 
   const closeTicker = useCallback(() => setSelectedTicker(null), []);
 

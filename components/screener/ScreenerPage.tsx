@@ -561,17 +561,21 @@ export function ScreenerPage() {
                   <div style={{ padding: "9px 12px", display: "flex", alignItems: "center", gap: 4, flexWrap: "wrap" }}>
                     {r.setupsMatched.map((k) => {
                       const label = setupDisplayLabel(k);
-                      // Pivot date shown != "today" for both setups, same
-                      // reason for each: both are reversal-style confirmed-
-                      // swing-low pivots (mirrors of each other -- Regular
-                      // compares Low+RSI Higher Low, Hidden compares Close+RSI
-                      // Lower Low), so confirmation genuinely lags the more
-                      // recent pivot by swing_window bars.
-                      const pivot = k === "rsi10_div_bullish" ? r.rsiDivBullishPivotDate : k === "rsi10_div_hidden_bullish" ? r.rsiDivHiddenBullishPivotDate : null;
-                      const tip = pivot ? `${label} · pivot ${pivot} · confirmed today` : label;
-                      return <span key={k} title={tip} style={{ fontSize: 9, fontWeight: 700, color: "var(--up)", background: "var(--upSoft)", borderRadius: 5, padding: "2px 6px", whiteSpace: "nowrap" }}>{label}{pivot ? <span style={{ opacity: 0.7, fontWeight: 600 }}> · piv {pivot}</span> : null}</span>;
+                      // Pivot date shown != "today" for both RSI divergence
+                      // setups, same reason for each: both are reversal-style
+                      // confirmed-swing pivots, so confirmation genuinely lags
+                      // the more recent pivot by swing_window bars.
+                      const pivot = k === "rsi_divergence" ? r.rsiDivBullishPivotDate : k === "rsi_divergence_hidden" ? r.rsiDivHiddenBullishPivotDate : null;
+                      const tip = pivot ? `${label} (Bull) · pivot ${pivot} · confirmed today` : label;
+                      return <span key={`${k}-bull`} title={tip} style={{ fontSize: 9, fontWeight: 700, color: "var(--up)", background: "var(--upSoft)", borderRadius: 5, padding: "2px 6px", whiteSpace: "nowrap" }}>{label}{pivot ? <span style={{ opacity: 0.7, fontWeight: 600 }}> · piv {pivot}</span> : null}</span>;
                     })}
-                    {!r.setupsMatched.length ? <span style={{ fontSize: 9.5, color: "var(--faint)" }}>—</span> : null}
+                    {r.setupsBear.map((k) => {
+                      const label = setupDisplayLabel(k);
+                      const pivot = k === "rsi_divergence" ? r.rsiDivBearishPivotDate : k === "rsi_divergence_hidden" ? r.rsiDivHiddenBearishPivotDate : null;
+                      const tip = pivot ? `${label} (Bear) · pivot ${pivot} · confirmed today` : `${label} (Bear)`;
+                      return <span key={`${k}-bear`} title={tip} style={{ fontSize: 9, fontWeight: 700, color: "var(--down)", background: "var(--downSoft)", borderRadius: 5, padding: "2px 6px", whiteSpace: "nowrap" }}>{label}{pivot ? <span style={{ opacity: 0.7, fontWeight: 600 }}> · piv {pivot}</span> : null}</span>;
+                    })}
+                    {!r.setupsMatched.length && !r.setupsBear.length ? <span style={{ fontSize: 9.5, color: "var(--faint)" }}>—</span> : null}
                   </div>
                   {/* PRICE */}
                   <div style={{ padding: "9px 8px", textAlign: "right" }}><span style={{ fontFamily: MONO, fontSize: 11.5, fontWeight: 700 }}>{r.price == null ? "—" : formatPrice(r.price)}</span></div>
