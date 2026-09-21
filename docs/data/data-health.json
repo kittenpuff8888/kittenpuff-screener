@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-22T00:25:49.652362+07:00",
- "marketDate": "2026-09-21",
+ "generatedAt": "2026-09-22T01:47:27.169550+07:00",
+ "marketDate": "2026-09-18",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-22T00:25:38.396474+07:00"
+  "auditedAt": "2026-09-22T01:47:16.637797+07:00"
  },
  "runLog": [
   {
@@ -55,16 +55,16 @@
    "message": "Dataset already published; last successful snapshot preserved."
   },
   {
-   "timestamp": "2026-09-21T23:01:33.716860+07:00",
+   "timestamp": "2026-09-22T00:28:03.203378+07:00",
    "marketDate": "2026-09-21",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-09-22T00:24:36.095823+07:00",
+   "timestamp": "2026-09-22T01:46:27.886800+07:00",
    "marketDate": "2026-09-21",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-09-21; latest observed OHLCV date was 2026-09-18. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-22T00:25:40.949149+07:00",
+  "lastChecked": "2026-09-22T01:47:19.147542+07:00",
   "checked": 15,
   "failures": [],
   "results": [
