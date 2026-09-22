@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-23T00:02:39.326454+07:00",
+ "generatedAt": "2026-09-23T00:24:02.081831+07:00",
  "marketDate": "2026-09-22",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-23T00:02:24.156301+07:00"
+  "auditedAt": "2026-09-23T00:23:42.977626+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-18T23:46:14.911536+07:00",
-   "marketDate": "2026-09-18",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-09-19T00:45:56.772622+07:00",
    "marketDate": "2026-09-18",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-22",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-23T00:21:11.192967+07:00",
+   "marketDate": "2026-09-22",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-23T00:02:26.116206+07:00",
+  "lastChecked": "2026-09-23T00:23:48.870340+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -110,15 +110,15 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "BBNI",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "BBRI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BBSS",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "BYAN",
+    "ticker": "BJTM",
     "status": "ERROR: TypeError"
    },
    {
@@ -127,6 +127,10 @@
    },
    {
     "ticker": "EMAS",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "ESSA",
     "status": "ERROR: TypeError"
    },
    {
@@ -143,10 +147,6 @@
    },
    {
     "ticker": "SMSM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "SRTG",
     "status": "ERROR: TypeError"
    },
    {
