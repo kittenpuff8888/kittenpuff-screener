@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-09-23",
+ "asOf": "2026-09-24",
  "entries": [
   {
    "date": "2026-07-10",
@@ -950,7 +950,7 @@
    "target": 15525,
    "invalidation": 13400,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -960,7 +960,7 @@
    "target": 1580,
    "invalidation": 1466,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -970,7 +970,7 @@
    "target": 263,
    "invalidation": 215,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -980,7 +980,7 @@
    "target": 354,
    "invalidation": 336.6,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -990,7 +990,7 @@
    "target": 8500,
    "invalidation": 7227.0,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -1000,7 +1000,7 @@
    "target": 2620,
    "invalidation": 2494.8,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -1010,7 +1010,7 @@
    "target": 108,
    "invalidation": 99.0,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-18",
@@ -1020,7 +1020,7 @@
    "target": 1740,
    "invalidation": 1666.0,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-09-21",
@@ -1030,7 +1030,7 @@
    "target": 15339,
    "invalidation": 11979,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1040,7 +1040,7 @@
    "target": 1858,
    "invalidation": 1719.8999999999999,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1050,7 +1050,7 @@
    "target": 114,
    "invalidation": 95,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1060,7 +1060,7 @@
    "target": 8500,
    "invalidation": 7227.0,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1070,7 +1070,7 @@
    "target": 108,
    "invalidation": 99.0,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1080,7 +1080,7 @@
    "target": 4975,
    "invalidation": 4554.0,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1090,7 +1090,7 @@
    "target": 3260,
    "invalidation": 2970.0,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1100,7 +1100,7 @@
    "target": 183,
    "invalidation": 154.44,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1110,7 +1110,7 @@
    "target": 1825,
    "invalidation": 1643.4,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1120,7 +1120,7 @@
    "target": 1518,
    "invalidation": 1450.35,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-21",
@@ -1130,7 +1130,7 @@
    "target": 415,
    "invalidation": 384.12,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-09-22",
@@ -1140,7 +1140,7 @@
    "target": 3775,
    "invalidation": 3479.0,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-22",
@@ -1150,7 +1150,7 @@
    "target": 522,
    "invalidation": 499.8,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-22",
@@ -1160,7 +1160,7 @@
    "target": 8500,
    "invalidation": 7227.0,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-22",
@@ -1170,7 +1170,7 @@
    "target": 655,
    "invalidation": 579.15,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-22",
@@ -1180,7 +1180,7 @@
    "target": 108,
    "invalidation": 99.0,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-09-22",
@@ -1190,11 +1190,111 @@
    "target": 1825,
    "invalidation": 1643.4,
    "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "BBNI",
+   "score": 70,
+   "close": 3590.0,
+   "target": 3770,
+   "invalidation": 3504.6,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "SRTG",
+   "score": 70,
+   "close": 1800.0,
+   "target": 1858,
+   "invalidation": 1719.8999999999999,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "ACES",
+   "score": 65,
+   "close": 348.0,
+   "target": 349,
+   "invalidation": 334.62,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "BJTM",
+   "score": 65,
+   "close": 520.0,
+   "target": 522,
+   "invalidation": 504.9,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "ESSA",
+   "score": 65,
+   "close": 610.0,
+   "target": 655,
+   "invalidation": 579.15,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "GPRA",
+   "score": 65,
+   "close": 102.0,
+   "target": 108,
+   "invalidation": 99.0,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "HATM",
+   "score": 65,
+   "close": 515.0,
+   "target": 559,
+   "invalidation": 493.02,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "RMKE",
+   "score": 65,
+   "close": 406.0,
+   "target": 415,
+   "invalidation": 384.12,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "TSPC",
+   "score": 65,
+   "close": 2680.0,
+   "target": 2740,
+   "invalidation": 2643.3,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "BINA",
+   "score": 60,
+   "close": 4060.0,
+   "target": 4170,
+   "invalidation": 3920.4,
+   "outcome": "open",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 119,
+  "total": 129,
   "decided": 75,
   "targetFirst": 28,
   "hitRate": 0.373
