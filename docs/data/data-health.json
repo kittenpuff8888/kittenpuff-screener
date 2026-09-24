@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-25T00:43:07.393184+07:00",
+ "generatedAt": "2026-09-25T00:47:23.653592+07:00",
  "marketDate": "2026-09-24",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-25T00:42:54.886250+07:00"
+  "auditedAt": "2026-09-25T00:47:06.700526+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-23T00:21:11.192967+07:00",
-   "marketDate": "2026-09-22",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-09-23T01:11:23.291917+07:00",
    "marketDate": "2026-09-22",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-24",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-25T00:45:21.595163+07:00",
+   "marketDate": "2026-09-24",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-25T00:42:57.405324+07:00",
+  "lastChecked": "2026-09-25T00:47:09.591685+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -122,11 +122,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BJTM",
+    "ticker": "BUDI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BUDI",
+    "ticker": "BULL",
     "status": "ERROR: TypeError"
    },
    {
@@ -134,19 +134,19 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "ESSA",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "IPPE",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "NTBK",
+    "ticker": "ISAT",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SRTG",
+    "ticker": "LAND",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "NTBK",
     "status": "ERROR: TypeError"
    },
    {
