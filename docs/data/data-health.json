@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-25T01:31:38.778352+07:00",
- "marketDate": "2026-09-24",
+ "generatedAt": "2026-09-25T23:11:49.623130+07:00",
+ "marketDate": "2026-09-25",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-25T01:31:23.156322+07:00"
+  "auditedAt": "2026-09-25T23:11:34.070939+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-23T22:55:17.946246+07:00",
-   "marketDate": "2026-09-23",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-09-24T00:55:50.821616+07:00",
-   "marketDate": "2026-09-23",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-09-24T00:59:54.803109+07:00",
    "marketDate": "2026-09-23",
@@ -65,6 +53,18 @@
    "marketDate": "2026-09-24",
    "status": "NO_CHANGE",
    "message": "Dataset already published; last successful snapshot preserved."
+  },
+  {
+   "timestamp": "2026-09-25T21:44:44.811743+07:00",
+   "marketDate": "2026-09-25",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-09-25T23:09:10.321012+07:00",
+   "marketDate": "2026-09-25",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-25T01:31:26.155354+07:00",
+  "lastChecked": "2026-09-25T23:11:36.047589+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -114,6 +114,10 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "BBKP",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "BBNI",
     "status": "ERROR: TypeError"
    },
@@ -122,19 +126,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BUDI",
+    "ticker": "BIRD",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "BULL",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "COIN",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "IPPE",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,101 +142,105 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "NTBK",
+    "ticker": "MDRN",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "POWR",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "SRAJ",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "TLKM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "ZONE",
     "status": "ERROR: TypeError"
    }
   ],
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 13,
+  "count": 12,
   "scanned": 921,
   "quarantined": 5,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-09-24",
-    "close": 3270.0,
-    "volume": 53729000.0,
+    "date": "2026-09-25",
+    "close": 3230.0,
+    "volume": 67544100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-09-24",
-    "close": 4770.0,
-    "volume": 21665700.0,
+    "date": "2026-09-25",
+    "close": 4690.0,
+    "volume": 30912500.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-09-24",
-    "close": 6225.0,
-    "volume": 75648600.0,
+    "date": "2026-09-25",
+    "close": 6250.0,
+    "volume": 89447400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-09-24",
-    "close": 3140.0,
-    "volume": 129218800.0,
+    "date": "2026-09-25",
+    "close": 3150.0,
+    "volume": 87244800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "close": 2410.0,
-    "volume": 114511100.0,
+    "volume": 170051400.0,
     "source": "yfinance"
    },
    {
-    "ticker": "ISAT",
-    "date": "2026-09-24",
-    "close": 2400.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "LAND",
-    "date": "2026-09-24",
-    "close": 76.0,
+    "ticker": "SNLK",
+    "date": "2026-09-25",
+    "close": 240.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ACES",
-    "date": "2026-09-24",
-    "close": 344.0,
+    "date": "2026-09-25",
+    "close": 342.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BBNI",
-    "date": "2026-09-24",
-    "close": 3520.0,
+    "date": "2026-09-25",
+    "close": 3500.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BULL",
-    "date": "2026-09-24",
-    "close": 380.0,
+    "ticker": "CYBR",
+    "date": "2026-09-25",
+    "close": 520.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PADA",
+    "date": "2026-09-25",
+    "close": 158.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 129,
-   "decided": 75,
+   "total": 142,
+   "decided": 93,
    "targetFirst": 28,
-   "hitRate": 0.373
+   "hitRate": 0.301
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-09-24",
-    "close": 3270.0,
-    "volume": 53729000.0,
+    "date": "2026-09-25",
+    "close": 3230.0,
+    "volume": 67544100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-09-24",
-    "close": 4770.0,
-    "volume": 21665700.0,
+    "date": "2026-09-25",
+    "close": 4690.0,
+    "volume": 30912500.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-09-24",
-    "close": 6225.0,
-    "volume": 75648600.0,
+    "date": "2026-09-25",
+    "close": 6250.0,
+    "volume": 89447400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-09-24",
-    "close": 3140.0,
-    "volume": 129218800.0,
+    "date": "2026-09-25",
+    "close": 3150.0,
+    "volume": 87244800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "close": 2410.0,
-    "volume": 114511100.0,
+    "volume": 170051400.0,
     "source": "yfinance"
    },
    {
-    "ticker": "ISAT",
-    "date": "2026-09-24",
-    "close": 2400.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "LAND",
-    "date": "2026-09-24",
-    "close": 76.0,
+    "ticker": "SNLK",
+    "date": "2026-09-25",
+    "close": 240.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ACES",
-    "date": "2026-09-24",
-    "close": 344.0,
+    "date": "2026-09-25",
+    "close": 342.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BBNI",
-    "date": "2026-09-24",
-    "close": 3520.0,
+    "date": "2026-09-25",
+    "close": 3500.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BULL",
-    "date": "2026-09-24",
-    "close": 380.0,
+    "ticker": "CYBR",
+    "date": "2026-09-25",
+    "close": 520.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PADA",
+    "date": "2026-09-25",
+    "close": 158.0,
     "volume": null,
     "source": "yfinance"
    }
