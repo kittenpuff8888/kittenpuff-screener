@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-25T23:11:49.623130+07:00",
+ "generatedAt": "2026-09-26T02:16:28.819767+07:00",
  "marketDate": "2026-09-25",
  "universe": {
   "size": 921,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-25T23:11:34.070939+07:00"
+  "auditedAt": "2026-09-26T02:16:12.685086+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-24T00:59:54.803109+07:00",
-   "marketDate": "2026-09-23",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-09-24T01:28:54.845558+07:00",
    "marketDate": "2026-09-23",
@@ -65,6 +59,12 @@
    "marketDate": "2026-09-25",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-26T02:14:45.928962+07:00",
+   "marketDate": "2026-09-25",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-25T23:11:36.047589+07:00",
+  "lastChecked": "2026-09-26T02:16:15.683305+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -130,15 +130,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BULL",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "ISAT",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "LAND",
+    "ticker": "CYBR",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,7 +138,15 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "PADA",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "POWR",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "SNLK",
     "status": "ERROR: TypeError"
    },
    {
