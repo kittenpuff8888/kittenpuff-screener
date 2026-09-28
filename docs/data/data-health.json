@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-26T02:16:28.819767+07:00",
+ "generatedAt": "2026-09-29T02:12:53.675422+07:00",
  "marketDate": "2026-09-25",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-26T02:16:12.685086+07:00"
+  "auditedAt": "2026-09-29T02:12:37.477646+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-24T01:28:54.845558+07:00",
-   "marketDate": "2026-09-23",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
-  {
-   "timestamp": "2026-09-24T22:54:08.890234+07:00",
-   "marketDate": "2026-09-24",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
   {
    "timestamp": "2026-09-25T00:41:23.294519+07:00",
    "marketDate": "2026-09-24",
@@ -65,6 +53,18 @@
    "marketDate": "2026-09-25",
    "status": "NO_CHANGE",
    "message": "Dataset already published; last successful snapshot preserved."
+  },
+  {
+   "timestamp": "2026-09-29T00:49:23.986826+07:00",
+   "marketDate": "2026-09-28",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-09-29T02:09:56.535500+07:00",
+   "marketDate": "2026-09-28",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-09-28; latest observed OHLCV date was 2026-09-25. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-26T02:16:15.683305+07:00",
+  "lastChecked": "2026-09-29T02:12:39.670476+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -114,10 +114,6 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BBKP",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "BBNI",
     "status": "ERROR: TypeError"
    },
@@ -126,15 +122,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BIRD",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "CYBR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MDRN",
+    "ticker": "FILM",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "JECC",
     "status": "ERROR: TypeError"
    },
    {
@@ -142,7 +138,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "POWR",
+    "ticker": "SLIS",
     "status": "ERROR: TypeError"
    },
    {
@@ -150,11 +146,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SRAJ",
+    "ticker": "TELE",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "TLKM",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "YOII",
     "status": "ERROR: TypeError"
    }
   ],
