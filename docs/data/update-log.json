@@ -1,18 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-08-18T16:57:26.860386+07:00",
-      "marketDate": "2026-08-18",
-      "status": "WAITING",
-      "message": "Market-close check completed at 16:57 WIB; the current session is retried after 17:00."
-    },
-    {
-      "timestamp": "2026-08-18T17:17:02.937591+07:00",
-      "marketDate": "2026-08-18",
-      "status": "STARTED",
-      "message": "Daily update pipeline started."
-    },
-    {
       "timestamp": "2026-08-18T18:02:45.167738+07:00",
       "marketDate": "2026-08-18",
       "status": "SUCCESS",
@@ -597,6 +585,18 @@
     {
       "timestamp": "2026-09-29T05:07:22.625335+07:00",
       "marketDate": "2026-09-28",
+      "status": "SUCCESS",
+      "message": "Created and validated a new dated snapshot."
+    },
+    {
+      "timestamp": "2026-09-29T23:08:08.853733+07:00",
+      "marketDate": "2026-09-29",
+      "status": "STARTED",
+      "message": "Daily update pipeline started."
+    },
+    {
+      "timestamp": "2026-09-30T00:35:33.779915+07:00",
+      "marketDate": "2026-09-29",
       "status": "SUCCESS",
       "message": "Created and validated a new dated snapshot."
     }

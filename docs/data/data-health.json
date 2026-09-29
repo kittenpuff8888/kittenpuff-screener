@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-09-29T05:09:03.077259+07:00",
- "marketDate": "2026-09-28",
+ "generatedAt": "2026-09-30T00:36:51.081092+07:00",
+ "marketDate": "2026-09-29",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-09-29T05:08:47.713260+07:00"
+  "auditedAt": "2026-09-30T00:36:38.098043+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-25T01:29:49.395203+07:00",
-   "marketDate": "2026-09-24",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
-  {
-   "timestamp": "2026-09-25T21:44:44.811743+07:00",
-   "marketDate": "2026-09-25",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
   {
    "timestamp": "2026-09-25T23:09:10.321012+07:00",
    "marketDate": "2026-09-25",
@@ -65,6 +53,18 @@
    "marketDate": "2026-09-28",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-09-29T23:08:08.853733+07:00",
+   "marketDate": "2026-09-29",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-09-30T00:35:33.779915+07:00",
+   "marketDate": "2026-09-29",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -75,9 +75,9 @@
  },
  "processingSummary": {
   "totalScanned": 962,
-  "ok": 910,
+  "ok": 912,
   "partial": 9,
-  "noData": 43
+  "noData": 41
  },
  "ksei": {
   "snapshots": [
@@ -93,16 +93,16 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-09-29T05:08:50.897241+07:00",
+  "lastChecked": "2026-09-30T00:36:41.111762+07:00",
   "checked": 15,
   "failures": [],
   "results": [
    {
-    "ticker": "ACES",
+    "ticker": "ANTM",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "ANTM",
+    "ticker": "ASBI",
     "status": "ERROR: TypeError"
    },
    {
@@ -114,31 +114,39 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BBNI",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "BBRI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "CYBR",
+    "ticker": "BLTZ",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "FILM",
+    "ticker": "DGIK",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "JECC",
+    "ticker": "ELTY",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PADA",
+    "ticker": "ISAP",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SLIS",
+    "ticker": "LPPF",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "MDIA",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "RODA",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "SILO",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,101 +154,93 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TELE",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "TLKM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "YOII",
     "status": "ERROR: TypeError"
    }
   ],
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 16,
+  "count": 21,
   "scanned": 921,
   "quarantined": 5,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-09-28",
-    "close": 3100.0,
-    "volume": 77533400.0,
+    "date": "2026-09-29",
+    "close": 3160.0,
+    "volume": 79484200.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-09-28",
-    "close": 4670.0,
-    "volume": 25788600.0,
+    "date": "2026-09-29",
+    "close": 4700.0,
+    "volume": 44529100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-09-28",
-    "close": 6225.0,
-    "volume": 112107600.0,
+    "date": "2026-09-29",
+    "close": 6150.0,
+    "volume": 149783400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-09-28",
-    "close": 3140.0,
-    "volume": 102848000.0,
+    "date": "2026-09-29",
+    "close": 3170.0,
+    "volume": 134943400.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "close": 2370.0,
-    "volume": 131894200.0,
+    "volume": 228706200.0,
     "source": "yfinance"
    },
    {
-    "ticker": "ISAP",
-    "date": "2026-09-28",
-    "close": 25.0,
+    "ticker": "ARCI",
+    "date": "2026-09-29",
+    "close": 1225.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "ASPR",
+    "date": "2026-09-29",
+    "close": 144.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "DGIK",
-    "date": "2026-09-28",
-    "close": 139.0,
+    "date": "2026-09-29",
+    "close": 137.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "ELTY",
-    "date": "2026-09-28",
-    "close": 37.0,
+    "ticker": "PGEO",
+    "date": "2026-09-29",
+    "close": 985.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SILO",
-    "date": "2026-09-28",
-    "close": 1975.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "SNLK",
-    "date": "2026-09-28",
-    "close": 242.0,
+    "ticker": "VIVA",
+    "date": "2026-09-29",
+    "close": 46.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 154,
-   "decided": 101,
-   "targetFirst": 29,
-   "hitRate": 0.287
+   "total": 170,
+   "decided": 119,
+   "targetFirst": 31,
+   "hitRate": 0.261
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-09-28",
-    "close": 3100.0,
-    "volume": 77533400.0,
+    "date": "2026-09-29",
+    "close": 3160.0,
+    "volume": 79484200.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-09-28",
-    "close": 4670.0,
-    "volume": 25788600.0,
+    "date": "2026-09-29",
+    "close": 4700.0,
+    "volume": 44529100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-09-28",
-    "close": 6225.0,
-    "volume": 112107600.0,
+    "date": "2026-09-29",
+    "close": 6150.0,
+    "volume": 149783400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-09-28",
-    "close": 3140.0,
-    "volume": 102848000.0,
+    "date": "2026-09-29",
+    "close": 3170.0,
+    "volume": 134943400.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "close": 2370.0,
-    "volume": 131894200.0,
+    "volume": 228706200.0,
     "source": "yfinance"
    },
    {
-    "ticker": "ISAP",
-    "date": "2026-09-28",
-    "close": 25.0,
+    "ticker": "ARCI",
+    "date": "2026-09-29",
+    "close": 1225.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "ASPR",
+    "date": "2026-09-29",
+    "close": 144.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "DGIK",
-    "date": "2026-09-28",
-    "close": 139.0,
+    "date": "2026-09-29",
+    "close": 137.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "ELTY",
-    "date": "2026-09-28",
-    "close": 37.0,
+    "ticker": "PGEO",
+    "date": "2026-09-29",
+    "close": 985.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SILO",
-    "date": "2026-09-28",
-    "close": 1975.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "SNLK",
-    "date": "2026-09-28",
-    "close": 242.0,
+    "ticker": "VIVA",
+    "date": "2026-09-29",
+    "close": 46.0,
     "volume": null,
     "source": "yfinance"
    }
