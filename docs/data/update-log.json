@@ -1,12 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-08-19T18:32:09.486919+07:00",
-      "marketDate": "2026-08-19",
-      "status": "FAILED",
-      "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.15/x64/bin/python', '/home/runner/work/IDXScreener/IDXScreener/scripts/validate_data.py']' returned non-zero exit status 1."
-    },
-    {
       "timestamp": "2026-08-20T18:05:29.572090+07:00",
       "marketDate": "2026-08-20",
       "status": "STARTED",
@@ -597,8 +591,14 @@
     {
       "timestamp": "2026-10-01T01:56:32.374479+07:00",
       "marketDate": "2026-09-30",
-      "status": "NO_DATA",
-      "message": "No valid IDX session was available for 2026-09-30; latest observed OHLCV date was 2026-09-29. The last successful snapshot was preserved."
+      "status": "SUCCESS",
+      "message": "Created and validated a new dated snapshot."
+    },
+    {
+      "timestamp": "2026-10-01T02:01:33.729778+07:00",
+      "marketDate": "2026-09-30",
+      "status": "NO_CHANGE",
+      "message": "Dataset already published; last successful snapshot preserved."
     }
   ]
 }
