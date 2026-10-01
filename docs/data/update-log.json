@@ -589,16 +589,16 @@
       "message": "Dataset already published; last successful snapshot preserved."
     },
     {
-      "timestamp": "2026-10-01T23:42:38.212730+07:00",
+      "timestamp": "2026-10-02T01:11:08.737873+07:00",
       "marketDate": "2026-10-01",
       "status": "STARTED",
       "message": "Daily update pipeline started."
     },
     {
-      "timestamp": "2026-10-02T01:05:55.745946+07:00",
+      "timestamp": "2026-10-02T02:29:20.718765+07:00",
       "marketDate": "2026-10-01",
-      "status": "SUCCESS",
-      "message": "Created and validated a new dated snapshot."
+      "status": "NO_DATA",
+      "message": "No valid IDX session was available for 2026-10-01; latest observed OHLCV date was 2026-09-30. The last successful snapshot was preserved."
     }
   ]
 }
