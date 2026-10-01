@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-02T02:31:16.813332+07:00",
- "marketDate": "2026-09-30",
+ "generatedAt": "2026-10-02T02:36:52.485737+07:00",
+ "marketDate": "2026-10-01",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-02T02:31:03.067350+07:00"
+  "auditedAt": "2026-10-02T02:36:35.356666+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-09-30T02:00:26.604602+07:00",
-   "marketDate": "2026-09-29",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-09-30T02:31:50.228656+07:00",
    "marketDate": "2026-09-29",
@@ -63,8 +57,14 @@
   {
    "timestamp": "2026-10-02T02:29:20.718765+07:00",
    "marketDate": "2026-10-01",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-01; latest observed OHLCV date was 2026-09-30. The last successful snapshot was preserved."
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-10-02T02:34:21.512701+07:00",
+   "marketDate": "2026-10-01",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,14 +93,10 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-02T02:31:04.640788+07:00",
+  "lastChecked": "2026-10-02T02:36:38.263766+07:00",
   "checked": 15,
   "failures": [],
   "results": [
-   {
-    "ticker": "AALI",
-    "status": "ERROR: TypeError"
-   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -115,6 +111,10 @@
    },
    {
     "ticker": "ASII",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "ASPR",
     "status": "ERROR: TypeError"
    },
    {
@@ -142,11 +142,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SNLK",
+    "ticker": "NAYZ",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SRTG",
+    "ticker": "OMED",
     "status": "ERROR: TypeError"
    },
    {
