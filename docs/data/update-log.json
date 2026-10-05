@@ -589,13 +589,13 @@
       "message": "Dataset already published; last successful snapshot preserved."
     },
     {
-      "timestamp": "2026-10-06T01:49:41.516394+07:00",
+      "timestamp": "2026-10-06T03:25:39.139543+07:00",
       "marketDate": "2026-10-05",
       "status": "STARTED",
       "message": "Daily update pipeline started."
     },
     {
-      "timestamp": "2026-10-06T03:15:39.392047+07:00",
+      "timestamp": "2026-10-06T04:52:20.855695+07:00",
       "marketDate": "2026-10-05",
       "status": "SUCCESS",
       "message": "Created and validated a new dated snapshot."
