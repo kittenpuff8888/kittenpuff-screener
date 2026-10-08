@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-08T05:05:47.522630+07:00",
+ "generatedAt": "2026-10-09T01:22:23.877610+07:00",
  "marketDate": "2026-10-07",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-08T05:05:30.073084+07:00"
+  "auditedAt": "2026-10-09T01:22:07.646388+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-07T00:47:23.557316+07:00",
-   "marketDate": "2026-10-06",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-07T02:13:08.373550+07:00",
-   "marketDate": "2026-10-06",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-10-07T02:17:24.906783+07:00",
    "marketDate": "2026-10-06",
@@ -65,6 +53,18 @@
    "marketDate": "2026-10-07",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-10-08T23:55:03.910589+07:00",
+   "marketDate": "2026-10-08",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-09T01:20:17.844185+07:00",
+   "marketDate": "2026-10-08",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-10-08; latest observed OHLCV date was 2026-10-07. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,18 +93,10 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-08T05:05:32.985859+07:00",
+  "lastChecked": "2026-10-09T01:22:10.064399+07:00",
   "checked": 15,
   "failures": [],
   "results": [
-   {
-    "ticker": "ADRO",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "AMAR",
-    "status": "ERROR: TypeError"
-   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -122,15 +114,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BMAS",
+    "ticker": "CBUT",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "DGWG",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "DSNG",
     "status": "ERROR: TypeError"
    },
    {
@@ -142,19 +130,31 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "ISAP",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "MRAT",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "PSAB",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PYFA",
+    "ticker": "PTMP",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TAMA",
+    "ticker": "SMDM",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "TLKM",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "TRIS",
     "status": "ERROR: TypeError"
    }
   ],
