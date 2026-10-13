@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-14T03:21:28.472697+07:00",
+ "generatedAt": "2026-10-14T04:31:53.005992+07:00",
  "marketDate": "2026-10-13",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-14T03:21:13.054664+07:00"
+  "auditedAt": "2026-10-14T04:31:40.840880+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-10T04:08:16.108958+07:00",
-   "marketDate": "2026-10-09",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-10T05:34:13.120480+07:00",
-   "marketDate": "2026-10-09",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-10-13T03:45:34.089930+07:00",
    "marketDate": "2026-10-12",
@@ -63,6 +51,18 @@
   {
    "timestamp": "2026-10-14T03:19:00.488934+07:00",
    "marketDate": "2026-10-13",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-10-13; latest observed OHLCV date was 2026-10-09. The last successful snapshot was preserved."
+  },
+  {
+   "timestamp": "2026-10-14T03:24:25.686117+07:00",
+   "marketDate": "2026-10-13",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-14T04:30:12.141331+07:00",
+   "marketDate": "2026-10-13",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
   }
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-14T03:21:15.436341+07:00",
+  "lastChecked": "2026-10-14T04:31:42.623189+07:00",
   "checked": 15,
   "failures": [],
   "results": [
