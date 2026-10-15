@@ -1,18 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-09-09T23:48:32.118406+07:00",
-      "marketDate": "2026-09-09",
-      "status": "SUCCESS",
-      "message": "Created and validated a new dated snapshot."
-    },
-    {
-      "timestamp": "2026-09-09T23:56:28.523878+07:00",
-      "marketDate": "2026-09-09",
-      "status": "NO_CHANGE",
-      "message": "Dataset already published; last successful snapshot preserved."
-    },
-    {
       "timestamp": "2026-09-10T00:55:18.156530+07:00",
       "marketDate": "2026-09-09",
       "status": "NO_CHANGE",
@@ -599,6 +587,18 @@
       "marketDate": "2026-10-15",
       "status": "FAILED",
       "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+    },
+    {
+      "timestamp": "2026-10-16T01:25:41.845073+07:00",
+      "marketDate": "2026-10-15",
+      "status": "STARTED",
+      "message": "Daily update pipeline started."
+    },
+    {
+      "timestamp": "2026-10-16T02:50:21.762049+07:00",
+      "marketDate": "2026-10-15",
+      "status": "FAILED",
+      "message": "RuntimeError: Archive validation failed: 2026-10-15 was not added to manifest.json."
     }
   ]
 }
