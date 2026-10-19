@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-20T02:27:55.859999+07:00",
- "marketDate": "2026-10-16",
+ "generatedAt": "2026-10-20T03:59:35.770754+07:00",
+ "marketDate": "2026-10-19",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-20T02:27:40.408414+07:00"
+  "auditedAt": "2026-10-20T03:59:22.174245+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-15T21:26:00.153883+07:00",
-   "marketDate": "2026-10-15",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-15T22:50:25.926080+07:00",
-   "marketDate": "2026-10-15",
-   "status": "FAILED",
-   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
-  },
   {
    "timestamp": "2026-10-16T01:25:41.845073+07:00",
    "marketDate": "2026-10-15",
@@ -55,16 +43,28 @@
    "message": "Created and validated a new dated snapshot."
   },
   {
-   "timestamp": "2026-10-20T01:06:41.196970+07:00",
+   "timestamp": "2026-10-19T23:39:14.675059+07:00",
    "marketDate": "2026-10-19",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-20T02:26:11.139735+07:00",
+   "timestamp": "2026-10-20T01:04:36.188942+07:00",
    "marketDate": "2026-10-19",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-19; latest observed OHLCV date was 2026-10-16. The last successful snapshot was preserved."
+   "status": "FAILED",
+   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+  },
+  {
+   "timestamp": "2026-10-20T02:30:42.401857+07:00",
+   "marketDate": "2026-10-19",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-20T03:58:07.592279+07:00",
+   "marketDate": "2026-10-19",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-20T02:27:42.357494+07:00",
+  "lastChecked": "2026-10-20T03:59:25.507971+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -118,15 +118,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "CGAS",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "CMNT",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "DWGL",
+    "ticker": "DART",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "DMAS",
     "status": "ERROR: TypeError"
    },
    {
@@ -134,11 +134,19 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "LUCY",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "MAPI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MORA",
+    "ticker": "MPPA",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "NICK",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,101 +154,93 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SATU",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "TLKM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "TOSK",
     "status": "ERROR: TypeError"
    }
   ],
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 25,
+  "count": 29,
   "scanned": 921,
-  "quarantined": 5,
+  "quarantined": 6,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-16",
-    "close": 2550.0,
-    "volume": 216135600.0,
+    "date": "2026-10-19",
+    "close": 2480.0,
+    "volume": 236862100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-16",
-    "close": 4190.0,
-    "volume": 150890200.0,
+    "date": "2026-10-19",
+    "close": 4130.0,
+    "volume": 101072800.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-16",
-    "close": 5175.0,
-    "volume": 1241098200.0,
+    "date": "2026-10-19",
+    "close": 4820.0,
+    "volume": 382924400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-16",
-    "close": 2640.0,
-    "volume": 1254239900.0,
+    "date": "2026-10-19",
+    "close": 2540.0,
+    "volume": 1359912100.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-16",
-    "close": 1900.0,
-    "volume": 993589600.0,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "INTP",
-    "date": "2026-10-16",
-    "close": 5150.0,
-    "volume": null,
+    "date": "2026-10-19",
+    "close": 1770.0,
+    "volume": 1251403600.0,
     "source": "yfinance"
    },
    {
     "ticker": "CMNT",
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "close": 755.0,
     "volume": null,
     "source": "yfinance"
    },
    {
+    "ticker": "ACES",
+    "date": "2026-10-19",
+    "close": 322.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "BDMN",
+    "date": "2026-10-19",
+    "close": 4400.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "BSML",
+    "date": "2026-10-19",
+    "close": 480.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
     "ticker": "MAPI",
-    "date": "2026-10-16",
-    "close": 1320.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "PSAB",
-    "date": "2026-10-16",
-    "close": 446.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BFIN",
-    "date": "2026-10-16",
-    "close": 765.0,
+    "date": "2026-10-19",
+    "close": 1230.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 357,
-   "decided": 262,
-   "targetFirst": 71,
-   "hitRate": 0.271
+   "total": 382,
+   "decided": 282,
+   "targetFirst": 75,
+   "hitRate": 0.266
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-16",
-    "close": 2550.0,
-    "volume": 216135600.0,
+    "date": "2026-10-19",
+    "close": 2480.0,
+    "volume": 236862100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-16",
-    "close": 4190.0,
-    "volume": 150890200.0,
+    "date": "2026-10-19",
+    "close": 4130.0,
+    "volume": 101072800.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-16",
-    "close": 5175.0,
-    "volume": 1241098200.0,
+    "date": "2026-10-19",
+    "close": 4820.0,
+    "volume": 382924400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-16",
-    "close": 2640.0,
-    "volume": 1254239900.0,
+    "date": "2026-10-19",
+    "close": 2540.0,
+    "volume": 1359912100.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-16",
-    "close": 1900.0,
-    "volume": 993589600.0,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "INTP",
-    "date": "2026-10-16",
-    "close": 5150.0,
-    "volume": null,
+    "date": "2026-10-19",
+    "close": 1770.0,
+    "volume": 1251403600.0,
     "source": "yfinance"
    },
    {
     "ticker": "CMNT",
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "close": 755.0,
     "volume": null,
     "source": "yfinance"
    },
    {
+    "ticker": "ACES",
+    "date": "2026-10-19",
+    "close": 322.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "BDMN",
+    "date": "2026-10-19",
+    "close": 4400.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "BSML",
+    "date": "2026-10-19",
+    "close": 480.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
     "ticker": "MAPI",
-    "date": "2026-10-16",
-    "close": 1320.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "PSAB",
-    "date": "2026-10-16",
-    "close": 446.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BFIN",
-    "date": "2026-10-16",
-    "close": 765.0,
+    "date": "2026-10-19",
+    "close": 1230.0,
     "volume": null,
     "source": "yfinance"
    }
