@@ -1,18 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-09-16T22:40:48.043460+07:00",
-      "marketDate": "2026-09-16",
-      "status": "SUCCESS",
-      "message": "Created and validated a new dated snapshot."
-    },
-    {
-      "timestamp": "2026-09-17T01:46:20.773950+07:00",
-      "marketDate": "2026-09-16",
-      "status": "NO_CHANGE",
-      "message": "Dataset already published; last successful snapshot preserved."
-    },
-    {
       "timestamp": "2026-09-18T00:27:42.529394+07:00",
       "marketDate": "2026-09-17",
       "status": "STARTED",
@@ -599,6 +587,18 @@
       "marketDate": "2026-10-22",
       "status": "FAILED",
       "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+    },
+    {
+      "timestamp": "2026-10-23T00:41:32.416926+07:00",
+      "marketDate": "2026-10-22",
+      "status": "STARTED",
+      "message": "Daily update pipeline started."
+    },
+    {
+      "timestamp": "2026-10-23T02:00:29.983742+07:00",
+      "marketDate": "2026-10-22",
+      "status": "NO_DATA",
+      "message": "No valid IDX session was available for 2026-10-22; latest observed OHLCV date was 2026-10-21. The last successful snapshot was preserved."
     }
   ]
 }
