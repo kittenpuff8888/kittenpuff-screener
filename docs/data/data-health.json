@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-24T01:48:29.103962+07:00",
- "marketDate": "2026-10-22",
+ "generatedAt": "2026-10-24T03:23:31.549258+07:00",
+ "marketDate": "2026-10-23",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-24T01:48:16.234273+07:00"
+  "auditedAt": "2026-10-24T03:23:17.704223+07:00"
  },
  "runLog": [
   {
@@ -55,16 +55,16 @@
    "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
   },
   {
-   "timestamp": "2026-10-24T00:31:51.059023+07:00",
+   "timestamp": "2026-10-24T01:51:26.135743+07:00",
    "marketDate": "2026-10-23",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-24T01:46:49.453786+07:00",
+   "timestamp": "2026-10-24T03:21:56.680048+07:00",
    "marketDate": "2026-10-23",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-23; latest observed OHLCV date was 2026-10-22. The last successful snapshot was preserved."
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-24T01:48:18.126390+07:00",
+  "lastChecked": "2026-10-24T03:23:20.271903+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -161,86 +161,86 @@
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 40,
+  "count": 42,
   "scanned": 921,
   "quarantined": 6,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-22",
-    "close": 2840.0,
-    "volume": 123756100.0,
+    "date": "2026-10-23",
+    "close": 2860.0,
+    "volume": 85507700.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-22",
-    "close": 4450.0,
-    "volume": 105787900.0,
+    "date": "2026-10-23",
+    "close": 4550.0,
+    "volume": 56498300.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-22",
-    "close": 5175.0,
-    "volume": 286928500.0,
+    "date": "2026-10-23",
+    "close": 5025.0,
+    "volume": 495623900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-22",
-    "close": 2900.0,
-    "volume": 530527600.0,
+    "date": "2026-10-23",
+    "close": 2910.0,
+    "volume": 360865600.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-22",
-    "close": 2200.0,
-    "volume": 354937200.0,
+    "date": "2026-10-23",
+    "close": 2240.0,
+    "volume": 238905400.0,
     "source": "yfinance"
    },
    {
-    "ticker": "AALI",
-    "date": "2026-10-22",
-    "close": 9150.0,
+    "ticker": "BDKR",
+    "date": "2026-10-23",
+    "close": 183.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BDMN",
-    "date": "2026-10-22",
-    "close": 4800.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BSSR",
-    "date": "2026-10-22",
-    "close": 5200.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BUKA",
-    "date": "2026-10-22",
-    "close": 109.0,
+    "ticker": "BTPS",
+    "date": "2026-10-23",
+    "close": 1000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "DMAS",
-    "date": "2026-10-22",
-    "close": 218.0,
+    "date": "2026-10-23",
+    "close": 214.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PGEO",
+    "date": "2026-10-23",
+    "close": 1025.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PWON",
+    "date": "2026-10-23",
+    "close": 282.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 434,
-   "decided": 333,
-   "targetFirst": 105,
-   "hitRate": 0.315
+   "total": 474,
+   "decided": 351,
+   "targetFirst": 116,
+   "hitRate": 0.33
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-22",
-    "close": 2840.0,
-    "volume": 123756100.0,
+    "date": "2026-10-23",
+    "close": 2860.0,
+    "volume": 85507700.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-22",
-    "close": 4450.0,
-    "volume": 105787900.0,
+    "date": "2026-10-23",
+    "close": 4550.0,
+    "volume": 56498300.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-22",
-    "close": 5175.0,
-    "volume": 286928500.0,
+    "date": "2026-10-23",
+    "close": 5025.0,
+    "volume": 495623900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-22",
-    "close": 2900.0,
-    "volume": 530527600.0,
+    "date": "2026-10-23",
+    "close": 2910.0,
+    "volume": 360865600.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-22",
-    "close": 2200.0,
-    "volume": 354937200.0,
+    "date": "2026-10-23",
+    "close": 2240.0,
+    "volume": 238905400.0,
     "source": "yfinance"
    },
    {
-    "ticker": "AALI",
-    "date": "2026-10-22",
-    "close": 9150.0,
+    "ticker": "BDKR",
+    "date": "2026-10-23",
+    "close": 183.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BDMN",
-    "date": "2026-10-22",
-    "close": 4800.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BSSR",
-    "date": "2026-10-22",
-    "close": 5200.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "BUKA",
-    "date": "2026-10-22",
-    "close": 109.0,
+    "ticker": "BTPS",
+    "date": "2026-10-23",
+    "close": 1000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "DMAS",
-    "date": "2026-10-22",
-    "close": 218.0,
+    "date": "2026-10-23",
+    "close": 214.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PGEO",
+    "date": "2026-10-23",
+    "close": 1025.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "PWON",
+    "date": "2026-10-23",
+    "close": 282.0,
     "volume": null,
     "source": "yfinance"
    }
