@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-23T03:29:55.781256+07:00",
+ "generatedAt": "2026-10-24T01:48:29.103962+07:00",
  "marketDate": "2026-10-22",
  "universe": {
   "size": 921,
@@ -15,45 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-23T03:29:39.840955+07:00"
+  "auditedAt": "2026-10-24T01:48:16.234273+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-21T21:39:47.383551+07:00",
-   "marketDate": "2026-10-21",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-21T23:05:02.090122+07:00",
-   "marketDate": "2026-10-21",
-   "status": "FAILED",
-   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
-  },
-  {
-   "timestamp": "2026-10-22T00:43:30.638807+07:00",
-   "marketDate": "2026-10-21",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-22T02:14:37.340876+07:00",
-   "marketDate": "2026-10-21",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-21; latest observed OHLCV date was 2026-10-20. The last successful snapshot was preserved."
-  },
-  {
-   "timestamp": "2026-10-22T21:39:34.064165+07:00",
-   "marketDate": "2026-10-22",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-22T23:01:34.247449+07:00",
-   "marketDate": "2026-10-22",
-   "status": "FAILED",
-   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
-  },
   {
    "timestamp": "2026-10-23T02:05:03.160243+07:00",
    "marketDate": "2026-10-22",
@@ -65,6 +29,42 @@
    "marketDate": "2026-10-22",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-10-23T21:25:22.176547+07:00",
+   "marketDate": "2026-10-23",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-23T22:42:24.658185+07:00",
+   "marketDate": "2026-10-23",
+   "status": "FAILED",
+   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+  },
+  {
+   "timestamp": "2026-10-23T22:45:02.018096+07:00",
+   "marketDate": "2026-10-23",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-24T00:08:09.196488+07:00",
+   "marketDate": "2026-10-23",
+   "status": "FAILED",
+   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+  },
+  {
+   "timestamp": "2026-10-24T00:31:51.059023+07:00",
+   "marketDate": "2026-10-23",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-24T01:46:49.453786+07:00",
+   "marketDate": "2026-10-23",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-10-23; latest observed OHLCV date was 2026-10-22. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-23T03:29:41.706815+07:00",
+  "lastChecked": "2026-10-24T01:48:18.126390+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -118,39 +118,39 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "BDMN",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "BSSR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BUKK",
+    "ticker": "BUDI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "CYBR",
+    "ticker": "BUKA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "DATA",
+    "ticker": "DMAS",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "GWSA",
+    "ticker": "ISAT",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "INTP",
+    "ticker": "KAYU",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PGEO",
+    "ticker": "MICE",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PNBN",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "PWON",
+    "ticker": "SUPR",
     "status": "ERROR: TypeError"
    },
    {
