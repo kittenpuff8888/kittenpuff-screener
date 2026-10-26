@@ -1,427 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-10-23",
+ "asOf": "2026-10-26",
  "entries": [
-  {
-   "date": "2026-10-07",
-   "ticker": "DGWG",
-   "score": 75,
-   "close": 336.0,
-   "target": 361,
-   "invalidation": 326,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "IATA",
-   "score": 75,
-   "close": 109.0,
-   "target": 133,
-   "invalidation": 95,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "INDY",
-   "score": 70,
-   "close": 2730.0,
-   "target": 2850,
-   "invalidation": 2637,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "ISAP",
-   "score": 70,
-   "close": 24.0,
-   "target": 26,
-   "invalidation": 23,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "PSAB",
-   "score": 70,
-   "close": 520.0,
-   "target": 550,
-   "invalidation": 490.0,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "PWON",
-   "score": 70,
-   "close": 270.0,
-   "target": 284,
-   "invalidation": 267,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "SIDO",
-   "score": 70,
-   "close": 354.0,
-   "target": 362,
-   "invalidation": 348,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "TAXI",
-   "score": 70,
-   "close": 15.0,
-   "target": 17,
-   "invalidation": 14,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "CNMA",
-   "score": 65,
-   "close": 89.0,
-   "target": 90,
-   "invalidation": 86.13,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "NCKL",
-   "score": 65,
-   "close": 865.0,
-   "target": 922,
-   "invalidation": 821.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "TSPC",
-   "score": 65,
-   "close": 2650.0,
-   "target": 2685,
-   "invalidation": 2534.4,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "BBRI",
-   "score": 60,
-   "close": 3140.0,
-   "target": 3240,
-   "invalidation": 3019.5,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "CTRA",
-   "score": 60,
-   "close": 545.0,
-   "target": 575,
-   "invalidation": 514.8,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "MAPA",
-   "score": 60,
-   "close": 640.0,
-   "target": 658,
-   "invalidation": 603.9,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "SILO",
-   "score": 60,
-   "close": 1920.0,
-   "target": 2015,
-   "invalidation": 1871.1,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "TLKM",
-   "score": 60,
-   "close": 2310.0,
-   "target": 2460,
-   "invalidation": 2178.0,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "INTP",
-   "score": 55,
-   "close": 4960.0,
-   "target": 5130,
-   "invalidation": 4712.4,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "MSTI",
-   "score": 55,
-   "close": 1330.0,
-   "target": 1370,
-   "invalidation": 1296.9,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "PGEO",
-   "score": 55,
-   "close": 1010.0,
-   "target": 1018,
-   "invalidation": 925.65,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-07",
-   "ticker": "PNBN",
-   "score": 55,
-   "close": 835.0,
-   "target": 868,
-   "invalidation": 811.8,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "VERN",
-   "score": 75,
-   "close": 222.0,
-   "target": 288,
-   "invalidation": 190,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "PSAB",
-   "score": 70,
-   "close": 510.0,
-   "target": 545,
-   "invalidation": 490.0,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "TAXI",
-   "score": 70,
-   "close": 16.0,
-   "target": 18,
-   "invalidation": 15,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "ACES",
-   "score": 65,
-   "close": 328.0,
-   "target": 338,
-   "invalidation": 314.82,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "BINA",
-   "score": 65,
-   "close": 3970.0,
-   "target": 4175,
-   "invalidation": 3880.7999999999997,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "NCKL",
-   "score": 65,
-   "close": 855.0,
-   "target": 898,
-   "invalidation": 821.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "TSPC",
-   "score": 65,
-   "close": 2600.0,
-   "target": 2685,
-   "invalidation": 2534.4,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "BUMI",
-   "score": 60,
-   "close": 174.0,
-   "target": 190,
-   "invalidation": 165.33,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "CPIN",
-   "score": 60,
-   "close": 2930.0,
-   "target": 3050,
-   "invalidation": 2821.5,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "CTRA",
-   "score": 60,
-   "close": 540.0,
-   "target": 570,
-   "invalidation": 514.8,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "KIJA",
-   "score": 60,
-   "close": 155.0,
-   "target": 177,
-   "invalidation": 148.5,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "NICL",
-   "score": 60,
-   "close": 360.0,
-   "target": 414,
-   "invalidation": 340.56,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "SILO",
-   "score": 60,
-   "close": 1905.0,
-   "target": 2015,
-   "invalidation": 1871.1,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-08",
-   "ticker": "PGEO",
-   "score": 55,
-   "close": 995.0,
-   "target": 1018,
-   "invalidation": 916.3,
-   "outcome": "undecided",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "PSAB",
-   "score": 80,
-   "close": 540.0,
-   "target": 563,
-   "invalidation": 527,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "BSDE",
-   "score": 70,
-   "close": 540.0,
-   "target": 590,
-   "invalidation": 519.75,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "BINA",
-   "score": 65,
-   "close": 4000.0,
-   "target": 4160,
-   "invalidation": 3890.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "NCKL",
-   "score": 65,
-   "close": 860.0,
-   "target": 892,
-   "invalidation": 813.4,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "TSPC",
-   "score": 65,
-   "close": 2630.0,
-   "target": 2685,
-   "invalidation": 2508.8,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "BBRI",
-   "score": 60,
-   "close": 3100.0,
-   "target": 3220,
-   "invalidation": 2999.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "SILO",
-   "score": 60,
-   "close": 1905.0,
-   "target": 2010,
-   "invalidation": 1861.2,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-09",
-   "ticker": "ENRG",
-   "score": 55,
-   "close": 995.0,
-   "target": 1235,
-   "invalidation": 930.6,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-09",
    "ticker": "TOBA",
@@ -1090,7 +670,7 @@
    "target": 776,
    "invalidation": 750,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1100,7 +680,7 @@
    "target": 343,
    "invalidation": 304.92,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1110,7 +690,7 @@
    "target": 4638,
    "invalidation": 4158.0,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1120,7 +700,7 @@
    "target": 526,
    "invalidation": 463.32,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1130,7 +710,7 @@
    "target": 1402,
    "invalidation": 1217.7,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1140,7 +720,7 @@
    "target": 138,
    "invalidation": 103.95,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1150,7 +730,7 @@
    "target": 960,
    "invalidation": 811.8,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1160,7 +740,7 @@
    "target": 270,
    "invalidation": 243.54,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1170,7 +750,7 @@
    "target": 850,
    "invalidation": 707.85,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1180,7 +760,7 @@
    "target": 190,
    "invalidation": 164.34,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1190,7 +770,7 @@
    "target": 7675,
    "invalidation": 6509.25,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1200,7 +780,7 @@
    "target": 885,
    "invalidation": 777.15,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1210,7 +790,7 @@
    "target": 183,
    "invalidation": 160,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1220,7 +800,7 @@
    "target": 26,
    "invalidation": 18.81,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1230,7 +810,7 @@
    "target": 2228,
    "invalidation": 1262.25,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1240,7 +820,7 @@
    "target": 112,
    "invalidation": 92.07,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1250,7 +830,7 @@
    "target": 368,
    "invalidation": 283.14,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1260,7 +840,7 @@
    "target": 88,
    "invalidation": 69.3,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1270,7 +850,7 @@
    "target": 365,
    "invalidation": 259.38,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1280,7 +860,7 @@
    "target": 232,
    "invalidation": 203.94,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1290,7 +870,7 @@
    "target": 3225,
    "invalidation": 2237.4,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1300,7 +880,7 @@
    "target": 8025,
    "invalidation": 7301.25,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1310,7 +890,7 @@
    "target": 3180,
    "invalidation": 2821.5,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1320,7 +900,7 @@
    "target": 4985,
    "invalidation": 4425.3,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1330,7 +910,7 @@
    "target": 1082,
    "invalidation": 782.1,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1340,7 +920,7 @@
    "target": 755,
    "invalidation": 658.35,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1350,7 +930,7 @@
    "target": 4972,
    "invalidation": 4524.3,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1360,7 +940,7 @@
    "target": 1085,
    "invalidation": 925.65,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-19",
@@ -1369,8 +949,8 @@
    "close": 446.0,
    "target": 488,
    "invalidation": 411.84,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-20",
@@ -1380,7 +960,7 @@
    "target": 8675,
    "invalidation": 8008,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1390,7 +970,7 @@
    "target": 5741,
    "invalidation": 5090,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1400,7 +980,7 @@
    "target": 6273,
    "invalidation": 5156,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1410,7 +990,7 @@
    "target": 1081,
    "invalidation": 964,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1419,8 +999,8 @@
    "close": 270.0,
    "target": 288,
    "invalidation": 262,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "target",
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1430,7 +1010,7 @@
    "target": 113,
    "invalidation": 104,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1440,7 +1020,7 @@
    "target": 815,
    "invalidation": 757,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1450,7 +1030,7 @@
    "target": 742,
    "invalidation": 601,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1460,7 +1040,7 @@
    "target": 1352,
    "invalidation": 1153.35,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1469,8 +1049,8 @@
    "close": 2200.0,
    "target": 2625,
    "invalidation": 2088.9,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "invalidated",
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1480,7 +1060,7 @@
    "target": 3180,
    "invalidation": 2821.5,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1490,7 +1070,7 @@
    "target": 192,
    "invalidation": 151.47,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1500,7 +1080,7 @@
    "target": 4638,
    "invalidation": 4158.0,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1510,7 +1090,7 @@
    "target": 830,
    "invalidation": 668.25,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1520,7 +1100,7 @@
    "target": 526,
    "invalidation": 463.32,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1530,7 +1110,7 @@
    "target": 1082,
    "invalidation": 782.1,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1540,7 +1120,7 @@
    "target": 755,
    "invalidation": 658.35,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1550,7 +1130,7 @@
    "target": 23888,
    "invalidation": 21309.75,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1560,7 +1140,7 @@
    "target": 1382,
    "invalidation": 1178.1,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1570,7 +1150,7 @@
    "target": 1085,
    "invalidation": 925.65,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1580,7 +1160,7 @@
    "target": 134,
    "invalidation": 94.05,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1590,7 +1170,7 @@
    "target": 488,
    "invalidation": 411.84,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-20",
@@ -1600,7 +1180,7 @@
    "target": 1872,
    "invalidation": 1628.55,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-22",
@@ -1610,7 +1190,7 @@
    "target": 9683,
    "invalidation": 9000,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1620,7 +1200,7 @@
    "target": 8850,
    "invalidation": 4662,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1630,7 +1210,7 @@
    "target": 5741,
    "invalidation": 4943,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1640,7 +1220,7 @@
    "target": 115,
    "invalidation": 107,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1650,7 +1230,7 @@
    "target": 242,
    "invalidation": 202,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1660,7 +1240,7 @@
    "target": 5878,
    "invalidation": 5483,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1670,7 +1250,7 @@
    "target": 27175,
    "invalidation": 24352,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1680,7 +1260,7 @@
    "target": 1200,
    "invalidation": 1115,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1689,8 +1269,8 @@
    "close": 1005.0,
    "target": 1081,
    "invalidation": 987,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1700,7 +1280,7 @@
    "target": 304,
    "invalidation": 273,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1710,7 +1290,7 @@
    "target": 11875,
    "invalidation": 10943,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1720,7 +1300,7 @@
    "target": 3774,
    "invalidation": 3246,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1730,7 +1310,7 @@
    "target": 14,
    "invalidation": 11,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1740,7 +1320,7 @@
    "target": 1045,
    "invalidation": 943,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1750,7 +1330,7 @@
    "target": 798,
    "invalidation": 741,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1760,7 +1340,7 @@
    "target": 619,
    "invalidation": 563,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1769,8 +1349,8 @@
    "close": 660.0,
    "target": 685,
    "invalidation": 649,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1780,7 +1360,7 @@
    "target": 671,
    "invalidation": 559,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1790,7 +1370,7 @@
    "target": 686,
    "invalidation": 645,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1800,7 +1380,7 @@
    "target": 1527,
    "invalidation": 1429,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1809,8 +1389,8 @@
    "close": 930.0,
    "target": 980,
    "invalidation": 907,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1820,7 +1400,7 @@
    "target": 3350,
    "invalidation": 2971,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1830,7 +1410,7 @@
    "target": 367,
    "invalidation": 345,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1840,7 +1420,7 @@
    "target": 438,
    "invalidation": 369,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1850,7 +1430,7 @@
    "target": 276,
    "invalidation": 258,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1860,7 +1440,7 @@
    "target": 35,
    "invalidation": 29,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1870,7 +1450,7 @@
    "target": 250,
    "invalidation": 223,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1880,7 +1460,7 @@
    "target": 80,
    "invalidation": 53.46,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1890,7 +1470,7 @@
    "target": 1352,
    "invalidation": 1153.35,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1900,7 +1480,7 @@
    "target": 3180,
    "invalidation": 2821.5,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1910,7 +1490,7 @@
    "target": 192,
    "invalidation": 151.47,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1920,7 +1500,7 @@
    "target": 822,
    "invalidation": 668.25,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1930,7 +1510,7 @@
    "target": 526,
    "invalidation": 463.32,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1940,7 +1520,7 @@
    "target": 1072,
    "invalidation": 762.3,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1950,7 +1530,7 @@
    "target": 750,
    "invalidation": 658.35,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1960,7 +1540,7 @@
    "target": 1382,
    "invalidation": 1178.1,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1969,8 +1549,8 @@
    "close": 2240.0,
    "target": 2610,
    "invalidation": 2088.9,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1980,7 +1560,7 @@
    "target": 131,
    "invalidation": 89.1,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -1990,7 +1570,7 @@
    "target": 486,
    "invalidation": 411.84,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-22",
@@ -2000,14 +1580,434 @@
    "target": 1872,
    "invalidation": 1628.55,
    "outcome": "target",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BDKR",
+   "score": 80,
+   "close": 183.0,
+   "target": 196,
+   "invalidation": 172,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BTPS",
+   "score": 80,
+   "close": 1000.0,
+   "target": 1045,
+   "invalidation": 979,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "DMAS",
+   "score": 80,
+   "close": 214.0,
+   "target": 242,
+   "invalidation": 202,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "PGEO",
+   "score": 80,
+   "close": 1025.0,
+   "target": 1081,
+   "invalidation": 1007,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "PWON",
+   "score": 80,
+   "close": 282.0,
+   "target": 304,
+   "invalidation": 273,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "AADI",
+   "score": 75,
+   "close": 11375.0,
+   "target": 11875,
+   "invalidation": 10960,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BBNI",
+   "score": 75,
+   "close": 3420.0,
+   "target": 3774,
+   "invalidation": 3246,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BLES",
+   "score": 75,
+   "close": 210.0,
+   "target": 235,
+   "invalidation": 199,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ELSA",
+   "score": 75,
+   "close": 665.0,
+   "target": 724,
+   "invalidation": 651,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "HMSP",
+   "score": 75,
+   "close": 650.0,
+   "target": 686,
+   "invalidation": 645,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MEDC",
+   "score": 75,
+   "close": 1480.0,
+   "target": 1591,
+   "invalidation": 1433,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "OILS",
+   "score": 75,
+   "close": 334.0,
+   "target": 372,
+   "invalidation": 317,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "PTBA",
+   "score": 75,
+   "close": 3280.0,
+   "target": 3655,
+   "invalidation": 3110,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SMDR",
+   "score": 75,
+   "close": 384.0,
+   "target": 438,
+   "invalidation": 370,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SMRA",
+   "score": 75,
+   "close": 260.0,
+   "target": 272,
+   "invalidation": 250,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "UNTR",
+   "score": 75,
+   "close": 25300.0,
+   "target": 26716,
+   "invalidation": 24076,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "WMPP",
+   "score": 75,
+   "close": 26.0,
+   "target": 32,
+   "invalidation": 25,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ANDI",
+   "score": 70,
+   "close": 28.0,
+   "target": 41,
+   "invalidation": 26,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "JSMR",
+   "score": 70,
+   "close": 2660.0,
+   "target": 2798,
+   "invalidation": 2610,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KEEN",
+   "score": 70,
+   "close": 850.0,
+   "target": 911,
+   "invalidation": 825,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "LSIP",
+   "score": 70,
+   "close": 1470.0,
+   "target": 1656,
+   "invalidation": 1435,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MIDI",
+   "score": 70,
+   "close": 270.0,
+   "target": 286,
+   "invalidation": 262,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MITI",
+   "score": 70,
+   "close": 292.0,
+   "target": 340,
+   "invalidation": 270,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MOLI",
+   "score": 70,
+   "close": 384.0,
+   "target": 409,
+   "invalidation": 360,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "NANO",
+   "score": 70,
+   "close": 31.0,
+   "target": 35,
+   "invalidation": 30,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "PART",
+   "score": 70,
+   "close": 108.0,
+   "target": 116,
+   "invalidation": 104,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SMSM",
+   "score": 70,
+   "close": 1670.0,
+   "target": 1729,
+   "invalidation": 1633,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TOBA",
+   "score": 70,
+   "close": 520.0,
+   "target": 638,
+   "invalidation": 470,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "WMUU",
+   "score": 70,
+   "close": 36.0,
+   "target": 41,
+   "invalidation": 35,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "FAST",
+   "score": 65,
+   "close": 380.0,
+   "target": 408,
+   "invalidation": 369,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MDKA",
+   "score": 65,
+   "close": 2190.0,
+   "target": 2600,
+   "invalidation": 2088.9,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "AKRA",
+   "score": 55,
+   "close": 1390.0,
+   "target": 1352,
+   "invalidation": 1153.35,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ARCI",
+   "score": 55,
+   "close": 1045.0,
+   "target": 1108,
+   "invalidation": 881.1,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "ASLI",
+   "score": 55,
+   "close": 362.0,
+   "target": 390,
+   "invalidation": 237.6,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BDMN",
+   "score": 55,
+   "close": 5025.0,
+   "target": 8850,
+   "invalidation": 4690,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "BFIN",
+   "score": 55,
+   "close": 805.0,
+   "target": 822,
+   "invalidation": 668.25,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "IATA",
+   "score": 55,
+   "close": 94.0,
+   "target": 94,
+   "invalidation": 72.27,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "MEJA",
+   "score": 55,
+   "close": 114.0,
+   "target": 131,
+   "invalidation": 89.1,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "PSAB",
+   "score": 55,
+   "close": 442.0,
+   "target": 486,
+   "invalidation": 411.84,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "RISE",
+   "score": 55,
+   "close": 535.0,
+   "target": 625,
+   "invalidation": 509.85,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "SOCI",
+   "score": 55,
+   "close": 494.0,
+   "target": 534,
+   "invalidation": 399.96,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "TAPG",
+   "score": 55,
+   "close": 1900.0,
+   "target": 1872,
+   "invalidation": 1628.55,
+   "outcome": "target",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 474,
-  "decided": 351,
-  "targetFirst": 116,
-  "hitRate": 0.33
+  "total": 516,
+  "decided": 376,
+  "targetFirst": 123,
+  "hitRate": 0.327
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }

@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-27T02:01:05.675503+07:00",
- "marketDate": "2026-10-23",
+ "generatedAt": "2026-10-27T03:27:28.174899+07:00",
+ "marketDate": "2026-10-26",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-27T02:00:48.313559+07:00"
+  "auditedAt": "2026-10-27T03:27:14.720960+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-23T21:25:22.176547+07:00",
-   "marketDate": "2026-10-23",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-23T22:42:24.658185+07:00",
-   "marketDate": "2026-10-23",
-   "status": "FAILED",
-   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
-  },
   {
    "timestamp": "2026-10-23T22:45:02.018096+07:00",
    "marketDate": "2026-10-23",
@@ -55,16 +43,28 @@
    "message": "Created and validated a new dated snapshot."
   },
   {
-   "timestamp": "2026-10-27T00:35:10.069261+07:00",
+   "timestamp": "2026-10-26T23:19:42.428868+07:00",
    "marketDate": "2026-10-26",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-27T01:59:05.754140+07:00",
+   "timestamp": "2026-10-27T00:32:35.534866+07:00",
    "marketDate": "2026-10-26",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-26; latest observed OHLCV date was 2026-10-23. The last successful snapshot was preserved."
+   "status": "FAILED",
+   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+  },
+  {
+   "timestamp": "2026-10-27T02:04:02.445416+07:00",
+   "marketDate": "2026-10-26",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-27T03:25:35.705941+07:00",
+   "marketDate": "2026-10-26",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-27T02:00:51.613800+07:00",
+  "lastChecked": "2026-10-27T03:27:17.714883+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -161,86 +161,86 @@
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 42,
+  "count": 14,
   "scanned": 921,
   "quarantined": 6,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-23",
-    "close": 2860.0,
-    "volume": 85507700.0,
+    "date": "2026-10-26",
+    "close": 2760.0,
+    "volume": 78695500.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-23",
-    "close": 4550.0,
-    "volume": 56498300.0,
+    "date": "2026-10-26",
+    "close": 4560.0,
+    "volume": 35419700.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-23",
-    "close": 5025.0,
-    "volume": 495623900.0,
+    "date": "2026-10-26",
+    "close": 4940.0,
+    "volume": 353641200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-23",
+    "date": "2026-10-26",
     "close": 2910.0,
-    "volume": 360865600.0,
+    "volume": 252788200.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-23",
-    "close": 2240.0,
-    "volume": 238905400.0,
+    "date": "2026-10-26",
+    "close": 2250.0,
+    "volume": 257077200.0,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "AKRA",
+    "date": "2026-10-26",
+    "close": 1400.0,
+    "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-23",
-    "close": 183.0,
+    "date": "2026-10-26",
+    "close": 179.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BTPS",
-    "date": "2026-10-23",
-    "close": 1000.0,
+    "ticker": "ADES",
+    "date": "2026-10-26",
+    "close": 33000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "DMAS",
-    "date": "2026-10-23",
-    "close": 214.0,
+    "ticker": "ASPR",
+    "date": "2026-10-26",
+    "close": 151.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "PGEO",
-    "date": "2026-10-23",
-    "close": 1025.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "PWON",
-    "date": "2026-10-23",
-    "close": 282.0,
+    "ticker": "FAST",
+    "date": "2026-10-26",
+    "close": 400.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 474,
-   "decided": 351,
-   "targetFirst": 116,
-   "hitRate": 0.33
+   "total": 516,
+   "decided": 376,
+   "targetFirst": 123,
+   "hitRate": 0.327
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-23",
-    "close": 2860.0,
-    "volume": 85507700.0,
+    "date": "2026-10-26",
+    "close": 2760.0,
+    "volume": 78695500.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-23",
-    "close": 4550.0,
-    "volume": 56498300.0,
+    "date": "2026-10-26",
+    "close": 4560.0,
+    "volume": 35419700.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-23",
-    "close": 5025.0,
-    "volume": 495623900.0,
+    "date": "2026-10-26",
+    "close": 4940.0,
+    "volume": 353641200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-23",
+    "date": "2026-10-26",
     "close": 2910.0,
-    "volume": 360865600.0,
+    "volume": 252788200.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-23",
-    "close": 2240.0,
-    "volume": 238905400.0,
+    "date": "2026-10-26",
+    "close": 2250.0,
+    "volume": 257077200.0,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "AKRA",
+    "date": "2026-10-26",
+    "close": 1400.0,
+    "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-23",
-    "close": 183.0,
+    "date": "2026-10-26",
+    "close": 179.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BTPS",
-    "date": "2026-10-23",
-    "close": 1000.0,
+    "ticker": "ADES",
+    "date": "2026-10-26",
+    "close": 33000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "DMAS",
-    "date": "2026-10-23",
-    "close": 214.0,
+    "ticker": "ASPR",
+    "date": "2026-10-26",
+    "close": 151.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "PGEO",
-    "date": "2026-10-23",
-    "close": 1025.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "PWON",
-    "date": "2026-10-23",
-    "close": 282.0,
+    "ticker": "FAST",
+    "date": "2026-10-26",
+    "close": 400.0,
     "volume": null,
     "source": "yfinance"
    }
