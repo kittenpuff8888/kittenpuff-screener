@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-27T03:27:28.174899+07:00",
+ "generatedAt": "2026-10-27T04:53:39.560004+07:00",
  "marketDate": "2026-10-26",
  "universe": {
   "size": 921,
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-27T03:27:14.720960+07:00"
+  "auditedAt": "2026-10-27T04:53:27.726580+07:00"
  },
  "runLog": [
   {
@@ -51,17 +51,17 @@
   {
    "timestamp": "2026-10-27T00:32:35.534866+07:00",
    "marketDate": "2026-10-26",
-   "status": "FAILED",
-   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-10-26; latest observed OHLCV date was 2026-10-23. The last successful snapshot was preserved."
   },
   {
-   "timestamp": "2026-10-27T02:04:02.445416+07:00",
+   "timestamp": "2026-10-27T03:30:26.487081+07:00",
    "marketDate": "2026-10-26",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-27T03:25:35.705941+07:00",
+   "timestamp": "2026-10-27T04:51:47.771623+07:00",
    "marketDate": "2026-10-26",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-27T03:27:17.714883+07:00",
+  "lastChecked": "2026-10-27T04:53:29.517260+07:00",
   "checked": 15,
   "failures": [],
   "results": [
