@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-28T01:23:58.593382+07:00",
- "marketDate": "2026-10-26",
+ "generatedAt": "2026-10-28T03:05:27.174342+07:00",
+ "marketDate": "2026-10-27",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-28T01:23:41.610827+07:00"
+  "auditedAt": "2026-10-28T03:05:10.267206+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-24T01:51:26.135743+07:00",
-   "marketDate": "2026-10-23",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-24T03:21:56.680048+07:00",
-   "marketDate": "2026-10-23",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-10-27T00:35:10.069261+07:00",
    "marketDate": "2026-10-26",
@@ -55,16 +43,28 @@
    "message": "Created and validated a new dated snapshot."
   },
   {
-   "timestamp": "2026-10-27T23:56:21.479839+07:00",
+   "timestamp": "2026-10-27T22:33:43.652964+07:00",
    "marketDate": "2026-10-27",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-28T01:21:49.659123+07:00",
+   "timestamp": "2026-10-27T23:52:13.554248+07:00",
    "marketDate": "2026-10-27",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-27; latest observed OHLCV date was 2026-10-26. The last successful snapshot was preserved."
+   "status": "FAILED",
+   "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
+  },
+  {
+   "timestamp": "2026-10-28T01:29:16.631133+07:00",
+   "marketDate": "2026-10-27",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-28T03:02:24.144196+07:00",
+   "marketDate": "2026-10-27",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-28T01:23:45.192950+07:00",
+  "lastChecked": "2026-10-28T03:05:13.321653+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -161,7 +161,7 @@
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 14,
+  "count": 9,
   "scanned": 921,
   "quarantined": 6,
   "spotCheckSample": [
@@ -174,73 +174,73 @@
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-26",
-    "close": 4560.0,
-    "volume": 35419700.0,
+    "date": "2026-10-27",
+    "close": 4630.0,
+    "volume": 67374100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-26",
-    "close": 4940.0,
-    "volume": 353641200.0,
+    "date": "2026-10-27",
+    "close": 4900.0,
+    "volume": 366846200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-26",
-    "close": 2910.0,
-    "volume": 252788200.0,
+    "date": "2026-10-27",
+    "close": 2900.0,
+    "volume": 431627300.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-26",
-    "close": 2250.0,
-    "volume": 257077200.0,
+    "date": "2026-10-27",
+    "close": 2140.0,
+    "volume": 326667800.0,
     "source": "yfinance"
    },
    {
     "ticker": "AKRA",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 1400.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 179.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ADES",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 33000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ASPR",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 151.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "FAST",
-    "date": "2026-10-26",
-    "close": 400.0,
+    "ticker": "HATM",
+    "date": "2026-10-27",
+    "close": 515.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 516,
-   "decided": 376,
-   "targetFirst": 123,
-   "hitRate": 0.327
+   "total": 530,
+   "decided": 397,
+   "targetFirst": 125,
+   "hitRate": 0.315
   }
  },
  "manualSpotCheck": {
@@ -255,64 +255,64 @@
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-26",
-    "close": 4560.0,
-    "volume": 35419700.0,
+    "date": "2026-10-27",
+    "close": 4630.0,
+    "volume": 67374100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-26",
-    "close": 4940.0,
-    "volume": 353641200.0,
+    "date": "2026-10-27",
+    "close": 4900.0,
+    "volume": 366846200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-26",
-    "close": 2910.0,
-    "volume": 252788200.0,
+    "date": "2026-10-27",
+    "close": 2900.0,
+    "volume": 431627300.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-26",
-    "close": 2250.0,
-    "volume": 257077200.0,
+    "date": "2026-10-27",
+    "close": 2140.0,
+    "volume": 326667800.0,
     "source": "yfinance"
    },
    {
     "ticker": "AKRA",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 1400.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 179.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ADES",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 33000.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "ASPR",
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "close": 151.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "FAST",
-    "date": "2026-10-26",
-    "close": 400.0,
+    "ticker": "HATM",
+    "date": "2026-10-27",
+    "close": 515.0,
     "volume": null,
     "source": "yfinance"
    }
