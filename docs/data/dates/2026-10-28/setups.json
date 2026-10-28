@@ -1,0 +1,267 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-10-28",
+ "generatedAt": "2026-10-29T04:17:42.831653+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 3,
+ "setups": [
+  {
+   "ticker": "INDY",
+   "name": "Indika Energy Tbk.",
+   "sector": "Others",
+   "close": 1995.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1929,
+   "invalidation": 1890.9,
+   "target": 2375,
+   "medianValueTraded20": 39893040000,
+   "rvol": 1.198041889969619,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -902764462,
+    -909050248,
+    -916119748,
+    -932484548,
+    -898609721,
+    -907654109,
+    -915190752,
+    -918919232,
+    -918919232,
+    -930037709,
+    -931081669,
+    -932264812,
+    -926220862,
+    -913801724,
+    -918635357,
+    -930159457,
+    -922381291,
+    -941988391,
+    -943913557,
+    -958516057,
+    -964528986,
+    -964528986,
+    -999114686,
+    -979325019,
+    -973316876,
+    -966512508,
+    -965203223,
+    -973811823,
+    -981826242,
+    -980573967
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 10,
+    "hitRate": 0.8,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AINDY"
+  },
+  {
+   "ticker": "BACH",
+   "name": "Bach Multi Global Tbk.",
+   "sector": "Others",
+   "close": 238.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 230,
+   "invalidation": 225.72,
+   "target": 302,
+   "medianValueTraded20": 4115748000,
+   "rvol": 0.5571631498199086,
+   "isRecentIpo": true,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -129999661,
+    -154013061,
+    -162687794,
+    -179311585,
+    -188232639,
+    -204885639,
+    -222315389,
+    -204420389,
+    -204420389,
+    -197608222,
+    -195824722,
+    -201119611,
+    -191180811,
+    -191180811,
+    -200498356,
+    -213583856,
+    -211376256,
+    -221303541,
+    -223852308,
+    -230599808,
+    -240887451,
+    -274037851,
+    -274037851,
+    -277428651,
+    -266559251,
+    -262028776,
+    -253078976,
+    -268908776,
+    -276044076,
+    -276044076
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABACH"
+  },
+  {
+   "ticker": "MEJA",
+   "name": "Harta Djaya Karya Tbk.",
+   "sector": "Others",
+   "close": 101.0,
+   "score": 55,
+   "components": {
+    "location": 0,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 91,
+   "invalidation": 89.1,
+   "target": 130,
+   "medianValueTraded20": 10540875100,
+   "rvol": 0.2501667815871469,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    8274573490,
+    8264127990,
+    8259634090,
+    8256336162,
+    8283467062,
+    8445969962,
+    8579898162,
+    8624093062,
+    8514824962,
+    8937969562,
+    8728085662,
+    8708271987,
+    8733504253,
+    8929246553,
+    9168732211,
+    9029927011,
+    9204830154,
+    9116109054,
+    9150419612,
+    9115934212,
+    9004185412,
+    8991781712,
+    8991781712,
+    9020860232,
+    9016573696,
+    9054628296,
+    9094770056,
+    9069137806,
+    9034700286,
+    9029673836
+   ],
+   "dataSource": "yfinance",
+   "why": "bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 10,
+    "hitRate": 0.8,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMEJA"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
