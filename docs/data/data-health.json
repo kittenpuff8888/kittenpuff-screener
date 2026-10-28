@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-28T04:32:17.381125+07:00",
+ "generatedAt": "2026-10-29T02:31:12.987218+07:00",
  "marketDate": "2026-10-27",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-10-28T04:32:01.398810+07:00"
+  "auditedAt": "2026-10-29T02:30:57.346347+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-27T00:35:10.069261+07:00",
-   "marketDate": "2026-10-26",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-27T01:59:05.754140+07:00",
-   "marketDate": "2026-10-26",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-10-26; latest observed OHLCV date was 2026-10-23. The last successful snapshot was preserved."
-  },
   {
    "timestamp": "2026-10-27T03:30:26.487081+07:00",
    "marketDate": "2026-10-26",
@@ -43,13 +31,13 @@
    "message": "Created and validated a new dated snapshot."
   },
   {
-   "timestamp": "2026-10-27T22:33:43.652964+07:00",
+   "timestamp": "2026-10-27T23:56:21.479839+07:00",
    "marketDate": "2026-10-27",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-10-27T23:52:13.554248+07:00",
+   "timestamp": "2026-10-28T01:21:49.659123+07:00",
    "marketDate": "2026-10-27",
    "status": "NO_DATA",
    "message": "No valid IDX session was available for 2026-10-27; latest observed OHLCV date was 2026-10-26. The last successful snapshot was preserved."
@@ -65,6 +53,18 @@
    "marketDate": "2026-10-27",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-10-29T00:54:30.000703+07:00",
+   "marketDate": "2026-10-28",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-10-29T02:29:46.105168+07:00",
+   "marketDate": "2026-10-28",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-10-28; latest observed OHLCV date was 2026-10-27. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,18 +93,10 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-10-28T04:32:03.627433+07:00",
-  "checked": 15,
+  "lastChecked": "2026-10-29T02:31:00.633935+07:00",
+  "checked": 14,
   "failures": [],
   "results": [
-   {
-    "ticker": "ADES",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "AKRA",
-    "status": "ERROR: TypeError"
-   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -114,7 +106,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "ASPR",
+    "ticker": "ASLI",
     "status": "ERROR: TypeError"
    },
    {
@@ -126,27 +118,31 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BDKR",
+    "ticker": "BSML",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "FAST",
+    "ticker": "ELSA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "GEMA",
+    "ticker": "JSMR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "INDX",
+    "ticker": "MEJA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "KAQI",
+    "ticker": "NEST",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SRAJ",
+    "ticker": "SMIL",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "TFCO",
     "status": "ERROR: TypeError"
    },
    {
@@ -154,7 +150,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "YULE",
+    "ticker": "ZATA",
     "status": "ERROR: TypeError"
    }
   ],
