@@ -1,37 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-10-28",
+ "asOf": "2026-10-29",
  "entries": [
-  {
-   "date": "2026-10-13",
-   "ticker": "PNBN",
-   "score": 55,
-   "close": 825.0,
-   "target": 858,
-   "invalidation": 806.85,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-13",
-   "ticker": "TCPI",
-   "score": 55,
-   "close": 2010.0,
-   "target": 3628,
-   "invalidation": 1315,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "ACES",
-   "score": 75,
-   "close": 342.0,
-   "target": 356,
-   "invalidation": 336,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-14",
    "ticker": "CBRE",
@@ -1010,7 +980,7 @@
    "target": 9683,
    "invalidation": 9000,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1019,8 +989,8 @@
    "close": 4800.0,
    "target": 8850,
    "invalidation": 4662,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1029,8 +999,8 @@
    "close": 5200.0,
    "target": 5741,
    "invalidation": 4943,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1040,7 +1010,7 @@
    "target": 115,
    "invalidation": 107,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1050,7 +1020,7 @@
    "target": 242,
    "invalidation": 202,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1060,7 +1030,7 @@
    "target": 5878,
    "invalidation": 5483,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1069,8 +1039,8 @@
    "close": 25300.0,
    "target": 27175,
    "invalidation": 24352,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1080,7 +1050,7 @@
    "target": 1200,
    "invalidation": 1115,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1090,7 +1060,7 @@
    "target": 1081,
    "invalidation": 987,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1099,8 +1069,8 @@
    "close": 280.0,
    "target": 304,
    "invalidation": 273,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1110,7 +1080,7 @@
    "target": 11875,
    "invalidation": 10943,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1119,8 +1089,8 @@
    "close": 3410.0,
    "target": 3774,
    "invalidation": 3246,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "invalidated",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1130,7 +1100,7 @@
    "target": 14,
    "invalidation": 11,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1139,8 +1109,8 @@
    "close": 970.0,
    "target": 1045,
    "invalidation": 943,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1150,7 +1120,7 @@
    "target": 798,
    "invalidation": 741,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1159,8 +1129,8 @@
    "close": 575.0,
    "target": 619,
    "invalidation": 563,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1170,7 +1140,7 @@
    "target": 685,
    "invalidation": 649,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1180,7 +1150,7 @@
    "target": 671,
    "invalidation": 559,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1190,7 +1160,7 @@
    "target": 686,
    "invalidation": 645,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1200,7 +1170,7 @@
    "target": 1527,
    "invalidation": 1429,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1210,7 +1180,7 @@
    "target": 980,
    "invalidation": 907,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1220,7 +1190,7 @@
    "target": 3350,
    "invalidation": 2971,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1230,7 +1200,7 @@
    "target": 367,
    "invalidation": 345,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1240,7 +1210,7 @@
    "target": 438,
    "invalidation": 369,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1250,7 +1220,7 @@
    "target": 276,
    "invalidation": 258,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1260,7 +1230,7 @@
    "target": 35,
    "invalidation": 29,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1270,7 +1240,7 @@
    "target": 250,
    "invalidation": 223,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1279,8 +1249,8 @@
    "close": 56.0,
    "target": 80,
    "invalidation": 53.46,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1290,7 +1260,7 @@
    "target": 1352,
    "invalidation": 1153.35,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1300,7 +1270,7 @@
    "target": 3180,
    "invalidation": 2821.5,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1309,8 +1279,8 @@
    "close": 174.0,
    "target": 192,
    "invalidation": 151.47,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1320,7 +1290,7 @@
    "target": 822,
    "invalidation": 668.25,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1330,7 +1300,7 @@
    "target": 526,
    "invalidation": 463.32,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1340,7 +1310,7 @@
    "target": 1072,
    "invalidation": 762.3,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1350,7 +1320,7 @@
    "target": 750,
    "invalidation": 658.35,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1360,7 +1330,7 @@
    "target": 1382,
    "invalidation": 1178.1,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1370,7 +1340,7 @@
    "target": 2610,
    "invalidation": 2088.9,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1379,8 +1349,8 @@
    "close": 105.0,
    "target": 131,
    "invalidation": 89.1,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1390,7 +1360,7 @@
    "target": 486,
    "invalidation": 411.84,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-22",
@@ -1400,7 +1370,7 @@
    "target": 1872,
    "invalidation": 1628.55,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-23",
@@ -1410,7 +1380,7 @@
    "target": 196,
    "invalidation": 172,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1420,7 +1390,7 @@
    "target": 1045,
    "invalidation": 979,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1430,7 +1400,7 @@
    "target": 242,
    "invalidation": 202,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1440,7 +1410,7 @@
    "target": 1081,
    "invalidation": 1007,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1450,7 +1420,7 @@
    "target": 304,
    "invalidation": 273,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1460,7 +1430,7 @@
    "target": 11875,
    "invalidation": 10960,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1469,8 +1439,8 @@
    "close": 3420.0,
    "target": 3774,
    "invalidation": 3246,
-   "outcome": "open",
-   "barsObserved": 3
+   "outcome": "invalidated",
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1480,7 +1450,7 @@
    "target": 235,
    "invalidation": 199,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1490,7 +1460,7 @@
    "target": 724,
    "invalidation": 651,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1500,7 +1470,7 @@
    "target": 686,
    "invalidation": 645,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1510,7 +1480,7 @@
    "target": 1591,
    "invalidation": 1433,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1520,7 +1490,7 @@
    "target": 372,
    "invalidation": 317,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1530,7 +1500,7 @@
    "target": 3655,
    "invalidation": 3110,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1540,7 +1510,7 @@
    "target": 438,
    "invalidation": 370,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1550,7 +1520,7 @@
    "target": 272,
    "invalidation": 250,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1560,7 +1530,7 @@
    "target": 26716,
    "invalidation": 24076,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1570,7 +1540,7 @@
    "target": 32,
    "invalidation": 25,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1580,7 +1550,7 @@
    "target": 41,
    "invalidation": 26,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1590,7 +1560,7 @@
    "target": 2798,
    "invalidation": 2610,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1600,7 +1570,7 @@
    "target": 911,
    "invalidation": 825,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1610,7 +1580,7 @@
    "target": 1656,
    "invalidation": 1435,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1620,7 +1590,7 @@
    "target": 286,
    "invalidation": 262,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1630,7 +1600,7 @@
    "target": 340,
    "invalidation": 270,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1640,7 +1610,7 @@
    "target": 409,
    "invalidation": 360,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1650,7 +1620,7 @@
    "target": 35,
    "invalidation": 30,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1660,7 +1630,7 @@
    "target": 116,
    "invalidation": 104,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1670,7 +1640,7 @@
    "target": 1729,
    "invalidation": 1633,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1680,7 +1650,7 @@
    "target": 638,
    "invalidation": 470,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1690,7 +1660,7 @@
    "target": 41,
    "invalidation": 35,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1700,7 +1670,7 @@
    "target": 408,
    "invalidation": 369,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1710,7 +1680,7 @@
    "target": 2600,
    "invalidation": 2088.9,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1720,7 +1690,7 @@
    "target": 1352,
    "invalidation": 1153.35,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1730,7 +1700,7 @@
    "target": 1108,
    "invalidation": 881.1,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1740,7 +1710,7 @@
    "target": 390,
    "invalidation": 237.6,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1750,7 +1720,7 @@
    "target": 8850,
    "invalidation": 4690,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1760,7 +1730,7 @@
    "target": 822,
    "invalidation": 668.25,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1770,7 +1740,7 @@
    "target": 94,
    "invalidation": 72.27,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1780,7 +1750,7 @@
    "target": 131,
    "invalidation": 89.1,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1790,7 +1760,7 @@
    "target": 486,
    "invalidation": 411.84,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1800,7 +1770,7 @@
    "target": 625,
    "invalidation": 509.85,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1810,7 +1780,7 @@
    "target": 534,
    "invalidation": 399.96,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-23",
@@ -1820,7 +1790,7 @@
    "target": 1872,
    "invalidation": 1628.55,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-10-26",
@@ -1830,7 +1800,7 @@
    "target": 1452,
    "invalidation": 1372,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1840,7 +1810,7 @@
    "target": 196,
    "invalidation": 172,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1850,7 +1820,7 @@
    "target": 34100,
    "invalidation": 31234.5,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1859,8 +1829,8 @@
    "close": 151.0,
    "target": 167,
    "invalidation": 144,
-   "outcome": "open",
-   "barsObserved": 2
+   "outcome": "invalidated",
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1870,7 +1840,7 @@
    "target": 454,
    "invalidation": 382,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1880,7 +1850,7 @@
    "target": 589,
    "invalidation": 488.03999999999996,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1890,7 +1860,7 @@
    "target": 5482,
    "invalidation": 4692.6,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1900,7 +1870,7 @@
    "target": 1108,
    "invalidation": 881.1,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1910,7 +1880,7 @@
    "target": 390,
    "invalidation": 237.6,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1920,7 +1890,7 @@
    "target": 815,
    "invalidation": 668.25,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1930,7 +1900,7 @@
    "target": 94,
    "invalidation": 76.23,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1940,7 +1910,7 @@
    "target": 301,
    "invalidation": 259.38,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1950,7 +1920,7 @@
    "target": 94,
    "invalidation": 72.27,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-26",
@@ -1960,7 +1930,7 @@
    "target": 131,
    "invalidation": 89.1,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-10-27",
@@ -1970,7 +1940,7 @@
    "target": 768,
    "invalidation": 653.4,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-27",
@@ -1980,7 +1950,7 @@
    "target": 449,
    "invalidation": 394.02,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-27",
@@ -1990,7 +1960,7 @@
    "target": 390,
    "invalidation": 237.6,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-10-27",
@@ -2000,14 +1970,44 @@
    "target": 130,
    "invalidation": 89.1,
    "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "INDY",
+   "score": 60,
+   "close": 1995.0,
+   "target": 2375,
+   "invalidation": 1890.9,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "BACH",
+   "score": 55,
+   "close": 238.0,
+   "target": 302,
+   "invalidation": 225.72,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "MEJA",
+   "score": 55,
+   "close": 101.0,
+   "target": 130,
+   "invalidation": 89.1,
+   "outcome": "open",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 534,
-  "decided": 409,
+  "total": 537,
+  "decided": 414,
   "targetFirst": 130,
-  "hitRate": 0.318
+  "hitRate": 0.314
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
