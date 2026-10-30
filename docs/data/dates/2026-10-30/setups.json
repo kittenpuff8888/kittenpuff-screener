@@ -1,0 +1,334 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-10-30",
+ "generatedAt": "2026-10-31T03:31:36.461365+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "BDKR",
+   "name": "Berdikari Pondasi Perkasa Tbk.",
+   "sector": "Others",
+   "close": 150.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 152,
+   "invalidation": 148.5,
+   "target": 190,
+   "medianValueTraded20": 5845812600,
+   "rvol": 0.1913372236377086,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    3712529519,
+    3709039786,
+    3712058486,
+    3721902086,
+    3725313619,
+    3749136499,
+    3775806772,
+    3779262072,
+    3786392772,
+    3782729512,
+    3836055356,
+    3951662556,
+    3935836006,
+    3945013681,
+    3930369110,
+    3882704417,
+    3904753951,
+    3875402294,
+    3871910171,
+    3888280399,
+    3888280399,
+    3907869999,
+    3905159332,
+    3920168632,
+    3966768232,
+    3957520832,
+    3962876682,
+    3957707315,
+    3947188224,
+    3939796824
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABDKR"
+  },
+  {
+   "ticker": "SRSN",
+   "name": "Indo Acidatama Tbk",
+   "sector": "Others",
+   "close": 99.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 98,
+   "invalidation": 96.03,
+   "target": 124,
+   "medianValueTraded20": 18861343200,
+   "rvol": 0.7292786697168862,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -522084761,
+    -945718873,
+    -865033053,
+    -953864653,
+    -1219745353,
+    -1382862826,
+    -1088770526,
+    -904395215,
+    -871505348,
+    -1046912598,
+    -838358336,
+    -1155533799,
+    -1180119154,
+    -1393507654,
+    -1353272294,
+    -1533217764,
+    -1402571992,
+    -1440974220,
+    -1454146177,
+    -1632083377,
+    -1518173077,
+    -1404278532,
+    -1257975379,
+    -1099299939,
+    -1173252289,
+    -1233686789,
+    -1353741955,
+    -1386365073,
+    -1441713073,
+    -1504447702
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 5,
+    "hitRate": 0.8,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASRSN"
+  },
+  {
+   "ticker": "HRTA",
+   "name": "Hartadinata Abadi Tbk.",
+   "sector": "Others",
+   "close": 1430.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1419,
+   "invalidation": 1390.95,
+   "target": 1812,
+   "medianValueTraded20": 25177438000,
+   "rvol": 0.7438526385512516,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -994895433,
+    -990869267,
+    -978975553,
+    -974037553,
+    -982170253,
+    -991861953,
+    -986047487,
+    -979388598,
+    -983487898,
+    -984565173,
+    -984565173,
+    -982226623,
+    -986118523,
+    -994030023,
+    -977940523,
+    -990296723,
+    -1002037123,
+    -1005104948,
+    -1014603232,
+    -1048948732,
+    -1061454082,
+    -1047653624,
+    -1027002448,
+    -1018618898,
+    -1024353134,
+    -1028657689,
+    -1036715389,
+    -1034431629,
+    -1040587529,
+    -1044800171
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AHRTA"
+  },
+  {
+   "ticker": "APLN",
+   "name": "Agung Podomoro Land Tbk.",
+   "sector": "Others",
+   "close": 81.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 79,
+   "invalidation": 77.22,
+   "target": 94,
+   "medianValueTraded20": 1894071200,
+   "rvol": 0.6112922251885102,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -372948856,
+    -375847142,
+    -373617113,
+    -373617113,
+    -381476542,
+    -426863442,
+    -414491142,
+    -435605642,
+    -442029362,
+    -460750562,
+    -450129602,
+    -440422102,
+    -448901968,
+    -463771835,
+    -457125035,
+    -471388835,
+    -463104735,
+    -463104735,
+    -472397002,
+    -499958902,
+    -532470102,
+    -504234835,
+    -504234835,
+    -492973155,
+    -489812155,
+    -493567635,
+    -502883702,
+    -500393802,
+    -509445202,
+    -502922202
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.67,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AAPLN"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
