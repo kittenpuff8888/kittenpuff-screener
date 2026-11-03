@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-04T01:42:12.082656+07:00",
+ "generatedAt": "2026-11-04T03:33:26.461846+07:00",
  "marketDate": "2026-11-02",
  "universe": {
   "size": 921,
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-04T01:42:02.819524+07:00"
+  "auditedAt": "2026-11-04T03:33:10.352223+07:00"
  },
  "runLog": [
   {
@@ -55,13 +55,13 @@
    "message": "Created and validated a new dated snapshot."
   },
   {
-   "timestamp": "2026-11-04T00:26:23.456172+07:00",
+   "timestamp": "2026-11-04T01:51:28.906089+07:00",
    "marketDate": "2026-11-03",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-11-04T01:41:09.630533+07:00",
+   "timestamp": "2026-11-04T03:31:32.866836+07:00",
    "marketDate": "2026-11-03",
    "status": "NO_DATA",
    "message": "No valid IDX session was available for 2026-11-03; latest observed OHLCV date was 2026-11-02. The last successful snapshot was preserved."
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-04T01:42:05.212918+07:00",
+  "lastChecked": "2026-11-04T03:33:13.266190+07:00",
   "checked": 14,
   "failures": [],
   "results": [
@@ -118,15 +118,19 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "DSSA",
+    "ticker": "GTRA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MBSS",
+    "ticker": "IKPM",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MCOR",
+    "ticker": "PDPP",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "RELI",
     "status": "ERROR: TypeError"
    },
    {
@@ -134,11 +138,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SDPC",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "TAMA",
+    "ticker": "TFAS",
     "status": "ERROR: TypeError"
    },
    {
