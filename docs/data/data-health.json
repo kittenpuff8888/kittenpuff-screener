@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-03T05:47:09.112178+07:00",
- "marketDate": "2026-10-30",
+ "generatedAt": "2026-11-03T07:12:54.257002+07:00",
+ "marketDate": "2026-11-02",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-03T05:46:57.473493+07:00"
+  "auditedAt": "2026-11-03T07:12:40.386850+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-10-30T03:32:08.896238+07:00",
-   "marketDate": "2026-10-29",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-10-30T04:58:12.493868+07:00",
-   "marketDate": "2026-10-29",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-10-31T00:44:30.609008+07:00",
    "marketDate": "2026-10-30",
@@ -65,6 +53,18 @@
    "marketDate": "2026-11-02",
    "status": "NO_DATA",
    "message": "No valid IDX session was available for 2026-11-02; latest observed OHLCV date was 2026-10-30. The last successful snapshot was preserved."
+  },
+  {
+   "timestamp": "2026-11-03T05:49:35.892817+07:00",
+   "marketDate": "2026-11-02",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-03T07:10:55.406995+07:00",
+   "marketDate": "2026-11-02",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-03T05:47:00.949238+07:00",
+  "lastChecked": "2026-11-03T07:12:42.304783+07:00",
   "checked": 14,
   "failures": [],
   "results": [
@@ -122,15 +122,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BELL",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "BSDE",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "DKHH",
+    "ticker": "DSSA",
     "status": "ERROR: TypeError"
    },
    {
@@ -138,7 +130,15 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MMLP",
+    "ticker": "MBSS",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "MCOR",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "SDPC",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,11 +146,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TLKM",
+    "ticker": "TAMA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "YELO",
+    "ticker": "TLKM",
     "status": "ERROR: TypeError"
    }
   ],
@@ -163,73 +163,73 @@
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-30",
-    "close": 2620.0,
-    "volume": 73951200.0,
+    "date": "2026-11-02",
+    "close": 2580.0,
+    "volume": 77403100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-30",
-    "close": 4800.0,
-    "volume": 51365300.0,
+    "date": "2026-11-02",
+    "close": 4860.0,
+    "volume": 27253600.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "close": 4980.0,
-    "volume": 286386300.0,
+    "volume": 196618100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-30",
-    "close": 2800.0,
-    "volume": 332954600.0,
+    "date": "2026-11-02",
+    "close": 2820.0,
+    "volume": 179257800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-30",
-    "close": 1980.0,
-    "volume": 327989800.0,
+    "date": "2026-11-02",
+    "close": 1960.0,
+    "volume": 209433900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-30",
-    "close": 150.0,
+    "date": "2026-11-02",
+    "close": 140.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SRSN",
-    "date": "2026-10-30",
-    "close": 99.0,
+    "ticker": "RSCH",
+    "date": "2026-11-02",
+    "close": 408.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "HRTA",
-    "date": "2026-10-30",
-    "close": 1430.0,
+    "ticker": "UVCR",
+    "date": "2026-11-02",
+    "close": 169.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "APLN",
-    "date": "2026-10-30",
-    "close": 81.0,
+    "ticker": "VERN",
+    "date": "2026-11-02",
+    "close": 169.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 538,
-   "decided": 425,
+   "total": 542,
+   "decided": 428,
    "targetFirst": 130,
-   "hitRate": 0.306
+   "hitRate": 0.304
   }
  },
  "manualSpotCheck": {
@@ -237,64 +237,64 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-10-30",
-    "close": 2620.0,
-    "volume": 73951200.0,
+    "date": "2026-11-02",
+    "close": 2580.0,
+    "volume": 77403100.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-10-30",
-    "close": 4800.0,
-    "volume": 51365300.0,
+    "date": "2026-11-02",
+    "close": 4860.0,
+    "volume": 27253600.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-10-30",
+    "date": "2026-11-02",
     "close": 4980.0,
-    "volume": 286386300.0,
+    "volume": 196618100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-10-30",
-    "close": 2800.0,
-    "volume": 332954600.0,
+    "date": "2026-11-02",
+    "close": 2820.0,
+    "volume": 179257800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-10-30",
-    "close": 1980.0,
-    "volume": 327989800.0,
+    "date": "2026-11-02",
+    "close": 1960.0,
+    "volume": 209433900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BDKR",
-    "date": "2026-10-30",
-    "close": 150.0,
+    "date": "2026-11-02",
+    "close": 140.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SRSN",
-    "date": "2026-10-30",
-    "close": 99.0,
+    "ticker": "RSCH",
+    "date": "2026-11-02",
+    "close": 408.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "HRTA",
-    "date": "2026-10-30",
-    "close": 1430.0,
+    "ticker": "UVCR",
+    "date": "2026-11-02",
+    "close": 169.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "APLN",
-    "date": "2026-10-30",
-    "close": 81.0,
+    "ticker": "VERN",
+    "date": "2026-11-02",
+    "close": 169.0,
     "volume": null,
     "source": "yfinance"
    }

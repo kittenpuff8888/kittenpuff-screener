@@ -1,0 +1,334 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-02",
+ "generatedAt": "2026-11-03T07:12:53.579767+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "BDKR",
+   "name": "Berdikari Pondasi Perkasa Tbk.",
+   "sector": "Others",
+   "close": 140.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 141,
+   "invalidation": 138.6,
+   "target": 185,
+   "medianValueTraded20": 5223236400,
+   "rvol": 0.2433595438291901,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    3711129086,
+    3714147786,
+    3723991386,
+    3727402919,
+    3751225799,
+    3777896072,
+    3781351372,
+    3788482072,
+    3784818812,
+    3838144656,
+    3953751856,
+    3937925306,
+    3947102981,
+    3932458410,
+    3884793717,
+    3906843251,
+    3877491594,
+    3873999471,
+    3890369699,
+    3890369699,
+    3909959299,
+    3907248632,
+    3922257932,
+    3968857532,
+    3959610132,
+    3964965982,
+    3959796615,
+    3949277524,
+    3941886124,
+    3932618024
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 8,
+    "hitRate": 0.88,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABDKR"
+  },
+  {
+   "ticker": "RSCH",
+   "name": "Charlie Hospital Semarang Tbk.",
+   "sector": "Others",
+   "close": 408.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 410,
+   "invalidation": 401.94,
+   "target": 520,
+   "medianValueTraded20": 11431046000,
+   "rvol": 0.6911197308448139,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    193055364,
+    218725564,
+    212393939,
+    212393939,
+    240514280,
+    256851406,
+    273337486,
+    289033580,
+    300003026,
+    315133706,
+    339720006,
+    352526963,
+    356894463,
+    371263396,
+    375911216,
+    375911216,
+    371904196,
+    377816563,
+    371654963,
+    371654963,
+    393681392,
+    413390092,
+    429685292,
+    422785092,
+    403107892,
+    398663092,
+    393734592,
+    384487470,
+    382913370,
+    372725617
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.57,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ARSCH"
+  },
+  {
+   "ticker": "UVCR",
+   "name": "Trimegah Karya Pratama Tbk.",
+   "sector": "Others",
+   "close": 169.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 164,
+   "invalidation": 160.38,
+   "target": 235,
+   "medianValueTraded20": 11503240000,
+   "rvol": 1.518494009060116,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    483048898,
+    473072244,
+    574492828,
+    867702928,
+    1047780777,
+    1167901958,
+    1105801658,
+    1180709558,
+    1189055373,
+    1184473557,
+    1215510007,
+    1197830287,
+    1284847787,
+    1272999030,
+    1281247096,
+    1248700708,
+    1213804068,
+    1159227490,
+    1159227490,
+    1159227490,
+    1226842074,
+    1238716774,
+    1247973134,
+    1238331009,
+    1211192109,
+    1189986776,
+    1132470576,
+    1097684276,
+    1076513126,
+    1061834144
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Internal Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 11,
+    "hitRate": 0.64,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AUVCR"
+  },
+  {
+   "ticker": "VERN",
+   "name": "Verona Indah Pictures Tbk.",
+   "sector": "Others",
+   "close": 169.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 165,
+   "invalidation": 161.37,
+   "target": 202,
+   "medianValueTraded20": 1921585200,
+   "rvol": 0.09462984875821492,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -537061730,
+    -531342230,
+    -531342230,
+    -533671490,
+    -531604856,
+    -523005390,
+    -550112290,
+    -567166190,
+    -564594904,
+    -562351171,
+    -539690537,
+    -516856895,
+    -506546195,
+    -478167695,
+    -476584895,
+    -466685645,
+    -466685645,
+    -468222878,
+    -464943025,
+    -459615942,
+    -451399542,
+    -446038403,
+    -437262728,
+    -422605028,
+    -421534648,
+    -422664028,
+    -418621788,
+    -419187179,
+    -417417912,
+    -417417912
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AVERN"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
