@@ -1,47 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-11-02",
+ "asOf": "2026-11-04",
  "entries": [
-  {
-   "date": "2026-10-14",
-   "ticker": "PSAB",
-   "score": 70,
-   "close": 500.0,
-   "target": 534,
-   "invalidation": 489.06,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "BINA",
-   "score": 65,
-   "close": 4000.0,
-   "target": 4160,
-   "invalidation": 3890.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "TSPC",
-   "score": 65,
-   "close": 2630.0,
-   "target": 2685,
-   "invalidation": 2508.8,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "UNVR",
-   "score": 65,
-   "close": 1615.0,
-   "target": 1610,
-   "invalidation": 1549.35,
-   "outcome": "target",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-14",
    "ticker": "AMRT",
@@ -1890,7 +1850,7 @@
    "target": 768,
    "invalidation": 653.4,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-27",
@@ -1900,7 +1860,7 @@
    "target": 449,
    "invalidation": 394.02,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-27",
@@ -1909,8 +1869,8 @@
    "close": 316.0,
    "target": 390,
    "invalidation": 237.6,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "invalidated",
+   "barsObserved": 5
   },
   {
    "date": "2026-10-27",
@@ -1920,7 +1880,7 @@
    "target": 130,
    "invalidation": 89.1,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-28",
@@ -1930,7 +1890,7 @@
    "target": 2375,
    "invalidation": 1890.9,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-28",
@@ -1940,7 +1900,7 @@
    "target": 302,
    "invalidation": 225.72,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-28",
@@ -1950,7 +1910,7 @@
    "target": 130,
    "invalidation": 89.1,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-29",
@@ -1960,7 +1920,7 @@
    "target": 1280,
    "invalidation": 930.6,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-10-30",
@@ -1970,7 +1930,7 @@
    "target": 190,
    "invalidation": 148.5,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-10-30",
@@ -1980,7 +1940,7 @@
    "target": 124,
    "invalidation": 96.03,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-10-30",
@@ -1990,7 +1950,7 @@
    "target": 1812,
    "invalidation": 1390.95,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-10-30",
@@ -1999,15 +1959,55 @@
    "close": 81.0,
    "target": 94,
    "invalidation": 77.22,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "BDKR",
+   "score": 70,
+   "close": 140.0,
+   "target": 185,
+   "invalidation": 138.6,
+   "outcome": "invalidated",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "RSCH",
+   "score": 70,
+   "close": 408.0,
+   "target": 520,
+   "invalidation": 401.94,
+   "outcome": "invalidated",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "UVCR",
+   "score": 65,
+   "close": 169.0,
+   "target": 235,
+   "invalidation": 160.38,
+   "outcome": "invalidated",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "VERN",
+   "score": 65,
+   "close": 169.0,
+   "target": 202,
+   "invalidation": 161.37,
+   "outcome": "invalidated",
+   "barsObserved": 2
   }
  ],
  "summary": {
-  "total": 542,
-  "decided": 428,
+  "total": 546,
+  "decided": 434,
   "targetFirst": 130,
-  "hitRate": 0.304
+  "hitRate": 0.3
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
