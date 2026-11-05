@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-05T06:12:32.231816+07:00",
+ "generatedAt": "2026-11-06T01:48:42.832151+07:00",
  "marketDate": "2026-11-04",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-05T06:12:18.230469+07:00"
+  "auditedAt": "2026-11-06T01:48:29.317127+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-04T01:51:28.906089+07:00",
-   "marketDate": "2026-11-03",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-11-04T03:31:32.866836+07:00",
-   "marketDate": "2026-11-03",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-11-03; latest observed OHLCV date was 2026-11-02. The last successful snapshot was preserved."
-  },
   {
    "timestamp": "2026-11-04T03:41:46.550706+07:00",
    "marketDate": "2026-11-03",
@@ -65,6 +53,18 @@
    "marketDate": "2026-11-04",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-11-06T00:38:21.584859+07:00",
+   "marketDate": "2026-11-05",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-06T01:47:07.574526+07:00",
+   "marketDate": "2026-11-05",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-11-05; latest observed OHLCV date was 2026-11-04. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,8 +93,8 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-05T06:12:20.063588+07:00",
-  "checked": 14,
+  "lastChecked": "2026-11-06T01:48:31.071596+07:00",
+  "checked": 15,
   "failures": [],
   "results": [
    {
@@ -114,27 +114,31 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "BBSI",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "BCAP",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "BDKR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BDMN",
+    "ticker": "BEST",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BEBS",
+    "ticker": "IKAI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "HMSP",
+    "ticker": "MGRO",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MAHA",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "MYTX",
+    "ticker": "PEHA",
     "status": "ERROR: TypeError"
    },
    {
@@ -142,11 +146,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TLKM",
+    "ticker": "TCID",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "UVCR",
+    "ticker": "TLKM",
     "status": "ERROR: TypeError"
    },
    {
