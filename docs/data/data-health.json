@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T04:29:03.558976+07:00",
- "marketDate": "2026-11-04",
+ "generatedAt": "2026-11-10T05:54:57.022345+07:00",
+ "marketDate": "2026-11-09",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-10T04:28:47.646773+07:00"
+  "auditedAt": "2026-11-10T05:54:43.046174+07:00"
  },
  "runLog": [
   {
@@ -55,16 +55,16 @@
    "message": "No valid IDX session was available for 2026-11-06; latest observed OHLCV date was 2026-11-05. The last successful snapshot was preserved."
   },
   {
-   "timestamp": "2026-11-10T03:01:50.143395+07:00",
+   "timestamp": "2026-11-10T04:31:40.929477+07:00",
    "marketDate": "2026-11-09",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-11-10T04:27:09.225894+07:00",
+   "timestamp": "2026-11-10T05:52:36.734202+07:00",
    "marketDate": "2026-11-09",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-11-09; latest observed OHLCV date was 2026-11-06. The last successful snapshot was preserved."
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -75,8 +75,8 @@
  },
  "processingSummary": {
   "totalScanned": 962,
-  "ok": 912,
-  "partial": 9,
+  "ok": 913,
+  "partial": 8,
   "noData": 41
  },
  "ksei": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-10T04:28:50.538249+07:00",
+  "lastChecked": "2026-11-10T05:54:44.907261+07:00",
   "checked": 15,
   "failures": [],
   "results": [
@@ -161,86 +161,86 @@
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 9,
+  "count": 7,
   "scanned": 921,
   "quarantined": 7,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-04",
-    "close": 2600.0,
-    "volume": 134090400.0,
+    "date": "2026-11-09",
+    "close": 2710.0,
+    "volume": 86234000.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-04",
-    "close": 4900.0,
-    "volume": 39537200.0,
+    "date": "2026-11-09",
+    "close": 5150.0,
+    "volume": 68845000.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-04",
-    "close": 4930.0,
-    "volume": 269099800.0,
+    "date": "2026-11-09",
+    "close": 5325.0,
+    "volume": 281069100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-04",
-    "close": 2690.0,
-    "volume": 220395600.0,
+    "date": "2026-11-09",
+    "close": 2820.0,
+    "volume": 219676000.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-04",
-    "close": 1885.0,
-    "volume": 188008700.0,
+    "date": "2026-11-09",
+    "close": 2050.0,
+    "volume": 193182000.0,
     "source": "yfinance"
    },
    {
-    "ticker": "RSCH",
-    "date": "2026-11-04",
-    "close": 354.0,
+    "ticker": "CMNT",
+    "date": "2026-11-09",
+    "close": 740.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MGRO",
-    "date": "2026-11-04",
+    "date": "2026-11-09",
     "close": 700.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "VERN",
-    "date": "2026-11-04",
-    "close": 147.0,
+    "ticker": "SMDR",
+    "date": "2026-11-09",
+    "close": 328.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BDKR",
-    "date": "2026-11-04",
-    "close": 122.0,
+    "ticker": "UNSP",
+    "date": "2026-11-09",
+    "close": 226.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BEST",
-    "date": "2026-11-04",
-    "close": 95.0,
+    "ticker": "BUKA",
+    "date": "2026-11-09",
+    "close": 97.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 546,
-   "decided": 434,
+   "total": 555,
+   "decided": 437,
    "targetFirst": 130,
-   "hitRate": 0.3
+   "hitRate": 0.297
   }
  },
  "manualSpotCheck": {
@@ -248,71 +248,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-04",
-    "close": 2600.0,
-    "volume": 134090400.0,
+    "date": "2026-11-09",
+    "close": 2710.0,
+    "volume": 86234000.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-04",
-    "close": 4900.0,
-    "volume": 39537200.0,
+    "date": "2026-11-09",
+    "close": 5150.0,
+    "volume": 68845000.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-04",
-    "close": 4930.0,
-    "volume": 269099800.0,
+    "date": "2026-11-09",
+    "close": 5325.0,
+    "volume": 281069100.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-04",
-    "close": 2690.0,
-    "volume": 220395600.0,
+    "date": "2026-11-09",
+    "close": 2820.0,
+    "volume": 219676000.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-04",
-    "close": 1885.0,
-    "volume": 188008700.0,
+    "date": "2026-11-09",
+    "close": 2050.0,
+    "volume": 193182000.0,
     "source": "yfinance"
    },
    {
-    "ticker": "RSCH",
-    "date": "2026-11-04",
-    "close": 354.0,
+    "ticker": "CMNT",
+    "date": "2026-11-09",
+    "close": 740.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MGRO",
-    "date": "2026-11-04",
+    "date": "2026-11-09",
     "close": 700.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "VERN",
-    "date": "2026-11-04",
-    "close": 147.0,
+    "ticker": "SMDR",
+    "date": "2026-11-09",
+    "close": 328.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BDKR",
-    "date": "2026-11-04",
-    "close": 122.0,
+    "ticker": "UNSP",
+    "date": "2026-11-09",
+    "close": 226.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "BEST",
-    "date": "2026-11-04",
-    "close": 95.0,
+    "ticker": "BUKA",
+    "date": "2026-11-09",
+    "close": 97.0,
     "volume": null,
     "source": "yfinance"
    }

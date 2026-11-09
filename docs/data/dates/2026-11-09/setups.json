@@ -1,0 +1,546 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-09",
+ "generatedAt": "2026-11-10T05:54:56.319141+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 7,
+ "setups": [
+  {
+   "ticker": "CMNT",
+   "name": "Cemindo Gemilang Tbk.",
+   "sector": "Others",
+   "close": 740.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 717,
+   "invalidation": 702.9,
+   "target": 742,
+   "medianValueTraded20": 11883644000,
+   "rvol": 1.135308187574736,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    7060265457,
+    7064986357,
+    7064986357,
+    7069271323,
+    7063757473,
+    7061313913,
+    7065639080,
+    7065639080,
+    7065639080,
+    7065639080,
+    7079705180,
+    7095656380,
+    7111006880,
+    7130294980,
+    7140175030,
+    7143532480,
+    7150740580,
+    7150740580,
+    7150740580,
+    7160125600,
+    7138692100,
+    7141571020,
+    7124159520,
+    7139819920,
+    7143594440,
+    7162251040,
+    7153991840,
+    7147751273,
+    7156182807,
+    7164730057
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 30,
+    "hitRate": 0.87,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACMNT"
+  },
+  {
+   "ticker": "MGRO",
+   "name": "Mahkota Group Tbk.",
+   "sector": "Others",
+   "close": 700.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 682,
+   "invalidation": 668.25,
+   "target": 705,
+   "medianValueTraded20": 2291454000,
+   "rvol": 0.08450274848285652,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1319583706,
+    1318664966,
+    1321072866,
+    1324783966,
+    1327386216,
+    1325858783,
+    1328136733,
+    1330436183,
+    1335030783,
+    1331394183,
+    1335242283,
+    1336748716,
+    1340871916,
+    1342482516,
+    1343304266,
+    1344972999,
+    1344972999,
+    1346909439,
+    1351224739,
+    1350066506,
+    1351190006,
+    1354669406,
+    1358357106,
+    1362175606,
+    1364911006,
+    1364911006,
+    1367985306,
+    1370563206,
+    1373875806,
+    1374141906
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 17,
+    "hitRate": 0.65,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMGRO"
+  },
+  {
+   "ticker": "SMDR",
+   "name": "Samudera Indonesia  Tbk.",
+   "sector": "Others",
+   "close": 328.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 321,
+   "invalidation": 314.82,
+   "target": 367,
+   "medianValueTraded20": 10210120200,
+   "rvol": 0.2720676208449788,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1291790540,
+    -1304417340,
+    -1277404940,
+    -1290232583,
+    -1278822203,
+    -1204329183,
+    -1240876083,
+    -1230656583,
+    -1223635297,
+    -1257179297,
+    -1237778583,
+    -1249034683,
+    -1284263397,
+    -1273020597,
+    -1257377806,
+    -1225646028,
+    -1204037308,
+    -1189806999,
+    -1181984139,
+    -1178612819,
+    -1185807973,
+    -1152492673,
+    -1164291073,
+    -1249540873,
+    -1209455350,
+    -1227756250,
+    -1218948050,
+    -1239597750,
+    -1235614383,
+    -1233702643
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 8,
+    "hitRate": 0.88,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASMDR"
+  },
+  {
+   "ticker": "UNSP",
+   "name": "Bakrie Sumatera Plantations Tb",
+   "sector": "Others",
+   "close": 226.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 220,
+   "invalidation": 215.82,
+   "target": 278,
+   "medianValueTraded20": 2256264000,
+   "rvol": 0.3451123804078294,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    22402132,
+    23846792,
+    25568817,
+    44249048,
+    37001571,
+    33431611,
+    38558958,
+    25522508,
+    27361085,
+    15078171,
+    19957560,
+    17265380,
+    13799346,
+    13799346,
+    13799346,
+    19213776,
+    16566156,
+    10777756,
+    23426161,
+    13517540,
+    -1992560,
+    6703765,
+    -1283635,
+    -4201035,
+    -3016100,
+    -9205300,
+    -1371050,
+    503410,
+    5055190,
+    1578590
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 3,
+    "hitRate": 0.33,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AUNSP"
+  },
+  {
+   "ticker": "BUKA",
+   "name": "Bukalapak.com Tbk.",
+   "sector": "Others",
+   "close": 97.0,
+   "score": 55,
+   "components": {
+    "location": 0,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 91,
+   "invalidation": 88.2,
+   "target": 104,
+   "medianValueTraded20": 9763535000,
+   "rvol": 0.116540207062097,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -17487164592,
+    -17473161532,
+    -17503047482,
+    -17569891782,
+    -17525424432,
+    -17542614132,
+    -17557781798,
+    -17639422538,
+    -17639422538,
+    -17597177538,
+    -17528531498,
+    -17508592865,
+    -17458038125,
+    -17409895445,
+    -17271655172,
+    -17045687744,
+    -16822737944,
+    -16677658544,
+    -16899644624,
+    -16873437224,
+    -17059292924,
+    -17075145664,
+    -17075145664,
+    -17136121964,
+    -17236776964,
+    -17288215864,
+    -17243436064,
+    -17230602214,
+    -17254434880,
+    -17260087580
+   ],
+   "dataSource": "yfinance",
+   "why": "bullish CHoCH (Internal Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 6,
+    "hitRate": 0.67,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABUKA"
+  },
+  {
+   "ticker": "MSTI",
+   "name": "Mastersystem Infotama Tbk.",
+   "sector": "Others",
+   "close": 1110.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 1096,
+   "invalidation": 1074.15,
+   "target": 1205,
+   "medianValueTraded20": 1515150000,
+   "rvol": 1.288575387328379,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -70554279,
+    -70354429,
+    -70518754,
+    -70723620,
+    -70228970,
+    -70228970,
+    -69881570,
+    -69252170,
+    -70241670,
+    -70241670,
+    -70113237,
+    -69570637,
+    -69570637,
+    -70989327,
+    -72247407,
+    -71777673,
+    -72546492,
+    -72090292,
+    -72447642,
+    -73404375,
+    -74352836,
+    -73998936,
+    -74372076,
+    -72455076,
+    -71862076,
+    -72535476,
+    -72740256,
+    -72556356,
+    -71807999,
+    -72114899
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 10,
+    "hitRate": 0.2,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMSTI"
+  },
+  {
+   "ticker": "SGER",
+   "name": "Sumber Global Energy Tbk.",
+   "sector": "Others",
+   "close": 630.0,
+   "score": 55,
+   "components": {
+    "location": 0,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 601,
+   "invalidation": 589.05,
+   "target": 732,
+   "medianValueTraded20": 35733600000,
+   "rvol": 1.062779402353348,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    9531815027,
+    9489325227,
+    9489325227,
+    9476787460,
+    9522236960,
+    9558585346,
+    9544945779,
+    9550741939,
+    9582901639,
+    9582901639,
+    9603430973,
+    9616378713,
+    9637163013,
+    9646732618,
+    9662605007,
+    9734066398,
+    9755543664,
+    9879723564,
+    9936017180,
+    9853608480,
+    9829814330,
+    9857390758,
+    9838575208,
+    9861159008,
+    9822664108,
+    9776152408,
+    9749281908,
+    9745520931,
+    9716090074,
+    9706080662
+   ],
+   "dataSource": "yfinance",
+   "why": "bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.89,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASGER"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}

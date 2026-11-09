@@ -1,9 +1,9 @@
 {
   "schemaVersion": 5,
-  "latestMarketDate": "2026-11-04",
-  "latest": "2026-11-04",
-  "generatedAt": "2026-11-04T16:30:00+07:00",
-  "lastSuccessfulDatasetLoad": "2026-11-04T16:30:00+07:00",
+  "latestMarketDate": "2026-11-09",
+  "latest": "2026-11-09",
+  "generatedAt": "2026-11-09T16:30:00+07:00",
+  "lastSuccessfulDatasetLoad": "2026-11-09T16:30:00+07:00",
   "updateSchedule": {
     "timezone": "Asia/Jakarta",
     "localTime": "16:30",
@@ -11,7 +11,7 @@
   },
   "historyRange": {
     "start": "2025-01-01",
-    "end": "2026-11-04"
+    "end": "2026-11-09"
   },
   "availableMarketDates": [
     "2025-01-02",
@@ -450,7 +450,10 @@
     "2026-10-30",
     "2026-11-02",
     "2026-11-03",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-09"
   ],
   "sourceVersions": {
     "archive": "schema-v5",
@@ -6626,6 +6629,48 @@
       "snapshotMode": "full_workbook",
       "workbook": "downloads/2026-11-04.xlsx",
       "ohlcv": "data/ohlcv/2026-11-04"
+    },
+    {
+      "marketDate": "2026-11-05",
+      "path": "data/dates/2026-11-05/",
+      "totalScanned": 962,
+      "okTickers": 920,
+      "partialTickers": 0,
+      "noDataTickers": 42,
+      "signalRows": 105,
+      "uniqueSignalTickers": 103,
+      "status": "ok",
+      "snapshotMode": "historical_ohlcv_reconstruction",
+      "workbook": null,
+      "ohlcv": "data/ohlcv/2026-11-09"
+    },
+    {
+      "marketDate": "2026-11-06",
+      "path": "data/dates/2026-11-06/",
+      "totalScanned": 962,
+      "okTickers": 920,
+      "partialTickers": 0,
+      "noDataTickers": 42,
+      "signalRows": 87,
+      "uniqueSignalTickers": 85,
+      "status": "ok",
+      "snapshotMode": "historical_ohlcv_reconstruction",
+      "workbook": null,
+      "ohlcv": "data/ohlcv/2026-11-09"
+    },
+    {
+      "marketDate": "2026-11-09",
+      "path": "data/dates/2026-11-09/",
+      "totalScanned": 962,
+      "okTickers": 913,
+      "partialTickers": 8,
+      "noDataTickers": 41,
+      "signalRows": 48,
+      "uniqueSignalTickers": 33,
+      "status": "ok",
+      "snapshotMode": "full_workbook",
+      "workbook": "downloads/2026-11-09.xlsx",
+      "ohlcv": "data/ohlcv/2026-11-09"
     }
   ]
 }

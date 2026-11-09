@@ -1,97 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-11-04",
+ "asOf": "2026-11-09",
  "entries": [
-  {
-   "date": "2026-10-14",
-   "ticker": "AMRT",
-   "score": 60,
-   "close": 1270.0,
-   "target": 1288,
-   "invalidation": 1207.8,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "BBCA",
-   "score": 60,
-   "close": 6125.0,
-   "target": 6125,
-   "invalidation": 5791.5,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "BBRI",
-   "score": 60,
-   "close": 3090.0,
-   "target": 3195,
-   "invalidation": 2999.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "BEST",
-   "score": 60,
-   "close": 115.0,
-   "target": 122,
-   "invalidation": 108.78,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "BRMS",
-   "score": 60,
-   "close": 555.0,
-   "target": 640,
-   "invalidation": 529.65,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "GZCO",
-   "score": 60,
-   "close": 151.0,
-   "target": 170,
-   "invalidation": 143.55,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "JPFA",
-   "score": 60,
-   "close": 2000.0,
-   "target": 2155,
-   "invalidation": 1940.4,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "MAPA",
-   "score": 60,
-   "close": 615.0,
-   "target": 645,
-   "invalidation": 584.1,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-14",
-   "ticker": "MINA",
-   "score": 60,
-   "close": 195.0,
-   "target": 226,
-   "invalidation": 187.10999999999999,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-14",
    "ticker": "SILO",
@@ -1920,7 +1830,7 @@
    "target": 1280,
    "invalidation": 930.6,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-10-30",
@@ -1930,7 +1840,7 @@
    "target": 190,
    "invalidation": 148.5,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-30",
@@ -1940,7 +1850,7 @@
    "target": 124,
    "invalidation": 96.03,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-30",
@@ -1950,7 +1860,7 @@
    "target": 1812,
    "invalidation": 1390.95,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-10-30",
@@ -1960,7 +1870,7 @@
    "target": 94,
    "invalidation": 77.22,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 5
   },
   {
    "date": "2026-11-02",
@@ -1970,7 +1880,7 @@
    "target": 185,
    "invalidation": 138.6,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 5
   },
   {
    "date": "2026-11-02",
@@ -1980,7 +1890,7 @@
    "target": 520,
    "invalidation": 401.94,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 5
   },
   {
    "date": "2026-11-02",
@@ -1990,7 +1900,7 @@
    "target": 235,
    "invalidation": 160.38,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 4
   },
   {
    "date": "2026-11-02",
@@ -2000,14 +1910,104 @@
    "target": 202,
    "invalidation": 161.37,
    "outcome": "invalidated",
+   "barsObserved": 5
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "RSCH",
+   "score": 70,
+   "close": 354.0,
+   "target": 494,
+   "invalidation": 350.46,
+   "outcome": "invalidated",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "MGRO",
+   "score": 65,
+   "close": 700.0,
+   "target": 705,
+   "invalidation": 668.25,
+   "outcome": "open",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "VERN",
+   "score": 65,
+   "close": 147.0,
+   "target": 194,
+   "invalidation": 145.53,
+   "outcome": "invalidated",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "BDKR",
+   "score": 60,
+   "close": 122.0,
+   "target": 170,
+   "invalidation": 120.78,
+   "outcome": "invalidated",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "BEST",
+   "score": 60,
+   "close": 95.0,
+   "target": 108,
+   "invalidation": 90.09,
+   "outcome": "open",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "BUKA",
+   "score": 55,
+   "close": 95.0,
+   "target": 104,
+   "invalidation": 88.2,
+   "outcome": "open",
    "barsObserved": 2
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "INDO",
+   "score": 55,
+   "close": 130.0,
+   "target": 152,
+   "invalidation": 124.74,
+   "outcome": "open",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "MAPI",
+   "score": 55,
+   "close": 1260.0,
+   "target": 1362,
+   "invalidation": 1138.5,
+   "outcome": "open",
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "NOBU",
+   "score": 55,
+   "close": 368.0,
+   "target": 428,
+   "invalidation": 348.48,
+   "outcome": "open",
+   "barsObserved": 3
   }
  ],
  "summary": {
-  "total": 546,
-  "decided": 434,
+  "total": 555,
+  "decided": 437,
   "targetFirst": 130,
-  "hitRate": 0.3
+  "hitRate": 0.297
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
