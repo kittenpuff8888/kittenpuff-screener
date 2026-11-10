@@ -1900,7 +1900,7 @@
    "target": 235,
    "invalidation": 160.38,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-02",
@@ -1969,8 +1969,8 @@
    "close": 95.0,
    "target": 104,
    "invalidation": 88.2,
-   "outcome": "open",
-   "barsObserved": 2
+   "outcome": "target",
+   "barsObserved": 3
   },
   {
    "date": "2026-11-04",
@@ -2005,9 +2005,9 @@
  ],
  "summary": {
   "total": 555,
-  "decided": 437,
-  "targetFirst": 130,
-  "hitRate": 0.297
+  "decided": 438,
+  "targetFirst": 131,
+  "hitRate": 0.299
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
