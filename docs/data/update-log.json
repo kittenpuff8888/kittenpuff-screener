@@ -1,6 +1,12 @@
 {
   "entries": [
     {
+      "timestamp": "2026-10-06T04:56:59.872412+07:00",
+      "marketDate": "2026-10-05",
+      "status": "NO_CHANGE",
+      "message": "Dataset already published; last successful snapshot preserved."
+    },
+    {
       "timestamp": "2026-10-07T00:47:23.557316+07:00",
       "marketDate": "2026-10-06",
       "status": "STARTED",
@@ -599,6 +605,12 @@
       "marketDate": "2026-11-09",
       "status": "SUCCESS",
       "message": "Created and validated a new dated snapshot."
+    },
+    {
+      "timestamp": "2026-11-10T07:24:08.667538+07:00",
+      "marketDate": "2026-11-09",
+      "status": "NO_CHANGE",
+      "message": "Dataset already published; last successful snapshot preserved."
     }
   ]
 }
