@@ -1,0 +1,475 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-11",
+ "generatedAt": "2026-11-12T05:48:38.614389+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 6,
+ "setups": [
+  {
+   "ticker": "RAJA",
+   "name": "Rukun Raharja Tbk.",
+   "sector": "Others",
+   "close": 520.0,
+   "score": 75,
+   "components": {
+    "location": 25,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 520,
+   "invalidation": 487,
+   "target": 654,
+   "medianValueTraded20": 30524223800,
+   "rvol": 7.402812089856141,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -10888450615,
+    -10902428558,
+    -10902428558,
+    -10911733080,
+    -10927668030,
+    -10957948410,
+    -10950606253,
+    -11017800053,
+    -11000893620,
+    -11014710986,
+    -10997181586,
+    -10997181586,
+    -10997181586,
+    -10828768986,
+    -10871092314,
+    -10850835783,
+    -10836783029,
+    -10932139129,
+    -10979726740,
+    -10955998586,
+    -10996855886,
+    -11046873871,
+    -10987913456,
+    -11048521356,
+    -11100853256,
+    -11051429318,
+    -11006976752,
+    -11068106852,
+    -10747032298,
+    -10706786223
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI OB Bear High; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 3,
+    "hitRate": 0.33,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ARAJA"
+  },
+  {
+   "ticker": "MGRO",
+   "name": "Mahkota Group Tbk.",
+   "sector": "Others",
+   "close": 675.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 667,
+   "invalidation": 653.4,
+   "target": 695,
+   "medianValueTraded20": 1957432500,
+   "rvol": 0.004548897966785881,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1311356866,
+    1315067966,
+    1317670216,
+    1316142783,
+    1318420733,
+    1320720183,
+    1325314783,
+    1321678183,
+    1325526283,
+    1327032716,
+    1331155916,
+    1332766516,
+    1333588266,
+    1335256999,
+    1335256999,
+    1337193439,
+    1341508739,
+    1340350506,
+    1341474006,
+    1344953406,
+    1348641106,
+    1352459606,
+    1355195006,
+    1355195006,
+    1358269306,
+    1360847206,
+    1364159806,
+    1364425906,
+    1364349806,
+    1364347992
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 17,
+    "hitRate": 0.65,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMGRO"
+  },
+  {
+   "ticker": "TRUE",
+   "name": "Triniti Dinamik Tbk.",
+   "sector": "Others",
+   "close": 18.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 18,
+   "invalidation": 17.82,
+   "target": 32,
+   "medianValueTraded20": 2160999200,
+   "rvol": 0.389244053862047,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -38537656,
+    -97839856,
+    -49851470,
+    -31801637,
+    574677163,
+    -326449964,
+    -390527197,
+    -625789797,
+    -741570797,
+    -802061797,
+    -874170297,
+    -889460097,
+    -970085697,
+    -970085697,
+    -948265097,
+    -982428164,
+    -1048322414,
+    -954504514,
+    -1080841114,
+    -1152089614,
+    -1215648414,
+    -1247993614,
+    -1260350614,
+    -1369971314,
+    -1369971314,
+    -1369971314,
+    -1369971314,
+    -1369971314,
+    -1324369914,
+    -1355909914
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATRUE"
+  },
+  {
+   "ticker": "GPSO",
+   "name": "Geoprima Solusi Tbk.",
+   "sector": "Others",
+   "close": 179.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 173,
+   "invalidation": 169.29,
+   "target": 210,
+   "medianValueTraded20": 2173334400,
+   "rvol": 0.1393354039909799,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    573662210,
+    564816170,
+    564816170,
+    557803384,
+    557803384,
+    556955712,
+    552592612,
+    556924912,
+    585817612,
+    585817612,
+    599387501,
+    604228901,
+    580875001,
+    586913930,
+    602669230,
+    600575401,
+    597320601,
+    592049683,
+    592049683,
+    590316750,
+    590316750,
+    579663150,
+    575299150,
+    577562913,
+    575552013,
+    574367570,
+    580458020,
+    580774392,
+    580774392,
+    579409892
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 4,
+    "hitRate": 1.0,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AGPSO"
+  },
+  {
+   "ticker": "MSTI",
+   "name": "Mastersystem Infotama Tbk.",
+   "sector": "Others",
+   "close": 1125.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 1096,
+   "invalidation": 1074.15,
+   "target": 1205,
+   "medianValueTraded20": 1630300000,
+   "rvol": 1.220168786248481,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -70717200,
+    -70881525,
+    -71086392,
+    -70591742,
+    -70591742,
+    -70244342,
+    -69614942,
+    -70604442,
+    -70604442,
+    -70476008,
+    -69933408,
+    -69933408,
+    -71352098,
+    -72610178,
+    -72140445,
+    -72909263,
+    -72453063,
+    -72810413,
+    -73767146,
+    -74715608,
+    -74361708,
+    -74734848,
+    -72817848,
+    -72224848,
+    -72898248,
+    -73103028,
+    -72919128,
+    -72170771,
+    -72477671,
+    -70966071
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.33,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMSTI"
+  },
+  {
+   "ticker": "SGER",
+   "name": "Sumber Global Energy Tbk.",
+   "sector": "Others",
+   "close": 645.0,
+   "score": 55,
+   "components": {
+    "location": 0,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 601,
+   "invalidation": 589.05,
+   "target": 732,
+   "medianValueTraded20": 32007822000,
+   "rvol": 0.2434077345224929,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    9313204519,
+    9300666752,
+    9346116252,
+    9382464638,
+    9368825071,
+    9374621231,
+    9406780931,
+    9406780931,
+    9427310265,
+    9440258005,
+    9461042305,
+    9470611910,
+    9486484299,
+    9557945690,
+    9579422956,
+    9703602856,
+    9759896472,
+    9677487772,
+    9653693622,
+    9681270050,
+    9662454500,
+    9685038300,
+    9646543400,
+    9600031700,
+    9573161200,
+    9569400223,
+    9539969366,
+    9529959954,
+    9501108454,
+    9500344507
+   ],
+   "dataSource": "yfinance",
+   "why": "bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.89,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASGER"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
