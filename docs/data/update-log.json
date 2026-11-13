@@ -589,13 +589,13 @@
       "message": "Created and validated a new dated snapshot."
     },
     {
-      "timestamp": "2026-11-14T00:24:11.119662+07:00",
+      "timestamp": "2026-11-14T01:47:40.835119+07:00",
       "marketDate": "2026-11-13",
       "status": "STARTED",
       "message": "Daily update pipeline started."
     },
     {
-      "timestamp": "2026-11-14T01:41:08.955018+07:00",
+      "timestamp": "2026-11-14T03:01:51.858394+07:00",
       "marketDate": "2026-11-13",
       "status": "NO_DATA",
       "message": "No valid IDX session was available for 2026-11-13; latest observed OHLCV date was 2026-11-12. The last successful snapshot was preserved."
