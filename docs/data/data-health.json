@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T07:10:28.833915+07:00",
+ "generatedAt": "2026-11-14T01:44:28.535015+07:00",
  "marketDate": "2026-11-12",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-13T07:10:17.995614+07:00"
+  "auditedAt": "2026-11-14T01:44:13.551762+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-12T01:45:08.689170+07:00",
-   "marketDate": "2026-11-11",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-11-12T03:03:40.300568+07:00",
-   "marketDate": "2026-11-11",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-11-11; latest observed OHLCV date was 2026-11-10. The last successful snapshot was preserved."
-  },
   {
    "timestamp": "2026-11-12T04:30:52.630077+07:00",
    "marketDate": "2026-11-11",
@@ -65,6 +53,18 @@
    "marketDate": "2026-11-12",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-11-14T00:24:11.119662+07:00",
+   "marketDate": "2026-11-13",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-14T01:41:08.955018+07:00",
+   "marketDate": "2026-11-13",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-11-13; latest observed OHLCV date was 2026-11-12. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-13T07:10:19.581414+07:00",
+  "lastChecked": "2026-11-14T01:44:15.395107+07:00",
   "checked": 14,
   "failures": [],
   "results": [
@@ -122,11 +122,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "GPSO",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "MGRO",
+    "ticker": "CBDK",
     "status": "ERROR: TypeError"
    },
    {
@@ -138,7 +134,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "RAJA",
+    "ticker": "SMDR",
     "status": "ERROR: TypeError"
    },
    {
@@ -146,7 +142,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TRUE",
+    "ticker": "TRON",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "VERN",
     "status": "ERROR: TypeError"
    },
    {
