@@ -1,67 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-11-11",
+ "asOf": "2026-11-12",
  "entries": [
-  {
-   "date": "2026-10-16",
-   "ticker": "BLES",
-   "score": 65,
-   "close": 178.0,
-   "target": 194,
-   "invalidation": 172.26,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "GEMS",
-   "score": 65,
-   "close": 7050.0,
-   "target": 7788,
-   "invalidation": 6732.0,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "OMED",
-   "score": 65,
-   "close": 200.0,
-   "target": 214,
-   "invalidation": 192.06,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "POWR",
-   "score": 65,
-   "close": 840.0,
-   "target": 920,
-   "invalidation": 811.8,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "WIIM",
-   "score": 65,
-   "close": 1300.0,
-   "target": 1422,
-   "invalidation": 1237.5,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "WMPP",
-   "score": 65,
-   "close": 20.0,
-   "target": 27,
-   "invalidation": 19.8,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-16",
    "ticker": "BAJA",
@@ -1850,7 +1790,7 @@
    "target": 494,
    "invalidation": 350.46,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-04",
@@ -1870,7 +1810,7 @@
    "target": 194,
    "invalidation": 145.53,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-04",
@@ -1880,7 +1820,7 @@
    "target": 170,
    "invalidation": 120.78,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-04",
@@ -1900,7 +1840,7 @@
    "target": 104,
    "invalidation": 88.2,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-04",
@@ -1939,8 +1879,8 @@
    "close": 105.0,
    "target": 111,
    "invalidation": 101,
-   "outcome": "open",
-   "barsObserved": 1
+   "outcome": "invalidated",
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -1950,7 +1890,7 @@
    "target": 742,
    "invalidation": 702.9,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -1960,7 +1900,7 @@
    "target": 705,
    "invalidation": 668.25,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -1970,7 +1910,7 @@
    "target": 367,
    "invalidation": 314.82,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -1980,7 +1920,7 @@
    "target": 278,
    "invalidation": 215.82,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -1990,7 +1930,7 @@
    "target": 1205,
    "invalidation": 1074.15,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 3
   },
   {
    "date": "2026-11-09",
@@ -2000,14 +1940,74 @@
    "target": 732,
    "invalidation": 589.05,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "RAJA",
+   "score": 75,
+   "close": 520.0,
+   "target": 654,
+   "invalidation": 487,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "MGRO",
+   "score": 65,
+   "close": 675.0,
+   "target": 695,
+   "invalidation": 653.4,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "TRUE",
+   "score": 60,
+   "close": 18.0,
+   "target": 32,
+   "invalidation": 17.82,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "GPSO",
+   "score": 55,
+   "close": 179.0,
+   "target": 210,
+   "invalidation": 169.29,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "MSTI",
+   "score": 55,
+   "close": 1125.0,
+   "target": 1205,
+   "invalidation": 1074.15,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "SGER",
+   "score": 55,
+   "close": 645.0,
+   "target": 732,
+   "invalidation": 589.05,
+   "outcome": "open",
+   "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 562,
-  "decided": 440,
+  "total": 568,
+  "decided": 442,
   "targetFirst": 131,
-  "hitRate": 0.298
+  "hitRate": 0.296
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }

@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-13T05:47:16.879929+07:00",
- "marketDate": "2026-11-11",
+ "generatedAt": "2026-11-13T07:10:28.833915+07:00",
+ "marketDate": "2026-11-12",
  "universe": {
   "size": 921,
   "source": "KSEI workbook roster",
@@ -15,7 +15,7 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-13T05:47:03.560694+07:00"
+  "auditedAt": "2026-11-13T07:10:17.995614+07:00"
  },
  "runLog": [
   {
@@ -55,16 +55,16 @@
    "message": "No valid IDX session was available for 2026-11-12; latest observed OHLCV date was 2026-11-11. The last successful snapshot was preserved."
   },
   {
-   "timestamp": "2026-11-13T04:14:13.007338+07:00",
+   "timestamp": "2026-11-13T05:50:36.749626+07:00",
    "marketDate": "2026-11-12",
    "status": "STARTED",
    "message": "Daily update pipeline started."
   },
   {
-   "timestamp": "2026-11-13T05:45:39.020158+07:00",
+   "timestamp": "2026-11-13T07:08:43.983739+07:00",
    "marketDate": "2026-11-12",
-   "status": "NO_DATA",
-   "message": "No valid IDX session was available for 2026-11-12; latest observed OHLCV date was 2026-11-11. The last successful snapshot was preserved."
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,10 +93,14 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-13T05:47:05.451035+07:00",
-  "checked": 15,
+  "lastChecked": "2026-11-13T07:10:19.581414+07:00",
+  "checked": 14,
   "failures": [],
   "results": [
+   {
+    "ticker": "ADES",
+    "status": "ERROR: TypeError"
+   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -114,19 +118,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BELL",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "BOAT",
+    "ticker": "BRAM",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "GPSO",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "INDO",
     "status": "ERROR: TypeError"
    },
    {
@@ -138,15 +134,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PSKT",
+    "ticker": "PLIN",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "RAJA",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "SGER",
     "status": "ERROR: TypeError"
    },
    {
@@ -155,92 +147,96 @@
    },
    {
     "ticker": "TRUE",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "WIRG",
     "status": "ERROR: TypeError"
    }
   ],
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 6,
+  "count": 9,
   "scanned": 921,
   "quarantined": 7,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-11",
-    "close": 2750.0,
-    "volume": 37892400.0,
+    "date": "2026-11-12",
+    "close": 2800.0,
+    "volume": 70274900.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-11",
-    "close": 5250.0,
-    "volume": 65760900.0,
+    "date": "2026-11-12",
+    "close": 5450.0,
+    "volume": 41720900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-11",
-    "close": 5325.0,
-    "volume": 92364800.0,
+    "date": "2026-11-12",
+    "close": 5475.0,
+    "volume": 192936300.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-11",
-    "close": 2860.0,
-    "volume": 133757400.0,
+    "date": "2026-11-12",
+    "close": 3030.0,
+    "volume": 337321500.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-11",
-    "close": 2060.0,
-    "volume": 61456500.0,
+    "date": "2026-11-12",
+    "close": 2130.0,
+    "volume": 165747500.0,
     "source": "yfinance"
    },
    {
-    "ticker": "RAJA",
-    "date": "2026-11-11",
-    "close": 520.0,
+    "ticker": "TRON",
+    "date": "2026-11-12",
+    "close": 78.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "MGRO",
-    "date": "2026-11-11",
-    "close": 675.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "TRUE",
-    "date": "2026-11-11",
-    "close": 18.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "GPSO",
-    "date": "2026-11-11",
-    "close": 179.0,
+    "ticker": "CBDK",
+    "date": "2026-11-12",
+    "close": 2730.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MSTI",
-    "date": "2026-11-11",
-    "close": 1125.0,
+    "date": "2026-11-12",
+    "close": 1105.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "SMDR",
+    "date": "2026-11-12",
+    "close": 328.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "VERN",
+    "date": "2026-11-12",
+    "close": 140.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 562,
-   "decided": 440,
+   "total": 568,
+   "decided": 442,
    "targetFirst": 131,
-   "hitRate": 0.298
+   "hitRate": 0.296
   }
  },
  "manualSpotCheck": {
@@ -248,71 +244,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-11",
-    "close": 2750.0,
-    "volume": 37892400.0,
+    "date": "2026-11-12",
+    "close": 2800.0,
+    "volume": 70274900.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-11",
-    "close": 5250.0,
-    "volume": 65760900.0,
+    "date": "2026-11-12",
+    "close": 5450.0,
+    "volume": 41720900.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-11",
-    "close": 5325.0,
-    "volume": 92364800.0,
+    "date": "2026-11-12",
+    "close": 5475.0,
+    "volume": 192936300.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-11",
-    "close": 2860.0,
-    "volume": 133757400.0,
+    "date": "2026-11-12",
+    "close": 3030.0,
+    "volume": 337321500.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-11",
-    "close": 2060.0,
-    "volume": 61456500.0,
+    "date": "2026-11-12",
+    "close": 2130.0,
+    "volume": 165747500.0,
     "source": "yfinance"
    },
    {
-    "ticker": "RAJA",
-    "date": "2026-11-11",
-    "close": 520.0,
+    "ticker": "TRON",
+    "date": "2026-11-12",
+    "close": 78.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "MGRO",
-    "date": "2026-11-11",
-    "close": 675.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "TRUE",
-    "date": "2026-11-11",
-    "close": 18.0,
-    "volume": null,
-    "source": "yfinance"
-   },
-   {
-    "ticker": "GPSO",
-    "date": "2026-11-11",
-    "close": 179.0,
+    "ticker": "CBDK",
+    "date": "2026-11-12",
+    "close": 2730.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MSTI",
-    "date": "2026-11-11",
-    "close": 1125.0,
+    "date": "2026-11-12",
+    "close": 1105.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "SMDR",
+    "date": "2026-11-12",
+    "close": 328.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "VERN",
+    "date": "2026-11-12",
+    "close": 140.0,
     "volume": null,
     "source": "yfinance"
    }
