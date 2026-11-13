@@ -1,0 +1,475 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-13",
+ "generatedAt": "2026-11-14T05:51:30.988665+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 6,
+ "setups": [
+  {
+   "ticker": "MARK",
+   "name": "Mark Dynamics Indonesia Tbk.",
+   "sector": "Others",
+   "close": 960.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 944,
+   "invalidation": 916.3,
+   "target": 1052,
+   "medianValueTraded20": 8543965500,
+   "rvol": 0.3954883542270489,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1674306776,
+    1684366576,
+    1682093033,
+    1691768633,
+    1684467733,
+    1673674489,
+    1684984889,
+    1698605264,
+    1692717714,
+    1703791679,
+    1703145727,
+    1710606616,
+    1732333416,
+    1732333416,
+    1737417216,
+    1729842716,
+    1725108616,
+    1732316316,
+    1726887516,
+    1735933203,
+    1735933203,
+    1705818403,
+    1699895919,
+    1696410385,
+    1704997285,
+    1706433765,
+    1702730685,
+    1703675645,
+    1703675645,
+    1706507045
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.71,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMARK"
+  },
+  {
+   "ticker": "TRON",
+   "name": "Teknologi Karya Digital Nusa T",
+   "sector": "Others",
+   "close": 78.0,
+   "score": 70,
+   "components": {
+    "location": 25,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 78,
+   "invalidation": 75,
+   "target": 85,
+   "medianValueTraded20": 1089069000,
+   "rvol": 7.224004853856068,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    87763497,
+    89179837,
+    92191870,
+    92191870,
+    89413870,
+    89413870,
+    81140070,
+    83933070,
+    475594970,
+    321215970,
+    321215970,
+    321215970,
+    312163100,
+    299923400,
+    287184843,
+    311100483,
+    293320683,
+    278876763,
+    268650763,
+    221426223,
+    208436523,
+    205327537,
+    196033937,
+    189049937,
+    175180137,
+    177045297,
+    174923697,
+    173775930,
+    168255430,
+    383642530
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI EMA50; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 16,
+    "hitRate": 0.5,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATRON"
+  },
+  {
+   "ticker": "CBDK",
+   "name": "Bangun Kosambi Sukses Tbk.",
+   "sector": "Others",
+   "close": 2730.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 2666,
+   "invalidation": 2613.6,
+   "target": 3045,
+   "medianValueTraded20": 6131900000,
+   "rvol": 0.4981658954249527,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -15285495,
+    -13909295,
+    -13587015,
+    -14005740,
+    -14235494,
+    -13299327,
+    -12860410,
+    -9654010,
+    -7127974,
+    -6771874,
+    -15796574,
+    -12660141,
+    -9242741,
+    -7596067,
+    -7713179,
+    -6433779,
+    -6712967,
+    -9258167,
+    -8123532,
+    -9896232,
+    -6094270,
+    -5407720,
+    -6774935,
+    -6774935,
+    -7674506,
+    -7174706,
+    -7894031,
+    -7425231,
+    -6776074,
+    -6236767
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 3,
+    "hitRate": 1.0,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACBDK"
+  },
+  {
+   "ticker": "MSTI",
+   "name": "Mastersystem Infotama Tbk.",
+   "sector": "Others",
+   "close": 1105.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 25,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 1096,
+   "invalidation": 1074.15,
+   "target": 1180,
+   "medianValueTraded20": 1683378000,
+   "rvol": 1.325969737112152,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -68397692,
+    -67903042,
+    -67903042,
+    -67555642,
+    -66926242,
+    -67915742,
+    -67915742,
+    -67787308,
+    -67244708,
+    -67244708,
+    -68663398,
+    -69921478,
+    -69451745,
+    -70220563,
+    -69764363,
+    -70121713,
+    -71078446,
+    -72026908,
+    -71673008,
+    -72046148,
+    -70129148,
+    -69536148,
+    -70209548,
+    -70414328,
+    -70230428,
+    -69482071,
+    -69788971,
+    -68277371,
+    -68756671,
+    -68164437
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows; absorption bar (high volume, small range at low)",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.33,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMSTI"
+  },
+  {
+   "ticker": "VERN",
+   "name": "Verona Indah Pictures Tbk.",
+   "sector": "Others",
+   "close": 140.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 136,
+   "invalidation": 133.65,
+   "target": 172,
+   "medianValueTraded20": 1016861000,
+   "rvol": 0.350291723662119,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -564594904,
+    -562351171,
+    -539690537,
+    -516856895,
+    -506546195,
+    -478167695,
+    -476584895,
+    -466685645,
+    -466685645,
+    -468222878,
+    -464943025,
+    -459615942,
+    -451399542,
+    -446038403,
+    -437262728,
+    -422605028,
+    -421534648,
+    -422664028,
+    -418621788,
+    -419187179,
+    -417417912,
+    -417417912,
+    -419519012,
+    -424656412,
+    -427191812,
+    -424706852,
+    -414104152,
+    -418457572,
+    -418948672,
+    -418509492
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AVERN"
+  },
+  {
+   "ticker": "TSPC",
+   "name": "Tempo Scan Pacific Tbk.",
+   "sector": "Others",
+   "close": 2230.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 2192,
+   "invalidation": 2148.3,
+   "target": 2365,
+   "medianValueTraded20": 1630314000,
+   "rvol": 1.892431114333132,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    176018856,
+    176392856,
+    176392856,
+    175856056,
+    176221112,
+    176004012,
+    176138512,
+    176209445,
+    176244545,
+    176962439,
+    176136799,
+    176009271,
+    175663771,
+    176199165,
+    176108665,
+    175829832,
+    175681399,
+    175742699,
+    175640479,
+    174668256,
+    174440881,
+    174543481,
+    174560001,
+    174560001,
+    175156801,
+    175320351,
+    175264385,
+    175140265,
+    175507715,
+    175823575
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 8,
+    "hitRate": 0.75,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATSPC"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}

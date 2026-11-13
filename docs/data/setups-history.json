@@ -1,97 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-11-12",
+ "asOf": "2026-11-13",
  "entries": [
-  {
-   "date": "2026-10-16",
-   "ticker": "BAJA",
-   "score": 60,
-   "close": 196.0,
-   "target": 350,
-   "invalidation": 194.04,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "PPRE",
-   "score": 60,
-   "close": 75.0,
-   "target": 92,
-   "invalidation": 73.26,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "PTSN",
-   "score": 60,
-   "close": 280.0,
-   "target": 374,
-   "invalidation": 277.2,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "SNLK",
-   "score": 60,
-   "close": 216.0,
-   "target": 232,
-   "invalidation": 203.94,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "UANG",
-   "score": 60,
-   "close": 2430.0,
-   "target": 3385,
-   "invalidation": 2405.7,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "AALI",
-   "score": 55,
-   "close": 7825.0,
-   "target": 8025,
-   "invalidation": 7301.25,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "ACES",
-   "score": 55,
-   "close": 328.0,
-   "target": 343,
-   "invalidation": 304.92,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "BSML",
-   "score": 55,
-   "close": 515.0,
-   "target": 526,
-   "invalidation": 463.32,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-16",
-   "ticker": "BSSR",
-   "score": 55,
-   "close": 4940.0,
-   "target": 4985,
-   "invalidation": 4425.3,
-   "outcome": "target",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-16",
    "ticker": "ENRG",
@@ -1900,7 +1810,7 @@
    "target": 705,
    "invalidation": 668.25,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-09",
@@ -1910,7 +1820,7 @@
    "target": 367,
    "invalidation": 314.82,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-09",
@@ -1920,7 +1830,7 @@
    "target": 278,
    "invalidation": 215.82,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-09",
@@ -1940,7 +1850,7 @@
    "target": 732,
    "invalidation": 589.05,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-11",
@@ -1950,7 +1860,7 @@
    "target": 654,
    "invalidation": 487,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-11",
@@ -1960,7 +1870,7 @@
    "target": 695,
    "invalidation": 653.4,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-11",
@@ -2000,14 +1910,104 @@
    "target": 732,
    "invalidation": 589.05,
    "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "TRON",
+   "score": 70,
+   "close": 78.0,
+   "target": 85,
+   "invalidation": 75,
+   "outcome": "open",
+   "barsObserved": 0
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "CBDK",
+   "score": 65,
+   "close": 2730.0,
+   "target": 3045,
+   "invalidation": 2613.6,
+   "outcome": "open",
+   "barsObserved": 0
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "MSTI",
+   "score": 65,
+   "close": 1105.0,
+   "target": 1180,
+   "invalidation": 1074.15,
+   "outcome": "open",
+   "barsObserved": 0
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "SMDR",
+   "score": 65,
+   "close": 328.0,
+   "target": 355,
+   "invalidation": 314.82,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "VERN",
+   "score": 65,
+   "close": 140.0,
+   "target": 172,
+   "invalidation": 133.65,
+   "outcome": "open",
+   "barsObserved": 0
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "MOLI",
+   "score": 60,
+   "close": 308.0,
+   "target": 347,
+   "invalidation": 293.04,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "MAPI",
+   "score": 55,
+   "close": 1200.0,
+   "target": 1285,
+   "invalidation": 1128.6,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "RAJA",
+   "score": 55,
+   "close": 535.0,
+   "target": 472,
+   "invalidation": 352.8,
+   "outcome": "target",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "TSPC",
+   "score": 55,
+   "close": 2220.0,
+   "target": 2365,
+   "invalidation": 2148.3,
+   "outcome": "open",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 568,
-  "decided": 442,
-  "targetFirst": 131,
-  "hitRate": 0.296
+  "total": 577,
+  "decided": 443,
+  "targetFirst": 132,
+  "hitRate": 0.298
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }
