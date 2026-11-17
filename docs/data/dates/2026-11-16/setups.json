@@ -1,0 +1,345 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-16",
+ "generatedAt": "2026-11-17T07:01:44.053000+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "MARK",
+   "name": "Mark Dynamics Indonesia Tbk.",
+   "sector": "Others",
+   "close": 960.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 944,
+   "invalidation": 916.3,
+   "target": 1052,
+   "medianValueTraded20": 8483440000,
+   "rvol": 0.6017107481467542,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1690694126,
+    1688420583,
+    1698096183,
+    1690795283,
+    1680002039,
+    1691312439,
+    1704932814,
+    1699045264,
+    1710119229,
+    1709473277,
+    1716934166,
+    1738660966,
+    1738660966,
+    1743744766,
+    1736170266,
+    1731436166,
+    1738643866,
+    1733215066,
+    1742260753,
+    1742260753,
+    1712145953,
+    1706223469,
+    1702737935,
+    1711324835,
+    1712761315,
+    1709058235,
+    1710003195,
+    1710003195,
+    1712834595,
+    1712834595
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.78,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMARK"
+  },
+  {
+   "ticker": "MAPI",
+   "name": "Mitra Adiperkasa Tbk.",
+   "sector": "Others",
+   "close": 1155.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 1151,
+   "invalidation": 1128.6,
+   "target": 1285,
+   "medianValueTraded20": 3820415000,
+   "rvol": 1.475352292453794,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1141305559,
+    -1139197570,
+    -1135460970,
+    -1132122990,
+    -1145880890,
+    -1145146290,
+    -1135439364,
+    -1136286094,
+    -1138675530,
+    -1146919530,
+    -1143169122,
+    -1149732981,
+    -1144327576,
+    -1145576894,
+    -1147446694,
+    -1149237894,
+    -1148349208,
+    -1149759402,
+    -1149079986,
+    -1145602386,
+    -1144608370,
+    -1138178370,
+    -1138178370,
+    -1137922124,
+    -1139026824,
+    -1139026824,
+    -1140291624,
+    -1133881624,
+    -1132223944,
+    -1138003194
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 8,
+    "hitRate": 0.62,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMAPI"
+  },
+  {
+   "ticker": "MGRO",
+   "name": "Mahkota Group Tbk.",
+   "sector": "Others",
+   "close": 660.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 636,
+   "invalidation": 623.7,
+   "target": 678,
+   "medianValueTraded20": 1914780000,
+   "rvol": 0.00021454945686805,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1311436273,
+    1313714223,
+    1316013673,
+    1320608273,
+    1316971673,
+    1320819773,
+    1322326206,
+    1326449406,
+    1328060006,
+    1328881756,
+    1330550489,
+    1330550489,
+    1332486929,
+    1336802229,
+    1335643996,
+    1336767496,
+    1340246896,
+    1343934596,
+    1347753096,
+    1350488496,
+    1350488496,
+    1353562796,
+    1356140696,
+    1359453296,
+    1359719396,
+    1359643296,
+    1359641482,
+    1360652082,
+    1360652859,
+    1360653359
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 12,
+    "hitRate": 0.75,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMGRO"
+  },
+  {
+   "ticker": "TSPC",
+   "name": "Tempo Scan Pacific Tbk.",
+   "sector": "Others",
+   "close": 2240.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 2192,
+   "invalidation": 2148.3,
+   "target": 2365,
+   "medianValueTraded20": 1630314000,
+   "rvol": 1.002579814902791,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    176620823,
+    176620823,
+    176084023,
+    176449079,
+    176231979,
+    176366479,
+    176437412,
+    176472512,
+    177190406,
+    176364766,
+    176237237,
+    175891737,
+    176427132,
+    176336632,
+    176057799,
+    175909365,
+    175970665,
+    175868445,
+    174896223,
+    174668848,
+    174771448,
+    174787968,
+    174787968,
+    175384768,
+    175548318,
+    175492351,
+    175368231,
+    175735681,
+    176051541,
+    176468341
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATSPC"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
