@@ -1,0 +1,345 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-18",
+ "generatedAt": "2026-11-19T06:54:59.309141+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "BDKR",
+   "name": "Berdikari Pondasi Perkasa Tbk.",
+   "sector": "Others",
+   "close": 110.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 106,
+   "invalidation": 103.95,
+   "target": 145,
+   "medianValueTraded20": 1446420400,
+   "rvol": 0.3492377105729398,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    3924446748,
+    3909802176,
+    3862137484,
+    3884187017,
+    3854835360,
+    3851343238,
+    3867713465,
+    3867713465,
+    3887303065,
+    3884592399,
+    3899601699,
+    3946201299,
+    3936953899,
+    3942309749,
+    3937140382,
+    3926621291,
+    3919229891,
+    3909961791,
+    3906812891,
+    3906812891,
+    3906812891,
+    3908188311,
+    3921240411,
+    3912613311,
+    3913577951,
+    3913577951,
+    3925179051,
+    3924514651,
+    3920167801,
+    3923761934
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.78,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABDKR"
+  },
+  {
+   "ticker": "RSCH",
+   "name": "Charlie Hospital Semarang Tbk.",
+   "sector": "Others",
+   "close": 258.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 255,
+   "invalidation": 249.48,
+   "target": 438,
+   "medianValueTraded20": 3840226000,
+   "rvol": 1.382968189767091,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    364712238,
+    379081171,
+    383728991,
+    383728991,
+    379721971,
+    385634338,
+    379472738,
+    379472738,
+    401499166,
+    421207866,
+    437503066,
+    430602866,
+    410925666,
+    406480866,
+    401552366,
+    392305245,
+    390731145,
+    380543392,
+    373160692,
+    364176892,
+    353247792,
+    346317292,
+    346317292,
+    344174223,
+    321057023,
+    323167037,
+    323900587,
+    334167658,
+    336794830,
+    323648305
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.57,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ARSCH"
+  },
+  {
+   "ticker": "TSPC",
+   "name": "Tempo Scan Pacific Tbk.",
+   "sector": "Others",
+   "close": 2260.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 2192,
+   "invalidation": 2148.3,
+   "target": 2365,
+   "medianValueTraded20": 1471950000,
+   "rvol": 0.6034123469653555,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    171518108,
+    171883163,
+    171666063,
+    171800563,
+    171871497,
+    171906597,
+    172624490,
+    171798850,
+    171671322,
+    171325822,
+    171861217,
+    171770717,
+    171491883,
+    171343450,
+    171404750,
+    171302530,
+    170330308,
+    170102933,
+    170205533,
+    170222053,
+    170222053,
+    170818853,
+    170982403,
+    170926436,
+    170802316,
+    171169766,
+    171485626,
+    171902426,
+    172412486,
+    172505146
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATSPC"
+  },
+  {
+   "ticker": "CNMA",
+   "name": "Nusantara Sejahtera Raya Tbk.",
+   "sector": "Others",
+   "close": 69.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 68,
+   "invalidation": 66.33,
+   "target": 72,
+   "medianValueTraded20": 4370302500,
+   "rvol": 0.5244534113443273,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -2245219838,
+    -2245219838,
+    -2260701838,
+    -2260701838,
+    -2290159838,
+    -2290159838,
+    -2381892829,
+    -2468258829,
+    -2413326495,
+    -2466250195,
+    -2466250195,
+    -2466250195,
+    -2504749845,
+    -2527531595,
+    -2527531595,
+    -2602115495,
+    -2631184795,
+    -2631184795,
+    -2716585595,
+    -2671164795,
+    -2671164795,
+    -2578961095,
+    -2677228395,
+    -2718214495,
+    -2740580095,
+    -2756843595,
+    -2727871895,
+    -2727871895,
+    -2727871895,
+    -2727871895
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 8,
+    "hitRate": 0.5,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACNMA"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
