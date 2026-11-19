@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-19T06:55:00.017361+07:00",
+ "generatedAt": "2026-11-20T03:01:26.479943+07:00",
  "marketDate": "2026-11-18",
  "universe": {
   "size": 921,
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-19T06:54:46.073202+07:00"
+  "auditedAt": "2026-11-20T03:01:13.190198+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-17T07:05:31.842749+07:00",
-   "marketDate": "2026-11-16",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-11-17T08:25:41.727724+07:00",
-   "marketDate": "2026-11-16",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-11-18T05:59:01.067527+07:00",
    "marketDate": "2026-11-17",
@@ -65,6 +53,18 @@
    "marketDate": "2026-11-18",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-11-20T01:38:55.709025+07:00",
+   "marketDate": "2026-11-19",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-20T02:59:29.086464+07:00",
+   "marketDate": "2026-11-19",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-11-19; latest observed OHLCV date was 2026-11-18. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -93,8 +93,8 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-19T06:54:49.269240+07:00",
-  "checked": 15,
+  "lastChecked": "2026-11-20T03:01:15.384830+07:00",
+  "checked": 14,
   "failures": [],
   "results": [
    {
@@ -102,15 +102,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "ARKA",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "ASII",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "AVIA",
     "status": "ERROR: TypeError"
    },
    {
@@ -122,35 +114,39 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "IBST",
+    "ticker": "BDKR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MAPI",
+    "ticker": "CNMA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "MGRO",
+    "ticker": "DIGI",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "RAJA",
+    "ticker": "HDFA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "RDTX",
+    "ticker": "MAYA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SMRA",
+    "ticker": "PWON",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "RSCH",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "SAPX",
     "status": "ERROR: TypeError"
    },
    {
     "ticker": "TLKM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "TRUE",
     "status": "ERROR: TypeError"
    },
    {
