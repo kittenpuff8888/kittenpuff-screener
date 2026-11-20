@@ -1,47 +1,7 @@
 {
  "schemaVersion": 1,
- "asOf": "2026-11-18",
+ "asOf": "2026-11-19",
  "entries": [
-  {
-   "date": "2026-10-19",
-   "ticker": "GEMS",
-   "score": 65,
-   "close": 6850.0,
-   "target": 7675,
-   "invalidation": 6509.25,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-19",
-   "ticker": "POWR",
-   "score": 65,
-   "close": 810.0,
-   "target": 885,
-   "invalidation": 777.15,
-   "outcome": "target",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-19",
-   "ticker": "TMPO",
-   "score": 65,
-   "close": 169.0,
-   "target": 183,
-   "invalidation": 160,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
-  {
-   "date": "2026-10-19",
-   "ticker": "WMPP",
-   "score": 65,
-   "close": 19.0,
-   "target": 26,
-   "invalidation": 18.81,
-   "outcome": "invalidated",
-   "barsObserved": 5
-  },
   {
    "date": "2026-10-19",
    "ticker": "AGAR",
@@ -1770,7 +1730,7 @@
    "target": 85,
    "invalidation": 75,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1780,7 +1740,7 @@
    "target": 3045,
    "invalidation": 2613.6,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1790,7 +1750,7 @@
    "target": 1180,
    "invalidation": 1074.15,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1799,8 +1759,8 @@
    "close": 328.0,
    "target": 355,
    "invalidation": 314.82,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1810,7 +1770,7 @@
    "target": 172,
    "invalidation": 133.65,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1819,8 +1779,8 @@
    "close": 308.0,
    "target": 347,
    "invalidation": 293.04,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "invalidated",
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1830,7 +1790,7 @@
    "target": 1285,
    "invalidation": 1128.6,
    "outcome": "invalidated",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1840,7 +1800,7 @@
    "target": 472,
    "invalidation": 352.8,
    "outcome": "target",
-   "barsObserved": 4
+   "barsObserved": 5
   },
   {
    "date": "2026-11-12",
@@ -1849,8 +1809,8 @@
    "close": 2220.0,
    "target": 2365,
    "invalidation": 2148.3,
-   "outcome": "open",
-   "barsObserved": 4
+   "outcome": "undecided",
+   "barsObserved": 5
   },
   {
    "date": "2026-11-13",
@@ -1860,7 +1820,7 @@
    "target": 1052,
    "invalidation": 916.3,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-13",
@@ -1870,7 +1830,7 @@
    "target": 85,
    "invalidation": 75,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-13",
@@ -1880,7 +1840,7 @@
    "target": 3045,
    "invalidation": 2613.6,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-13",
@@ -1890,7 +1850,7 @@
    "target": 1180,
    "invalidation": 1074.15,
    "outcome": "target",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-13",
@@ -1900,7 +1860,7 @@
    "target": 172,
    "invalidation": 133.65,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-13",
@@ -1910,7 +1870,7 @@
    "target": 2365,
    "invalidation": 2148.3,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-16",
@@ -1920,7 +1880,7 @@
    "target": 1052,
    "invalidation": 916.3,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-16",
@@ -1930,7 +1890,7 @@
    "target": 1285,
    "invalidation": 1128.6,
    "outcome": "invalidated",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-16",
@@ -1940,7 +1900,7 @@
    "target": 678,
    "invalidation": 623.7,
    "outcome": "target",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-16",
@@ -1950,7 +1910,7 @@
    "target": 2365,
    "invalidation": 2148.3,
    "outcome": "open",
-   "barsObserved": 2
+   "barsObserved": 3
   },
   {
    "date": "2026-11-17",
@@ -1960,7 +1920,7 @@
    "target": 52,
    "invalidation": 34,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-17",
@@ -1970,7 +1930,7 @@
    "target": 355,
    "invalidation": 293,
    "outcome": "open",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-17",
@@ -1980,7 +1940,7 @@
    "target": 1272,
    "invalidation": 1103.85,
    "outcome": "invalidated",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-17",
@@ -1990,7 +1950,7 @@
    "target": 675,
    "invalidation": 618.75,
    "outcome": "target",
-   "barsObserved": 1
+   "barsObserved": 2
   },
   {
    "date": "2026-11-17",
@@ -2000,14 +1960,54 @@
    "target": 2365,
    "invalidation": 2148.3,
    "outcome": "open",
+   "barsObserved": 2
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "BDKR",
+   "score": 60,
+   "close": 110.0,
+   "target": 145,
+   "invalidation": 103.95,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "RSCH",
+   "score": 60,
+   "close": 258.0,
+   "target": 438,
+   "invalidation": 249.48,
+   "outcome": "invalidated",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TSPC",
+   "score": 60,
+   "close": 2260.0,
+   "target": 2365,
+   "invalidation": 2148.3,
+   "outcome": "open",
+   "barsObserved": 1
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "CNMA",
+   "score": 55,
+   "close": 69.0,
+   "target": 72,
+   "invalidation": 66.33,
+   "outcome": "open",
    "barsObserved": 1
   }
  ],
  "summary": {
-  "total": 592,
-  "decided": 461,
+  "total": 596,
+  "decided": 463,
   "targetFirst": 138,
-  "hitRate": 0.299
+  "hitRate": 0.298
  },
  "note": "Forward outcomes of published setups (5 bars). Small samples early on; analytics, not advice."
 }

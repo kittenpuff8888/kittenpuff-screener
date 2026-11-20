@@ -1,0 +1,345 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-19",
+ "generatedAt": "2026-11-20T07:19:25.316706+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "MARK",
+   "name": "Mark Dynamics Indonesia Tbk.",
+   "sector": "Others",
+   "close": 930.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 909,
+   "invalidation": 891.0,
+   "target": 1035,
+   "medianValueTraded20": 7162674000,
+   "rvol": 0.8681664776685372,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1684065209,
+    1673271964,
+    1684582364,
+    1698202739,
+    1692315189,
+    1703389155,
+    1702743203,
+    1710204091,
+    1731930891,
+    1731930891,
+    1737014691,
+    1729440191,
+    1724706091,
+    1731913791,
+    1726484991,
+    1735530679,
+    1735530679,
+    1705415879,
+    1699493394,
+    1696007861,
+    1704594761,
+    1706031241,
+    1702328161,
+    1703273121,
+    1703273121,
+    1706104521,
+    1706104521,
+    1699211321,
+    1699211321,
+    1704712607
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.71,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMARK"
+  },
+  {
+   "ticker": "MGRO",
+   "name": "Mahkota Group Tbk.",
+   "sector": "Others",
+   "close": 645.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 626,
+   "invalidation": 613.8,
+   "target": 672,
+   "medianValueTraded20": 1646524500,
+   "rvol": 0.2406697843557229,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1303978573,
+    1300341973,
+    1304190073,
+    1305696506,
+    1309819706,
+    1311430306,
+    1312252056,
+    1313920789,
+    1313920789,
+    1315857229,
+    1320172529,
+    1319014296,
+    1320137796,
+    1323617196,
+    1327304896,
+    1331123396,
+    1333858796,
+    1333858796,
+    1336933096,
+    1339510996,
+    1342823596,
+    1343089696,
+    1343013596,
+    1343011782,
+    1344022382,
+    1344023159,
+    1344023659,
+    1343935659,
+    1343994326,
+    1344203083
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 20,
+    "hitRate": 0.55,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMGRO"
+  },
+  {
+   "ticker": "BDKR",
+   "name": "Berdikari Pondasi Perkasa Tbk.",
+   "sector": "Others",
+   "close": 108.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 105,
+   "invalidation": 102.96,
+   "target": 144,
+   "medianValueTraded20": 1380996000,
+   "rvol": 0.8826649897389418,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    3904887276,
+    3857222584,
+    3879272117,
+    3849920460,
+    3846428338,
+    3862798565,
+    3862798565,
+    3882388165,
+    3879677499,
+    3894686799,
+    3941286399,
+    3932038999,
+    3937394849,
+    3932225482,
+    3921706391,
+    3914314991,
+    3905046891,
+    3901897991,
+    3901897991,
+    3901897991,
+    3903273411,
+    3916325511,
+    3907698411,
+    3908663051,
+    3908663051,
+    3920264151,
+    3919599751,
+    3915252901,
+    3918847034,
+    3917426257
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ABDKR"
+  },
+  {
+   "ticker": "TKIM",
+   "name": "Pabrik Kertas Tjiwi Kimia Tbk.",
+   "sector": "Others",
+   "close": 5675.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 5631,
+   "invalidation": 5519.25,
+   "target": 6188,
+   "medianValueTraded20": 8245707500,
+   "rvol": 1.887002677148296,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -91120914,
+    -88445614,
+    -88658064,
+    -90380264,
+    -90708964,
+    -100077795,
+    -96720718,
+    -93672918,
+    -91776018,
+    -91567038,
+    -91723801,
+    -92773301,
+    -91175046,
+    -91056938,
+    -93570721,
+    -92987121,
+    -92987121,
+    -94678671,
+    -94127071,
+    -93018825,
+    -91807025,
+    -92390725,
+    -92723625,
+    -92613492,
+    -92551730,
+    -92477830,
+    -92222680,
+    -93190180,
+    -94680280,
+    -95971409
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.57,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ATKIM"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 921
+}
