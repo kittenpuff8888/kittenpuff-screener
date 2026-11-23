@@ -1,0 +1,415 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-23",
+ "generatedAt": "2026-11-24T06:15:26.776008+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 5,
+ "setups": [
+  {
+   "ticker": "CDIA",
+   "name": "Chandra Daya Investasi Tbk.",
+   "sector": "Others",
+   "close": 386.0,
+   "score": 70,
+   "components": {
+    "location": 25,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 379,
+   "invalidation": 350,
+   "target": 446,
+   "medianValueTraded20": 13139141600,
+   "rvol": 4.267253579537962,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -8511951269,
+    -8527202327,
+    -8557765264,
+    -8628803964,
+    -8786731164,
+    -8669886764,
+    -8664072614,
+    -8637718994,
+    -8640468972,
+    -8699692817,
+    -8746213917,
+    -8738431717,
+    -8770207617,
+    -8809080817,
+    -8789604191,
+    -8763077362,
+    -8840124462,
+    -8840124462,
+    -8811736062,
+    -8821879362,
+    -8817419217,
+    -8808840357,
+    -8812868157,
+    -8794169121,
+    -8818595121,
+    -8821310641,
+    -8840430741,
+    -8860781141,
+    -8874244341,
+    -8707425941
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI EMA25; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACDIA"
+  },
+  {
+   "ticker": "CYBR",
+   "name": "ITSEC Asia Tbk.",
+   "sector": "Others",
+   "close": 332.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 327,
+   "invalidation": 320.76,
+   "target": 364,
+   "medianValueTraded20": 6440746800,
+   "rvol": 1.471202093638764,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    434243326,
+    464332826,
+    460406346,
+    452649446,
+    452421457,
+    505664252,
+    489429635,
+    510806935,
+    545017235,
+    544285212,
+    543780712,
+    558142312,
+    559357012,
+    557833712,
+    555473312,
+    560214554,
+    590270785,
+    575857085,
+    563336035,
+    551999195,
+    540451175,
+    557139775,
+    567854755,
+    586048955,
+    564123955,
+    561911311,
+    565295011,
+    572586082,
+    591211282,
+    594756911
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 16,
+    "hitRate": 0.38,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACYBR"
+  },
+  {
+   "ticker": "MARK",
+   "name": "Mark Dynamics Indonesia Tbk.",
+   "sector": "Others",
+   "close": 915.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 899,
+   "invalidation": 881.1,
+   "target": 1028,
+   "medianValueTraded20": 7110576000,
+   "rvol": 1.473576682267819,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1666693004,
+    1680313379,
+    1674425829,
+    1685499795,
+    1684853843,
+    1692314731,
+    1714041531,
+    1714041531,
+    1719125331,
+    1711550831,
+    1706816731,
+    1714024431,
+    1708595631,
+    1717641319,
+    1717641319,
+    1687526519,
+    1681604034,
+    1678118501,
+    1686705401,
+    1688141881,
+    1684438801,
+    1685383761,
+    1685383761,
+    1688215161,
+    1688215161,
+    1681321961,
+    1681321961,
+    1686823247,
+    1688160647,
+    1689513425
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.71,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMARK"
+  },
+  {
+   "ticker": "ADES",
+   "name": "Akasha Wira International Tbk.",
+   "sector": "Others",
+   "close": 27975.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 27295,
+   "invalidation": 26754.75,
+   "target": 30762,
+   "medianValueTraded20": 1159582500,
+   "rvol": 0.4336931380107941,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1515579,
+    -1531679,
+    -1544679,
+    -1491879,
+    -1386989,
+    -1326861,
+    -1301350,
+    -1303847,
+    -1281047,
+    -1295160,
+    -1328860,
+    -1303160,
+    -1334779,
+    -1355179,
+    -1329519,
+    -1360194,
+    -1415529,
+    -1365892,
+    -1360442,
+    -1360194,
+    -1336755,
+    -1355715,
+    -1357079,
+    -1269679,
+    -1258146,
+    -1323046,
+    -1297546,
+    -1295079,
+    -1300050,
+    -1277550
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 5,
+    "hitRate": 1.0,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AADES"
+  },
+  {
+   "ticker": "MEDC",
+   "name": "Medco Energi Internasional Tbk",
+   "sector": "Others",
+   "close": 1165.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1136,
+   "invalidation": 1113.75,
+   "target": 1300,
+   "medianValueTraded20": 57015100000,
+   "rvol": 0.6085978321068477,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -2647190340,
+    -2581408987,
+    -2567467359,
+    -2675955059,
+    -2641415492,
+    -2571720992,
+    -2546585252,
+    -2481336939,
+    -2473093699,
+    -2497923379,
+    -2529222224,
+    -2511355024,
+    -2539648464,
+    -2520132130,
+    -2520132130,
+    -2588582505,
+    -2579719705,
+    -2615311855,
+    -2577375992,
+    -2602018349,
+    -2647861769,
+    -2627848491,
+    -2603613029,
+    -2555380029,
+    -2564494489,
+    -2532256704,
+    -2573040037,
+    -2601478437,
+    -2595475897,
+    -2578052397
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 13,
+    "hitRate": 0.77,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMEDC"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  },
+  {
+   "ticker": "RDTX",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-11-20->2026-11-23 (12875.0->640.0)"
+   ]
+  }
+ ],
+ "scanned": 919
+}
