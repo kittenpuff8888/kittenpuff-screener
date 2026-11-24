@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-24T07:41:30.598277+07:00",
+ "generatedAt": "2026-11-24T07:45:56.566088+07:00",
  "marketDate": "2026-11-23",
  "universe": {
   "size": 919,
@@ -15,15 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-24T07:41:17.856174+07:00"
+  "auditedAt": "2026-11-24T07:45:45.649792+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-20T05:50:24.100541+07:00",
-   "marketDate": "2026-11-19",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
   {
    "timestamp": "2026-11-20T07:17:15.098152+07:00",
    "marketDate": "2026-11-19",
@@ -65,6 +59,12 @@
    "marketDate": "2026-11-23",
    "status": "SUCCESS",
    "message": "Created and validated a new dated snapshot."
+  },
+  {
+   "timestamp": "2026-11-24T07:44:51.669440+07:00",
+   "marketDate": "2026-11-23",
+   "status": "NO_CHANGE",
+   "message": "Dataset already published; last successful snapshot preserved."
   }
  ],
  "qaSummary": {
@@ -93,10 +93,14 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-24T07:41:19.838845+07:00",
+  "lastChecked": "2026-11-24T07:45:48.441521+07:00",
   "checked": 15,
   "failures": [],
   "results": [
+   {
+    "ticker": "ADES",
+    "status": "ERROR: TypeError"
+   },
    {
     "ticker": "ANTM",
     "status": "ERROR: TypeError"
@@ -114,11 +118,19 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "CDIA",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "CYBR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "FAPA",
+    "ticker": "DEAL",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "KICI",
     "status": "ERROR: TypeError"
    },
    {
@@ -130,19 +142,11 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "OBAT",
+    "ticker": "SSIA",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "PSAB",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "PSGO",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "PWON",
+    "ticker": "TIRA",
     "status": "ERROR: TypeError"
    },
    {
@@ -150,11 +154,7 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "TRUE",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "UNSP",
+    "ticker": "VKTR",
     "status": "ERROR: TypeError"
    }
   ],

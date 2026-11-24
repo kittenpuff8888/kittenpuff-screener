@@ -1,12 +1,6 @@
 {
   "entries": [
     {
-      "timestamp": "2026-10-20T22:52:40.764815+07:00",
-      "marketDate": "2026-10-20",
-      "status": "FAILED",
-      "message": "CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/python', '/home/runner/work/kittenpuff-screener/kittenpuff-screener/scripts/validate_data.py']' returned non-zero exit status 1."
-    },
-    {
       "timestamp": "2026-10-21T01:57:47.500905+07:00",
       "marketDate": "2026-10-20",
       "status": "STARTED",
@@ -599,6 +593,12 @@
       "marketDate": "2026-11-23",
       "status": "SUCCESS",
       "message": "Created and validated a new dated snapshot."
+    },
+    {
+      "timestamp": "2026-11-24T07:44:51.669440+07:00",
+      "marketDate": "2026-11-23",
+      "status": "NO_CHANGE",
+      "message": "Dataset already published; last successful snapshot preserved."
     }
   ]
 }
