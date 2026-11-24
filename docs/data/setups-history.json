@@ -1810,7 +1810,7 @@
    "target": 52,
    "invalidation": 34,
    "outcome": "invalidated",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-17",
@@ -1820,7 +1820,7 @@
    "target": 355,
    "invalidation": 293,
    "outcome": "open",
-   "barsObserved": 3
+   "barsObserved": 4
   },
   {
    "date": "2026-11-17",
