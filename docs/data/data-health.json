@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-25T07:31:12.382844+07:00",
+ "generatedAt": "2026-11-26T04:01:36.747909+07:00",
  "marketDate": "2026-11-24",
  "universe": {
   "size": 919,
@@ -15,33 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-25T07:30:59.899735+07:00"
+  "auditedAt": "2026-11-26T04:01:24.136120+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-21T06:33:54.214946+07:00",
-   "marketDate": "2026-11-20",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
-  {
-   "timestamp": "2026-11-24T06:18:26.958911+07:00",
-   "marketDate": "2026-11-23",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-11-24T07:39:13.056167+07:00",
-   "marketDate": "2026-11-23",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
-  {
-   "timestamp": "2026-11-24T07:44:51.669440+07:00",
-   "marketDate": "2026-11-23",
-   "status": "NO_CHANGE",
-   "message": "Dataset already published; last successful snapshot preserved."
-  },
   {
    "timestamp": "2026-11-24T08:47:05.911486+07:00",
    "marketDate": "2026-11-23",
@@ -77,6 +53,18 @@
    "marketDate": "2026-11-24",
    "status": "NO_CHANGE",
    "message": "Dataset already published; last successful snapshot preserved."
+  },
+  {
+   "timestamp": "2026-11-26T02:35:57.971354+07:00",
+   "marketDate": "2026-11-25",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-26T04:00:13.757277+07:00",
+   "marketDate": "2026-11-25",
+   "status": "NO_DATA",
+   "message": "No valid IDX session was available for 2026-11-25; latest observed OHLCV date was 2026-11-24. The last successful snapshot was preserved."
   }
  ],
  "qaSummary": {
@@ -105,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-25T07:31:04.102374+07:00",
+  "lastChecked": "2026-11-26T04:01:26.829890+07:00",
   "checked": 14,
   "failures": [],
   "results": [
