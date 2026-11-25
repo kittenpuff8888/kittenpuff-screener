@@ -1,0 +1,211 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-25",
+ "generatedAt": "2026-11-26T06:48:14.284383+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 2,
+ "setups": [
+  {
+   "ticker": "MAPI",
+   "name": "Mitra Adiperkasa Tbk.",
+   "sector": "Others",
+   "close": 1040.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1030,
+   "invalidation": 1009.8,
+   "target": 1178,
+   "medianValueTraded20": 5362713000,
+   "rvol": 0.7889562900823626,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1198340411,
+    -1200729847,
+    -1208973847,
+    -1205223440,
+    -1211787299,
+    -1206381893,
+    -1207631212,
+    -1209501012,
+    -1211292212,
+    -1210403526,
+    -1211813720,
+    -1211134303,
+    -1207656703,
+    -1206662688,
+    -1200232688,
+    -1200232688,
+    -1199976442,
+    -1201081142,
+    -1201081142,
+    -1202345942,
+    -1195935942,
+    -1194278262,
+    -1200057512,
+    -1202693812,
+    -1212489978,
+    -1211861434,
+    -1213279280,
+    -1205222180,
+    -1206388314,
+    -1207767380
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 10,
+    "hitRate": 0.8,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMAPI"
+  },
+  {
+   "ticker": "ADES",
+   "name": "Akasha Wira International Tbk.",
+   "sector": "Others",
+   "close": 27975.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 27295,
+   "invalidation": 26754.75,
+   "target": 30762,
+   "medianValueTraded20": 1159582500,
+   "rvol": 0.6043437204910292,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1656000,
+    -1603200,
+    -1498309,
+    -1438181,
+    -1412670,
+    -1415167,
+    -1392367,
+    -1406480,
+    -1440180,
+    -1414480,
+    -1446099,
+    -1466499,
+    -1440839,
+    -1471514,
+    -1526849,
+    -1477213,
+    -1471763,
+    -1471514,
+    -1448075,
+    -1467035,
+    -1468399,
+    -1380999,
+    -1369466,
+    -1434366,
+    -1408866,
+    -1406399,
+    -1411371,
+    -1388871,
+    -1377850,
+    -1355008
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 5,
+    "hitRate": 1.0,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AADES"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 919
+}
