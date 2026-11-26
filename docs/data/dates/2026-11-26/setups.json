@@ -1,0 +1,341 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-26",
+ "generatedAt": "2026-11-27T06:15:10.036157+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 4,
+ "setups": [
+  {
+   "ticker": "CYBR",
+   "name": "ITSEC Asia Tbk.",
+   "sector": "Others",
+   "close": 368.0,
+   "score": 80,
+   "components": {
+    "location": 25,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 362,
+   "invalidation": 342,
+   "target": 405,
+   "medianValueTraded20": 6611381600,
+   "rvol": 2.233103786937066,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    494377989,
+    494150000,
+    547392795,
+    531158178,
+    552535478,
+    586745778,
+    586013755,
+    585509255,
+    599870855,
+    601085555,
+    599562255,
+    597201855,
+    601943098,
+    631999328,
+    617585628,
+    605064578,
+    593727738,
+    582179718,
+    598868318,
+    609583298,
+    627777498,
+    605852498,
+    603639854,
+    607023554,
+    614314625,
+    632939825,
+    636485454,
+    636485454,
+    645636021,
+    660112321
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI EMA25; bullish CHoCH (Internal Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACYBR"
+  },
+  {
+   "ticker": "MAPI",
+   "name": "Mitra Adiperkasa Tbk.",
+   "sector": "Others",
+   "close": 1025.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1030,
+   "invalidation": 1009.8,
+   "target": 1160,
+   "medianValueTraded20": 5362713000,
+   "rvol": 0.5338998741366767,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1192023002,
+    -1200267002,
+    -1196516595,
+    -1203080453,
+    -1197675048,
+    -1198924366,
+    -1200794166,
+    -1202585366,
+    -1201696680,
+    -1203106875,
+    -1202427458,
+    -1198949858,
+    -1197955843,
+    -1191525843,
+    -1191525843,
+    -1191269596,
+    -1192374296,
+    -1192374296,
+    -1193639096,
+    -1187229096,
+    -1185571416,
+    -1191350666,
+    -1193986966,
+    -1203783133,
+    -1203154589,
+    -1204572435,
+    -1196515335,
+    -1197681468,
+    -1199060535,
+    -1201915335
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 9,
+    "hitRate": 0.56,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMAPI"
+  },
+  {
+   "ticker": "SGER",
+   "name": "Sumber Global Energy Tbk.",
+   "sector": "Others",
+   "close": 585.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 566,
+   "invalidation": 554.4,
+   "target": 672,
+   "medianValueTraded20": 25133952000,
+   "rvol": 0.410012012225392,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    8863284059,
+    8879156448,
+    8950617839,
+    8972095106,
+    9096275006,
+    9152568621,
+    9070159921,
+    9046365771,
+    9073942200,
+    9055126650,
+    9077710450,
+    9039215550,
+    8992703850,
+    8965833350,
+    8962072372,
+    8932641515,
+    8922632103,
+    8893780603,
+    8893016656,
+    8844175216,
+    8837814016,
+    8827648636,
+    8829006096,
+    8768289696,
+    8791989778,
+    8766162828,
+    8794127294,
+    8824467734,
+    8832165306,
+    8815085206
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 14,
+    "hitRate": 0.79,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASGER"
+  },
+  {
+   "ticker": "SOCI",
+   "name": "Soechi Lines Tbk.",
+   "sector": "Others",
+   "close": 366.0,
+   "score": 65,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 364,
+   "invalidation": 356.4,
+   "target": 413,
+   "medianValueTraded20": 5013868200,
+   "rvol": 0.3556006494866609,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    101516491,
+    118216780,
+    146732280,
+    151784122,
+    155747324,
+    156945956,
+    149253509,
+    134391873,
+    138723233,
+    129240651,
+    122566138,
+    123663520,
+    112868110,
+    115642050,
+    106119175,
+    109237495,
+    105786328,
+    96857728,
+    80536728,
+    77970728,
+    95081228,
+    92485674,
+    83842974,
+    68898474,
+    58427774,
+    60862956,
+    69707420,
+    69707420,
+    67365020,
+    63120720
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": null,
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ASOCI"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 919
+}
