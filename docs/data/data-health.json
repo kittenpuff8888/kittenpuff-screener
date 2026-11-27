@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-28T04:53:43.385584+07:00",
- "marketDate": "2026-11-26",
+ "generatedAt": "2026-11-28T06:15:17.892404+07:00",
+ "marketDate": "2026-11-27",
  "universe": {
   "size": 919,
   "source": "KSEI workbook roster",
@@ -15,21 +15,9 @@
    "delistedCount": 0
   },
   "liveIdxRosterDiffReason": "IDX roster diff not yet computed this run",
-  "auditedAt": "2026-11-28T04:53:34.445328+07:00"
+  "auditedAt": "2026-11-28T06:15:08.709082+07:00"
  },
  "runLog": [
-  {
-   "timestamp": "2026-11-26T06:51:58.191548+07:00",
-   "marketDate": "2026-11-25",
-   "status": "STARTED",
-   "message": "Daily update pipeline started."
-  },
-  {
-   "timestamp": "2026-11-26T08:11:57.161301+07:00",
-   "marketDate": "2026-11-25",
-   "status": "SUCCESS",
-   "message": "Created and validated a new dated snapshot."
-  },
   {
    "timestamp": "2026-11-27T03:37:35.831052+07:00",
    "marketDate": "2026-11-26",
@@ -65,6 +53,18 @@
    "marketDate": "2026-11-27",
    "status": "NO_DATA",
    "message": "No valid IDX session was available for 2026-11-27; latest observed OHLCV date was 2026-11-26. The last successful snapshot was preserved."
+  },
+  {
+   "timestamp": "2026-11-28T04:56:37.753653+07:00",
+   "marketDate": "2026-11-27",
+   "status": "STARTED",
+   "message": "Daily update pipeline started."
+  },
+  {
+   "timestamp": "2026-11-28T06:14:01.175642+07:00",
+   "marketDate": "2026-11-27",
+   "status": "SUCCESS",
+   "message": "Created and validated a new dated snapshot."
   }
  ],
  "qaSummary": {
@@ -93,7 +93,7 @@
  "parity": {
   "status": "OK",
   "method": "Dual-source agreement (cached vs fresh yfinance; Investing.com adapter available in rebuild_backend/providers). True TradingView data needs a paid feed.",
-  "lastChecked": "2026-11-28T04:53:37.221998+07:00",
+  "lastChecked": "2026-11-28T06:15:10.375632+07:00",
   "checked": 14,
   "failures": [],
   "results": [
@@ -114,19 +114,19 @@
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "BPII",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "CMNP",
-    "status": "ERROR: TypeError"
-   },
-   {
     "ticker": "CYBR",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "DNAR",
+    "ticker": "DEFI",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "HELI",
+    "status": "ERROR: TypeError"
+   },
+   {
+    "ticker": "JSMR",
     "status": "ERROR: TypeError"
    },
    {
@@ -134,11 +134,15 @@
     "status": "ERROR: TypeError"
    },
    {
+    "ticker": "PANI",
+    "status": "ERROR: TypeError"
+   },
+   {
     "ticker": "SGER",
     "status": "ERROR: TypeError"
    },
    {
-    "ticker": "SMDM",
+    "ticker": "SMLE",
     "status": "ERROR: TypeError"
    },
    {
@@ -147,86 +151,89 @@
    },
    {
     "ticker": "TLKM",
-    "status": "ERROR: TypeError"
-   },
-   {
-    "ticker": "ZINC",
     "status": "ERROR: TypeError"
    }
   ],
   "note": "Price exact-match required (discrete IDX ticks); volume tolerance 0.5%. PARITY_FAIL tickers are excluded from swing setups this run."
  },
  "setups": {
-  "count": 4,
+  "count": 6,
   "scanned": 919,
   "quarantined": 7,
   "spotCheckSample": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-26",
-    "close": 2640.0,
-    "volume": 21461600.0,
+    "date": "2026-11-27",
+    "close": 2720.0,
+    "volume": 41862300.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-26",
-    "close": 5675.0,
-    "volume": 36477500.0,
+    "date": "2026-11-27",
+    "close": 5750.0,
+    "volume": 25205400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-26",
-    "close": 5900.0,
-    "volume": 216052900.0,
+    "date": "2026-11-27",
+    "close": 6000.0,
+    "volume": 129298200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-26",
-    "close": 3080.0,
-    "volume": 138381500.0,
+    "date": "2026-11-27",
+    "close": 3100.0,
+    "volume": 120372800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-26",
-    "close": 2010.0,
-    "volume": 126353600.0,
+    "date": "2026-11-27",
+    "close": 2040.0,
+    "volume": 89920100.0,
     "source": "yfinance"
    },
    {
-    "ticker": "CYBR",
-    "date": "2026-11-26",
-    "close": 368.0,
+    "ticker": "MARK",
+    "date": "2026-11-27",
+    "close": 1005.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MAPI",
-    "date": "2026-11-26",
-    "close": 1025.0,
+    "date": "2026-11-27",
+    "close": 1035.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SGER",
-    "date": "2026-11-26",
-    "close": 585.0,
+    "ticker": "DKHH",
+    "date": "2026-11-27",
+    "close": 98.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SOCI",
-    "date": "2026-11-26",
-    "close": 366.0,
+    "ticker": "PANI",
+    "date": "2026-11-27",
+    "close": 3430.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "CYBR",
+    "date": "2026-11-27",
+    "close": 380.0,
     "volume": null,
     "source": "yfinance"
    }
   ],
   "forwardOutcomes": {
-   "total": 618,
+   "total": 622,
    "decided": 471,
    "targetFirst": 141,
    "hitRate": 0.299
@@ -237,64 +244,71 @@
   "tickers": [
    {
     "ticker": "ANTM",
-    "date": "2026-11-26",
-    "close": 2640.0,
-    "volume": 21461600.0,
+    "date": "2026-11-27",
+    "close": 2720.0,
+    "volume": 41862300.0,
     "source": "yfinance"
    },
    {
     "ticker": "ASII",
-    "date": "2026-11-26",
-    "close": 5675.0,
-    "volume": 36477500.0,
+    "date": "2026-11-27",
+    "close": 5750.0,
+    "volume": 25205400.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBCA",
-    "date": "2026-11-26",
-    "close": 5900.0,
-    "volume": 216052900.0,
+    "date": "2026-11-27",
+    "close": 6000.0,
+    "volume": 129298200.0,
     "source": "yfinance"
    },
    {
     "ticker": "BBRI",
-    "date": "2026-11-26",
-    "close": 3080.0,
-    "volume": 138381500.0,
+    "date": "2026-11-27",
+    "close": 3100.0,
+    "volume": 120372800.0,
     "source": "yfinance"
    },
    {
     "ticker": "TLKM",
-    "date": "2026-11-26",
-    "close": 2010.0,
-    "volume": 126353600.0,
+    "date": "2026-11-27",
+    "close": 2040.0,
+    "volume": 89920100.0,
     "source": "yfinance"
    },
    {
-    "ticker": "CYBR",
-    "date": "2026-11-26",
-    "close": 368.0,
+    "ticker": "MARK",
+    "date": "2026-11-27",
+    "close": 1005.0,
     "volume": null,
     "source": "yfinance"
    },
    {
     "ticker": "MAPI",
-    "date": "2026-11-26",
-    "close": 1025.0,
+    "date": "2026-11-27",
+    "close": 1035.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SGER",
-    "date": "2026-11-26",
-    "close": 585.0,
+    "ticker": "DKHH",
+    "date": "2026-11-27",
+    "close": 98.0,
     "volume": null,
     "source": "yfinance"
    },
    {
-    "ticker": "SOCI",
-    "date": "2026-11-26",
-    "close": 366.0,
+    "ticker": "PANI",
+    "date": "2026-11-27",
+    "close": 3430.0,
+    "volume": null,
+    "source": "yfinance"
+   },
+   {
+    "ticker": "CYBR",
+    "date": "2026-11-27",
+    "close": 380.0,
     "volume": null,
     "source": "yfinance"
    }

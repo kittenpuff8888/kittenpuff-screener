@@ -1,0 +1,479 @@
+{
+ "schemaVersion": 1,
+ "marketDate": "2026-11-27",
+ "generatedAt": "2026-11-28T06:15:17.358535+07:00",
+ "config": {
+  "minMedianValueTraded": 1000000000,
+  "minScore": 55,
+  "cvdLookback": 20,
+  "divergenceLookback": 30,
+  "sweepLookback": 20,
+  "recentIpoMaxBars": 90,
+  "weights": {
+   "location": 25,
+   "structure": 25,
+   "orderflow": 25,
+   "ownership": 15,
+   "liquidity": 10
+  }
+ },
+ "methodology": "CVD is approximated from candle structure + volume (labelled 'approx.'); KSEI is monthly-lagged context; outputs are screening analytics, not trade advice.",
+ "count": 6,
+ "setups": [
+  {
+   "ticker": "MARK",
+   "name": "Mark Dynamics Indonesia Tbk.",
+   "sector": "Others",
+   "close": 1005.0,
+   "score": 75,
+   "components": {
+    "location": 25,
+    "structure": 25,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1005,
+   "invalidation": 979,
+   "target": 1070,
+   "medianValueTraded20": 6929307000,
+   "rvol": 0.7264520677426133,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    1630817648,
+    1638278537,
+    1660005337,
+    1660005337,
+    1665089137,
+    1657514637,
+    1652780537,
+    1659988237,
+    1654559437,
+    1663605125,
+    1663605125,
+    1633490325,
+    1627567840,
+    1624082307,
+    1632669207,
+    1634105687,
+    1630402607,
+    1631347567,
+    1631347567,
+    1634178967,
+    1634178967,
+    1627285767,
+    1627285767,
+    1632787053,
+    1634124453,
+    1635477230,
+    1636670330,
+    1641779830,
+    1642803897,
+    1647684686
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI PrevQ -1SD; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.71,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMARK"
+  },
+  {
+   "ticker": "MAPI",
+   "name": "Mitra Adiperkasa Tbk.",
+   "sector": "Others",
+   "close": 1035.0,
+   "score": 70,
+   "components": {
+    "location": 15,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1030,
+   "invalidation": 1009.8,
+   "target": 1160,
+   "medianValueTraded20": 5362713000,
+   "rvol": 0.4726355485442155,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -1215336796,
+    -1211586389,
+    -1218150248,
+    -1212744842,
+    -1213994160,
+    -1215863960,
+    -1217655160,
+    -1216766475,
+    -1218176669,
+    -1217497252,
+    -1214019652,
+    -1213025637,
+    -1206595637,
+    -1206595637,
+    -1206339390,
+    -1207444090,
+    -1207444090,
+    -1208708890,
+    -1202298890,
+    -1200641210,
+    -1206420460,
+    -1209056760,
+    -1218852927,
+    -1218224383,
+    -1219642229,
+    -1211585129,
+    -1212751262,
+    -1214130329,
+    -1216985129,
+    -1217495349
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; bullish CHoCH (Swing Bullish CHoCH); failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 10,
+    "hitRate": 0.8,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AMAPI"
+  },
+  {
+   "ticker": "DKHH",
+   "name": "Cipta Sarana Medika Tbk.",
+   "sector": "Others",
+   "close": 98.0,
+   "score": 65,
+   "components": {
+    "location": 25,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 5
+   },
+   "entryZone": 100,
+   "invalidation": 96,
+   "target": 126,
+   "medianValueTraded20": 1789580400,
+   "rvol": 5.84281396106488,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -2426027775,
+    -2395669835,
+    -2249032135,
+    -2054156095,
+    -2092733624,
+    -2036058311,
+    -2137729422,
+    -2130443667,
+    -2158956967,
+    -2169254767,
+    -2173542851,
+    -2189927651,
+    -2189927651,
+    -2174751151,
+    -2181258751,
+    -2186705497,
+    -2205563830,
+    -2224806630,
+    -2228317113,
+    -2234552380,
+    -2240535030,
+    -2276364315,
+    -2281453981,
+    -2277896881,
+    -2308824981,
+    -2308824981,
+    -2310049541,
+    -2309068675,
+    -2312505055,
+    -2302657491
+   ],
+   "dataSource": "yfinance",
+   "why": "at POI EQ Low; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 3,
+    "hitRate": 1.0,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ADKHH"
+  },
+  {
+   "ticker": "PANI",
+   "name": "Pantai Indah Kapuk Dua Tbk.",
+   "sector": "Others",
+   "close": 3430.0,
+   "score": 60,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 15,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 3313,
+   "invalidation": 3247.2,
+   "target": 3695,
+   "medianValueTraded20": 11751738000,
+   "rvol": 0.7725337401784114,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -398038056,
+    -391453956,
+    -388420830,
+    -389513130,
+    -387327130,
+    -387920922,
+    -390630369,
+    -387348289,
+    -391200689,
+    -388347372,
+    -386313572,
+    -389971072,
+    -384333972,
+    -387497680,
+    -386197249,
+    -386197249,
+    -386410149,
+    -388857733,
+    -391392017,
+    -389378467,
+    -391378804,
+    -389940938,
+    -388050578,
+    -390850051,
+    -391120089,
+    -387042033,
+    -392587633,
+    -392087604,
+    -392302037,
+    -390763217
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 7,
+    "hitRate": 0.43,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3APANI"
+  },
+  {
+   "ticker": "CYBR",
+   "name": "ITSEC Asia Tbk.",
+   "sector": "Others",
+   "close": 380.0,
+   "score": 55,
+   "components": {
+    "location": 0,
+    "structure": 25,
+    "orderflow": 20,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 363,
+   "invalidation": 342,
+   "target": 432,
+   "medianValueTraded20": 7235250000,
+   "rvol": 1.578428220596387,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    491716200,
+    544958995,
+    528724378,
+    550101678,
+    584311978,
+    583579955,
+    583075455,
+    597437055,
+    598651755,
+    597128455,
+    594768055,
+    599509298,
+    629565528,
+    615151828,
+    602630778,
+    591293938,
+    579745918,
+    596434518,
+    607149498,
+    625343698,
+    603418698,
+    601206054,
+    604589754,
+    611880825,
+    630506025,
+    634051654,
+    634051654,
+    643202221,
+    657678521,
+    684799081
+   ],
+   "dataSource": "yfinance",
+   "why": "bullish CHoCH (Internal Bullish CHoCH); CVD(approx.) bullish divergence at lows",
+   "history": {
+    "signals": 16,
+    "hitRate": 0.38,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3ACYBR"
+  },
+  {
+   "ticker": "JPFA",
+   "name": "Japfa Comfeed Indonesia Tbk.",
+   "sector": "Others",
+   "close": 1450.0,
+   "score": 55,
+   "components": {
+    "location": 15,
+    "structure": 20,
+    "orderflow": 10,
+    "ownership": 0,
+    "liquidity": 10
+   },
+   "entryZone": 1424,
+   "invalidation": 1395.9,
+   "target": 1585,
+   "medianValueTraded20": 47389208500,
+   "rvol": 0.8748876458264331,
+   "isRecentIpo": false,
+   "kseiFootprint": {
+    "available": true,
+    "asOf": "2026-08-31",
+    "netDeltaPP": 0.0,
+    "accumulation": false,
+    "changes": []
+   },
+   "cvdSpark": [
+    -298403075,
+    -278687418,
+    -268098611,
+    -260062903,
+    -254005183,
+    -266679283,
+    -258905516,
+    -248923780,
+    -268448393,
+    -268448393,
+    -266908237,
+    -284777197,
+    -303739788,
+    -296857688,
+    -316622488,
+    -352351250,
+    -380597550,
+    -383620904,
+    -371738604,
+    -343740204,
+    -374204620,
+    -393943660,
+    -417638394,
+    -435994694,
+    -435994694,
+    -503709494,
+    -481599694,
+    -508329394,
+    -518131394,
+    -500745254
+   ],
+   "dataSource": "yfinance",
+   "why": "basing at 20-day low band; failed breakdown: low swept and reclaimed; absorption bar (high volume, small range at low)",
+   "history": {
+    "signals": 12,
+    "hitRate": 0.75,
+    "note": "price-only core signal history for this ticker; small sample"
+   },
+   "tradingView": "https://www.tradingview.com/chart/?symbol=IDX%3AJPFA"
+  }
+ ],
+ "quarantined": [
+  {
+   "ticker": "BNBR",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-05-13->2026-05-18 (175.0->111.68468475341797)"
+   ]
+  },
+  {
+   "ticker": "COCO",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-06-26->2026-06-29 (170.0->83.19244384765625)"
+   ]
+  },
+  {
+   "ticker": "FORU",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-09-11->2026-09-14 (3720.0->238.4088592529297)"
+   ]
+  },
+  {
+   "ticker": "INET",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2025-12-24->2025-12-29 (750.0->454.43414306640625)"
+   ]
+  },
+  {
+   "ticker": "MKNT",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-16->2026-10-19 (1.0->2.0)",
+    "move beyond ARA/ARB bound 2026-10-19->2026-10-20 (2.0->3.0)"
+   ]
+  },
+  {
+   "ticker": "PACK",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-01-09->2026-01-12 (3280.0->272.0)"
+   ]
+  },
+  {
+   "ticker": "PPGL",
+   "quarantined": true,
+   "issues": [
+    "move beyond ARA/ARB bound 2026-10-23->2026-10-26 (468.0->280.79998779296875)"
+   ]
+  }
+ ],
+ "scanned": 919
+}
